@@ -100,13 +100,13 @@
 
 						<!-- Content -->
 							<article class="box post">
-								<a class="image featured"><img src="images/standings.png" alt="" /></a>
-								<header>
-									<h2>Abstract</h2>
-									<p>December 8th, 2022</p>
-									<p>By: Nathan Shaver</p>
-								</header>
-								<p>
+								<a class="image featured"><img src="images/sbfull.PNG" alt="" /></a>
+                  <header>
+                    <h2>Abstract</h2>
+                    <p>December 8th, 2022</p>
+                    <p>By: Nathan Shaver</p>
+                  </header>
+								          <p>
                                     Sabermetrics is the empirical analysis of baseball,
                                     especially baseball statistics that measure in-game
                                     activity. These activities measure pitching, batting,
@@ -126,8 +126,8 @@
                                     impact on the overall statistical trends throughout
                                     Major League Baseball.
 
-								</p>
-								<section>
+								          </p>
+								  <section>
 									<header>
 										<h3>Introduction</h3>
 									</header>
@@ -158,48 +158,47 @@
                                         on various plots. From there I drew conclusions on
                                         the results I found.
                                     </p>  
-								</section>
-								<section>
-									<header>
-										<h3>Related Work</h3>
-									</header>
-									<p>
-										Sports teams would originally evaluate athletes based
-                                        on gut instincts and arbitrary attributes such as fitness
+                          </section>
+                          <section>
+                            <header>
+                              <h3>Related Work</h3>
+                            </header>
+                            <p>
+										                    Historically, sports teams evaluated athletes based
+                                        on gut instincts and arbitrary attributes, such as fitness
                                         level, motivation, appearance, and body type.
-                                        However, data scientists and statisticians have
-                                        entered the sport with advanced measures over the
-                                        previous twenty years. The 2002 Oakland Athletics
-                                        were the first and most successful team to employ
+                                        However, during the last twenty years, data scientists and statisticians have joined 
+                                        the realm of sports with improved metrics. The 2002 Oakland Athletics
+                                        were the first and one of the most successful teams to employ
                                         this strategy, taking a statistical approach to their
                                         season by using data analytics to draft, trade, and
-                                        manage its players. Steinberg from [1] stated that the
-                                        2002 Oakland Athletics “sabermetrics system did not
+                                        manage their players. Steinberg from [1] stated that for the
+                                        2002 Oakland Athletics, "[the]...sabermetrics system did not
                                         require that players fit the height, weight, speed or
                                         body composition prototypes that dictated the moves
-                                        of other clubs”. This resulted in a high efficiency, low
-                                        out system. Additionally the authors in [2] stated,
-                                        “Early sabermetricians combined batters' and teams'
+                                        of other clubs". This resulted in a high efficiency, low
+                                        out system. Additionally, the authors in [2] stated,
+                                        "Early sabermetricians combined batters' and teams'
                                         on-base percentage and slugging percentage into a
                                         statistic called OPS (On base Plus Slugging.)
                                         However, even this measure doesn't fully describe
                                         how effective a team is at scoring runs, and has
                                         increasingly been replaced by sabermetric measures
                                         which weight on-base percentage and slugging
-                                        percentage”. As a result of this 2002 Oakland
+                                        percentage". Following the 2002 Oakland
                                         Athletics teams employing sabermetrics, other
                                         baseball teams and sports caught on to this new
                                         strategy.
 
 									</p>
 									<p>
-                                        Although our work is on a smaller scale than that of
-                                        professional baseball teams, we looked at and
-                                        analyzed similar relationships between baseball
-                                        statistics. After performing some relatively basic
-                                        analysis, we dove into deeper tests that pull from
+                                        Although my work is on a smaller scale than
+                                        professional baseball organizations, I wanted to 
+                                        analyze similar relationships between baseball
+                                        statistics. After performing some basic
+                                        analysis, I dove into deeper tests that pulled from
                                         large datasets such as how rule changes affect
-                                        baseball statistics over time
+                                        baseball statistics over a given time period.
 									</p>
 								</section>
 								<section>
@@ -207,23 +206,19 @@
 										<h3>Background</h3>
 									</header>
 									<p>
-                                        We used Baseball Reference and pyBaseball as our
+                                        I used Baseball Reference as my
                                         primary source of data. They contain a wealth of data
                                         dating back to as early as 1900, when the modern era
                                         of professional baseball began. Baseball reference
                                         contains seasonal data on teams and players.
-                                        Pictured below is Baseball Reference's page on the
-                                        2022 New York Yankees. It displays their best
-                                        players, classic baseball statistics as well as
-                                        sabermetric statistics.
 									</p>
 									<p>
-                                        In addition we used pybaseball, a Python
+                                        In addition, I utilzed pyBaseball, a Python
                                         library for analyzing baseball data. The library pulls
                                         data from Baseball Reference, Baseball Savant, and
-                                        FanGraphs, official websites that store tremendous
-                                        amounts of information as previously discussed. The
-                                        software gets statcast data, pitching statistics, hitting
+                                        FanGraphs: official websites that store tremendous
+                                        amounts of information. The
+                                        software can compile statcast data, pitching statistics, hitting
                                         statistics, division standings/team records, awards
                                         data, and other information. Data is accessible at the
                                         individual pitching/batting level as well as aggregated
@@ -234,43 +229,40 @@
 									<header>
 										<h3>Methodology</h3>
 									</header>
-									<p>
-                                        Our main tasks included initially developing several
+									                  <p>
+                                        I main tasks included initially developing several
                                         key functions that mine data from pybaseball. These
                                         include: pitching statistical comparisons, graphical
                                         standings by season and a least squares residual
                                         calculator.
                                         
-									</p>
-									<p>
-                                        Following the initial work, we were tasked to mine
-                                        data on a larger scale. We addressed our major topic
-                                        being the general null hypothesis: various events
+									                  </p>
+									                  <p>                   
+                                        General null hypothesis: various events
                                         and/or rule changes have no impact on the overall
                                         statistical trends throughout Major League Baseball.
-                                        The experiments included these rule changes and
-                                        events:
-									</p>
+									                  </p>
                                     <p>
-                                        In 1968: MLB lowered the height of the pitching
-                                        mound from 15 in to 10 inches.
-                                        Mid 1970s: Various MLB teams moved to larger
+                                        ● In 1968: MLB lowered the height of the pitching
+                                        mound from 15 in to 10 inches.<br>
+                                        ● Mid 1970s: Various MLB teams moved to larger
                                         stadiums with longer distances from home plate to the
-                                        outfield fence.
-                                        In 2003: MLB began testing players for steroids
+                                        outfield fence.<br>
+                                        ● In 2003: MLB began testing players for steroids<br>
                                     </p>
                                     <p>
                                         After graphing the data between 1900-2022, it was
-                                        necessary to begin data cleaning. We didn't want
-                                        extraneous factors impacting our results. As such, we
-                                        decided to clean the data to only include the year of
+                                        necessary to begin data cleaning. I didn't want
+                                        extraneous factors impacting the results. As such, I cleaned 
+                                        the data to only include the year of
                                         the rule change plus or minus 5-7 years, depending
-                                        on the experiment. We then analyzed the null
-                                        hypothesis through a difference of means t-test. Our
-                                        decision on whether to reject or to fail to reject the null
-                                        hypothesis comes down to if our t-statistic is inside or
-                                        outside the t-critical value bounds. From there, we
-                                        looked at the key findings and implications of our
+                                        on the experiment. Analyzing the null
+                                        hypothesis was caculated through a difference 
+                                        of means t-test. My decision on whether to reject or
+                                        fail to reject the null
+                                        hypothesis came down to if the t-statistic is inside or
+                                        outside the t-critical value bounds. From there, I
+                                        looked at the key findings and implications of my 
                                         results
                                     </p>
 								</section>
@@ -279,13 +271,16 @@
 										<h3>Preliminary Work</h3>
 									</header>
 									<p>
-                                        For our initial setup, we drew up code in Python to
-                                        analyze statistics across a broad range (1900-2022).
-                                        We wanted to analyze specific statistics that we
+                                        For my initial setup, I programmed code in Python to
+                                        analyze the statistics across a broad range (1900-2022).
+                                        I analyzed specific statistics that I
                                         thought could be impacted by the rule changes
-                                        outlined in our methodology. As such, we plotted and
-                                        analyzed K/9 (strikeouts per nine innings), SB (stolen
-                                        bases), and HR (home runs). Each data point was
+                                        outlined in my methodology. I decided on three statistics to
+                                        plot and analye:<br>
+                                        ● K/9 (strikeouts per nine innings) <br>
+                                        ● SB (stolen bases) <br>
+                                        ● HR (home runs). <br>
+                                        Each data point was
                                         averaged by team per year. For example, the 2022
                                         Texas Rangers stole 128 bases as a team. That data
                                         is represented as a single point. The summary data
@@ -378,19 +373,20 @@
 										<h3>Evaluation</h3>
 									</header>
 									<p>
-                                        With the established framework for the project, we
-                                        move on to the major topic. We formed the general
+                                        With the established framework for the project, I
+                                        moved on to the major topic. General
                                         null hypothesis: various events and/or rule changes
                                         have no impact on the overall statistical trends
                                         throughout Major League Baseball. The experiments
-                                        tested are the following rule changes: MLB lowered
-                                        the height of the pitching mound from 15 in to 10 in in
-                                        1968, various MLB teams moved to larger stadiums
+                                        tested are the following rule changes: <br>
+                                        ● MLB lowered the height of the pitching mound from 15 inches to 10 inches in
+                                        1968. <br>
+                                        ● Various MLB teams moved to larger stadiums
                                         with longer distances from home plate to the outfield
-                                        fence in the 1970s and MLB began testing players for
-                                        steroids in 2003. Diving into the rule changes, we
-                                        start with MLB lowering the height of the pitching
-                                        mound.
+                                        fence in the 1970s <br>
+                                        ● MLB began testing players for steroids in 2003. <br> 
+                                        Diving into the rule changes, I start with MLB 
+                                        lowering the height of the pitching mound.
 									</p>
                                     <header>
                                         <h3>Experiment 1</h3>
@@ -401,21 +397,17 @@
                                         team strikeouts per 9 innings ratio.
                                     </p>
                                     <p>
-                                        Null hypothesis: µ
-                                        1 − µ
-                                        2 = 0
-                                        Alternative hypothesis: µ
-                                        1 − µ
-                                        2 ≠ 0
+                                        Null hypothesis: &mu;<sub>1</sub> − &mu; <sub>2</sub> = 0
+                                        Alternative hypothesis: &mu;<sub>1</sub> − &mu; <sub>2</sub> ≠ 0
                                     </p>
                                     <p>
                                         I used pyBaseball to extract team
-                                        pitching data from 1900 to 2022. We then mined the
+                                        pitching data from 1900 to 2022. I mined the
                                         K/9 column, averaged each team by year, and plotted
-                                        them by year. However, we wanted to clean the data
+                                        them by year. However, I wanted to clean the data
                                         further by only analyzing the years surrounding 1968,
                                         when the rule was put into effect. This way, no
-                                        extraneous variables in the game would impact our
+                                        extraneous variables in the game would impact my 
                                         results. The summary data collected for each team
                                         and each year are as follows.
 									</p>
@@ -457,8 +449,8 @@
                                         </tr>
                                     </table>
                                     <p>
-                                        We then graphed the least squares residuals for this
-                                        rule change. The rule went into effect in 1968, so we
+                                        I graphed the least squares residuals for this
+                                        rule change. The rule went into effect in 1968, so I
                                         wanted to look at what percentage of residuals were
                                         over/under the lifelong trendline, which is highlighted
                                         in orange on the histogram. Each histogram was
@@ -481,20 +473,17 @@
                                         the lifelong trendline.
                                     </p>
                                     <p>
-                                        To test our null hypothesis, we used a difference of
-                                        means hypothesis test (two tailed, α<.05). This
-                                        decision comes down to the t-statistic value. If it is
+                                        To test my  null hypothesis, I used a difference of
+                                        means hypothesis test (two tailed, &alpha; <.05). This
+                                        decision comes down to the t-statistic value. If the test statistic is
                                         outside the critical values from the t-table below, we
-                                        reject the null. If it is inside, we fail to reject the null
-                                        hypothesis. Using the equation: t = [(𝑥 , we
-                                        1 − 𝑥
-                                        2
-                                        )/𝑆𝐸
+                                        reject the null. If it is inside, I fail to reject the null
+                                        hypothesis. Using the equation: t = [(x&#772; <sub>1</sub> − x&#772; <sub>2</sub>)/SE
                                         found the test statistic to be t = 1.7723. Using a
-                                        T-table, P(t≤ 1. 7723) = 0. 96118. Therefore, P(t
+                                        T-table, P(t&#8804; 1. 7723) = 0. 96118. Therefore, P(t
                                         > 1. 7723) = 0. 0388. The two tailed P value equals
-                                        0.776. Since α =. 05, this P value is not considered to
-                                        be significantly significant, and we fail to reject the null
+                                        0.776. Since &alpha; =. 05, this P value is not considered to
+                                        be significantly significant, and I fail to reject the null
                                         hypothesis.
                                     </p>
                                     <header>
@@ -506,29 +495,25 @@
                                         on team successful stolen bases.
                                     </p>
                                     <p>
-                                        Null hypothesis: µ
-                                        1 − µ
-                                        2 = 0
-                                        Alternative hypothesis: µ
-                                        1 − µ
-                                        2 ≠ 0
+                                        Null hypothesis: &mu;<sub>1</sub> − &mu; <sub>2</sub> = 0
+                                        Alternative hypothesis: &mu;<sub>1</sub> − &mu; <sub>2</sub> ≠ 0
                                     </p>
                                     <p>
                                         I used pyBaseball to extract team
-                                        batting data from 1900 to 2022. We then mined the
+                                        batting data from 1900 to 2022. I mined the
                                         SB column, averaged each team by year, and plotted
-                                        by year. However, we wanted to clean the data further
-                                        by only analyzing the years surrounding 1975. Unlike
+                                        by year. Just like the previous experiment, I wanted to clean the 
+                                        data further by only analyzing the years surrounding 1975. Unlike
                                         before, when there was a rule put into effect in a
                                         single year, teams moving into larger stadiums
                                         happened over the course of several years. We
                                         decided 1975 would be a good year to separate and
-                                        clean our data. This was after the Phillies, Reds and
+                                        clean my  data. This was after the Phillies, Reds and
                                         Pirates switched stadiums. This way, no extraneous
-                                        variables in the game would impact our results. The
+                                        variables in the game would impact my  results. The
                                         summary data collected for each team and each year
                                         are as follows.
-									</p>
+									                  </p>
                                     <table>
                                         <tr>
                                           <th>Variables</th>
@@ -567,13 +552,12 @@
                                         </tr>
                                     </table>
                                     <p>
-                                        We then graphed the least squares residuals. The
-                                        stadium change happened roughly in 1975, so we
-                                        wanted to look at what percentage of residuals were
-                                        over/under the lifelong trendline, which is highlighted
+                                        I graphed the least squares residuals. The
+                                        stadium change happened roughly in 1975, so I looked at what percentage 
+                                        of residuals were over/under the lifelong trendline, which is highlighted
                                         in orange on the histogram. Each histogram was
                                         separated into years before and after 1975.
-									</p><br>
+									                  </p><br>
                                     <div class="row">
                                         <div class="column1">
                                           <img src="images/sbsquare.PNG" alt="Least Squares Residuals" style="width:100%">
@@ -590,20 +574,17 @@
                                         the lifelong trendline.
                                     </p>
                                     <p>
-                                        To test our null hypothesis, we used a difference of
-                                        means hypothesis test (two tailed, α<.05). This
+                                        To test my  null hypothesis, I used a difference of
+                                        means hypothesis test (two tailed, &alpha;<.05). This
                                         decision comes down to the t-statistic value. If it is
                                         outside the critical values from the t-table below, we
-                                        reject the null. If it is inside, we fail to reject the null
-                                        hypothesis. Using the equation: t = [(𝑥 , we
-                                        1 − 𝑥
-                                        2
-                                        )/𝑆𝐸
+                                        reject the null. If it is inside, I fail to reject the null
+                                        hypothesis. Using the equation: t = [(x&#772; <sub>1</sub> − x&#772; <sub>2</sub>)/SE
                                         found the test statistic to be t = -6.1358. Using a
-                                        T-table, P(t≤− 6. 1358) ≈ 0. Therefore, P(t
+                                        T-table, P(t&#8804;− 6. 1358) ≈ 0. Therefore, P(t
                                         >− 6. 1358) = 99. 999. The two tailed P value is
-                                        < 0.0001. Since α =. 05, this P value is considered to
-                                        be significantly significant, and we reject the null
+                                        < 0.0001. Since &alpha; =. 05, this P value is considered to
+                                        be significantly significant, and I reject the null
                                         hypothesis.
                                     </p>
                                     <header>
@@ -615,24 +596,20 @@
                                         throughout a season
                                     </p>
                                     <p>
-                                        Null hypothesis: µ
-                                        1 − µ
-                                        2 = 0
-                                        Alternative hypothesis: µ
-                                        1 − µ
-                                        2 ≠ 0
+                                        Null hypothesis: &mu;<sub>1</sub> − &mu; <sub>2</sub> = 0
+                                        Alternative hypothesis: &mu;<sub>1</sub> − &mu; <sub>2</sub> ≠ 0
                                     </p>
                                     <p>
                                         I used pyBaseball to extract team
-                                        batting data from 1900 to 2022. We then mined the
+                                        batting data from 1900 to 2022. I then mined the
                                         HR column, averaged each team by year, and plotted
-                                        them by year. However, we wanted to clean the data
+                                        them by year. However, I wanted to clean the data
                                         further by only analyzing the years surrounding 2003,
                                         when the rule was put into effect. This way, no
-                                        extraneous variables in the game would impact our
+                                        extraneous variables in the game would impact my 
                                         results. The summary data collected for each team
                                         and each year are as follows.
-									</p>
+									                  </p>
                                     <table>
                                         <tr>
                                           <th>Variables</th>
@@ -671,14 +648,13 @@
                                         </tr>
                                     </table>
                                     <p>
-                                        We then graphed the least squares residuals for this
-                                        rule change. The rule went into effect in 2003, so we
-                                        wanted to look at what percentage of residuals were
+                                        I graphed the least squares residuals for this
+                                        rule change. The rule went into effect in 2003, so I looked at what percentage of residuals were
                                         over/under the lifelong trendline, which is highlighted
                                         in orange on the histogram. Each histogram was
                                         separated into years before and after the rule went
                                         into effect.
-									</p><br>
+									                  </p><br>
                                     <div class="row">
                                         <div class="column1">
                                           <img src="images/hrsquare.PNG" alt="Least Squares Residuals" style="width:100%">
@@ -695,49 +671,43 @@
                                         the lifelong trendline.
                                     </p>
                                     <p>
-                                        To test our null hypothesis, we used a difference of
-                                        means hypothesis test (two tailed, α<.05). This
-                                        decision comes down to the t-statistic value. If it is
-                                        outside the critical values from the t-table below, we
-                                        reject the null. If it is inside, we fail to reject the null
-                                        hypothesis. Using the equation: t = [(𝑥 , we
-                                        1 − 𝑥
-                                        2
-                                        )/𝑆𝐸
+                                        To test the null hypothesis, I used a difference of
+                                        means hypothesis test (two tailed, &alpha;<.05). This
+                                        decision comes down to the t-statistic value. If the test statistic is
+                                        outside the critical values from the t-table below, I
+                                        reject the null. If it is inside, I fail to reject the null
+                                        hypothesis. Using the equation: t = [(x&#772; <sub>1</sub> − x&#772; <sub>2</sub>)/SE
                                         found the test statistic to be t = 0.5820 Using a
-                                        T-table, P(t≤ 0. 5820) = 0. 71957. The two tailed P
-                                        value equals 0.5625. Since α =. 05, this P value is not
-                                        considered to be significantly significant, and we fail
+                                        T-table, P(t&#8804; 0. 5820) = 0. 71957. The two tailed P
+                                        value equals 0.5625. Since &alpha; =. 05, this P value is not
+                                        considered to be significantly significant, and I fail
                                         to reject the null hypothesis.
                                     </p>
-								</section>
-                                <section>
-									<header>
-										<h3>Discussion</h3>
-									</header>
-									<p>
-                                        One critical challenge we encountered when
-                                        analyzing sabermetrics is that many have not been
-                                        recorded for more than seven years. The
-                                        ‘Statcast-Era’ began in 2015 when Major League
+								              </section>
+                              <section>
+									                  <header>
+										                  <h3>Discussion</h3>
+									                  </header>
+									                  <p>
+                                      One significant problem I discovered while studying the sabermetrics was that 
+                                      several of them had not been recorded beyond 2015. The
+                                        'Statcast-Era' began in 2015 when Major League
                                         Baseball began tracking several advanced analytics.
                                         These include pitching velocities, baserunning
                                         speeds, fielding percentages and much more. This
                                         made it difficult to conduct a proper analysis of the
-                                        data when there is little to begin with.
+                                        data when not all of the statistics had been documented before 2015.
                                         
-									</p>
+									                  </p>
                                     <p>
                                         Additionally, pybaseball limits the amount of pull
                                         requests by source for a certain time period. This
                                         posed a minor problem for making rapid adjustments
-                                        or quick changes. Often, we had to wait for our time
-                                        period to reset and we could pull more data. It may be
-                                        helpful to store the data locally and then run tests.
-                                        This can only work if the dataset is small enough to
-                                        be reasonably stored locally.                                        
+                                        or quick changes. Often, I had to wait for my time
+                                        period to reset to pull more data. In future experiemnts may be
+                                        helpful to store the data locally.                                      
                                     </p>
-								</section>
+								                </section>
                                 <section>
 									<header>
 										<h3>Conclusions</h3>
@@ -759,14 +729,14 @@
 									</p>
                                     <p>
                                         In Experiment 1's case, there are several reasons
-                                        why we failed to reject the null hypothesis. Our
+                                        why I failed to reject the null hypothesis. My 
                                         leading theory is that strikeouts are not an absolute
                                         performance measure when it comes to pitching.
                                         Pitchers can have very good strikeout rates and still
                                         perform poorly by giving up home runs and hits.
                                         There are a variety of other possible statistics that
                                         could have resulted in a rejection of the null
-                                        hypothesis. In a future experiment, we would like to
+                                        hypothesis. In a future experiment, I want to
                                         look at other sabermetrics, such as BABIP (batted
                                         balls in play) or OBA (opponent batting average).
                                         These metrics could offer a more absolute indication
@@ -783,34 +753,34 @@
                                         remained curious about these results. It's possible
                                         that teams moving into larger stadiums with bigger
                                         fields were not the direct cause of the increase in
-                                        stolen bases. We decided to do some follow up
-                                        research on if this was partly the case. According to
-                                        John McMurray at SABR, it appears that it was. “With
+                                        stolen bases. I did some follow up
+                                        research to determine if this was partialy the case. According to
+                                        John McMurray at SABR, it appears it was. "With
                                         the opening of several large stadiums in the early
                                         1970s…it is easy to see why teams emphasized
                                         speed over home run hitting power. Further, the
                                         attraction of scoring runners from second base on
                                         singles hit on Astroturf surely influenced teams to
-                                        place an additional premium on fast players.” [3]. The
+                                        place an additional premium on fast players."" [3]. The
                                         switch from grass to astroturf was not something we
-                                        had considered in our research, and we feel confident
+                                        had considered in my  research, and I feel confident
                                         saying that it could have been another significant
                                         factor.
                                     </p>
                                     <p>
-                                        For Experiment 3, we failed to reject the null
+                                        For Experiment 3, I failed to reject the null
                                         hypothesis and have a leading theory as to why. The
                                         steroid era was a time filled with infamous players
                                         playing with performance enhancing drugs. However,
                                         the number of people taking these PEDs remained
-                                        relatively low. We believe that when steroid testing
+                                        relatively low. I believe that when steroid testing
                                         began in 2003, only a handful of players were
                                         impacted. On a team based scale, like the one we
                                         measured, there wasn't a significant decrease in
                                         home runs because most people weren't on PEDs.
                                         However, it will be impossible to prove this as the
                                         number of players who were on PEDs has yet to be
-                                        proven. All we can rely on is a speculating theory. If a
+                                        proven. All I can rely on is a speculating theory. If a
                                         statistic like home runs per player existed in the
                                         pyBaseball library, it would certainly be a focus for a
                                         future experiment.
@@ -819,12 +789,12 @@
                                         Baseball remains unique in the fact that it has one of
                                         the most documented histories in sports. Through the
                                         past 122 years, almost every player and team has
-                                        recorded statistics. Trends in these statistics have
+                                        documented statistics. Trends in these statistics have
                                         fluctuated and been influenced by many events and
                                         rule changes as the sport evolves. Often, these rule
                                         changes are applied to have a direct impact on trends
-                                        of certain statistics. However, as we have proven in
-                                        our experiments, it's not always the case that a
+                                        of certain statistics. However, as I have proven in
+                                        my  experiments, it's not always the case that a
                                         statistic is impacted. This will have to be something
                                         MLB takes into consideration as they continue to
                                         modify and change the sport.
