@@ -27,10 +27,50 @@
         $( "#divetabs2" ).tabs();
     });
     </script>
-
+    <style>
+        
+    #info-content{
+        height:2800px
+    }
+    @media screen and (max-width: 755px){
+        #info-content{
+            height:3100px
+        }
+    }
+    @media screen and (max-width: 640px){
+        #info-content{
+            height:3300px
+        }
+    }
+    @media screen and (max-width: 590px){
+        #info-content{
+            height:3500px
+        }
+    }
+    @media screen and (max-width: 520px){
+        #info-content{
+            height:3700px
+        }
+    }
+    @media screen and (max-width: 480px){
+        #info-content{
+            height:3100px
+        }
+    }
+    @media screen and (max-width: 400px){
+        #info-content{
+            height:3300px
+        }
+    }
+    @media screen and (max-width: 345px){
+        #info-content{
+            height:3500px
+        }
+    }
+    </style>
 </head> 
     
-        <body style="">
+        <body>
             <!-- header -->
             <div id="gold-bar"></div>
             <header>
@@ -59,7 +99,7 @@
             </header>
         
         <!-- main content -->
-        <div id="info-content" style="height: 3200px">
+        <div id="info-content">
             <h2 id="swim-header" style="font-size: 2.7em"><span>Club Swim Team Records</span></h2>
             <div class="content-wrap">
                 <div id="tabs2" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
@@ -406,7 +446,6 @@
                 </div>
             </div>
         </div>
-        <div id="info-content" style="height: 550px"></div>
         
         <!-- diving records -->
          <div id="info-content" style="height: 1100px">
