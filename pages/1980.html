@@ -124,6 +124,21 @@ body {font-family: "Lato", sans-serif;}
 #info-content{
   height:5300px
 }
+#backnext {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #CFB87C;
+  color: rgb(0, 0, 0);
+}
+.center1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 @media screen and (max-width: 600px) {
   .column {
     width:100%;
@@ -161,9 +176,11 @@ body {font-family: "Lato", sans-serif;}
 </style>
 
 <div id="info-content" >
-<div id="2022" class="tabcontent" style="display: block;">
-    <br>
+<div id="2022" class="tabcontent" style="display: block;"><br>
     <h1> 1979-1980 Division I Swimming & Diving Archive </h1>
+    <div class="center1">
+      <a id = 'backnext' href="../index1.html" class="next">Archive Directory</a>
+    </div><br><br>
     <img src="../assets/css/images/teamphoto1980.png" alt="Full Team Photo 2021-22" class="center"><br>
     
     <h1>1979-1980 Team Roster</h1>
@@ -253,7 +270,7 @@ body {font-family: "Lato", sans-serif;}
     <!--Meets-->
     <br><div class="row">
       <div class="column left" style="background-color:#eaebec;">
-        <h1>Colorado vs Colorado State - Men</h1><hr>
+        <h1>Men - Colorado vs Colorado State</h1><hr>
         <p>November 27th, 1979</p>
         <p>CU Boulder Recreation Center, Boulder, CO</p>
         <button class = "button button1"><a href="../assets/results/1970-1980/79F_MenVsCSU.pdf">PDF Results</a></button>
