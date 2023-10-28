@@ -63,120 +63,127 @@
         
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-/* Style the tab */
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    image-rendering: auto;
+  * {box-sizing: border-box}
+  body {font-family: "Lato", sans-serif;}
+  /* Style the tab */
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      image-rendering: auto;
+      width: 100%;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
     width: 100%;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 100%;
-  border-left: none;
-  height: 100%;
-}
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px;
-  overflow: auto;
-}
-
-.left {
-  width: 25%;
-  text-align: center;
-}
-
-.right {
-  width: 75%;
-}
-.full{
-  width:100%;
-  height:200px;
-  text-align: center;
-  overflow:hidden;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-#info-content{
-  height:5300px
-}
-#backnext {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #CFB87C;
-  color: rgb(0, 0, 0);
-}
-.center1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-@media screen and (max-width: 600px) {
+    border-left: none;
+    height: 100%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
   .column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+    overflow: auto;
+  }
+  
+  .left {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .right {
+    width: 75%;
+  }
+  .right-dual {
+    width: 75%;
+  }
+  .full{
     width:100%;
     height:200px;
+    text-align: center;
+    overflow:hidden;
   }
-  .right{
-    height:200px;
-    overflow:auto;
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  .left{
-    height:250px;
-  }
-  #info-content{
-    height:6300px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width:599px) {
-  .column {
-    width:100%;
-    height:200px;
-  }
-  .right{
-    height:200px;
-    overflow:auto;
-  }
-  .left{
-    height:250px;
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
   #info-content{
-    height:6550px;
+    height:4550px
   }
-}
-.button1 {background-color: #CFB87C;}
-
-</style>
+  #backnext {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #CFB87C;
+    color: rgb(0, 0, 0);
+  }
+  .center1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width:100%;
+      height:200px;
+    }
+    .right{
+      height:200px;
+      overflow:auto;
+    }
+    .right-dual{
+      height:110px;
+      overflow:auto;
+    }
+    .left{
+      height:250px;
+    }
+    #info-content{
+      height:4900px;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width:599px) {
+    .column {
+      width:100%;
+      height:200px;
+    }
+    .right{
+      height:200px;
+      overflow:auto;
+    }
+    .left{
+      height:250px;
+    }
+    #info-content{
+      height:5675px;
+    }
+  }
+  .button1 {background-color: #CFB87C;}
+  
+  </style>
 
 <div id="info-content" >
 <div class="tabcontent" style="display: block;"><br>
@@ -231,6 +238,54 @@ body {font-family: "Lato", sans-serif;}
     </tbody></table><br>
 
     <!--Meets-->
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Colorado vs Wyoming</h1><hr>
+        <p>January 15, 1955</p>
+        <p>Laramie, WY</p>
+        <button class = "button button1"><a href="../assets/results/1950-1959/55S_WYO.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img style = "max-height:25px; width:auto;" src="../assets/icons/cuboulder.png"></td>
+            <td>54</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #492F24;"><img style = "max-height:25px; width:auto;" src="../assets/icons/wyoming.png"></td>
+            <td>39</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Colorado vs Nebraska</h1><hr>
+        <p>January 22, 1955</p>
+        <p>Carlson Pool, Boulder, CO</p>
+        <button class = "button button1"><a href="../assets/results/1950-1959/55S_NU.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img style = "max-height:25px; width:auto;" src="../assets/icons/cuboulder.png"></td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #ffffff;"><img style = "max-height:25px; width:auto;" src="../assets/icons/nebraska.png"></td>
+            <td>42</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
     
 </div>
 
