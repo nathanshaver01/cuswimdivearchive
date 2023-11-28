@@ -63,6 +63,7 @@
         </header>
         
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
@@ -117,6 +118,7 @@ body {font-family: "Lato", sans-serif;}
   display: table;
   clear: both;
 }
+.mySlides {display:none;}
 .button {
   border: none;
   color: white;
@@ -190,8 +192,19 @@ body {font-family: "Lato", sans-serif;}
     <div class="center1">
       <a id = 'backnext' href="../index.html" class="next">&laquo; Archive Directory</a>
     </div><br><br>
-    <img src="../assets/css/images/teamphoto2023.jpg" alt="Full Team Photo 2022-23" class="center"><br>
     
+    <div class="w3-content w3-section">
+      <img class="mySlides" src="../assets/css/images/teamphoto2023.jpg" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/23S_VMAC.png" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/22S_DU.png" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/23S_Nat2.png" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/22F_UU.png" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/23S_Nat.jpg" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/22S_CC.png" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/23S_TT.jpg" style="width:100%">
+      <img class="mySlides" src="../assets/css/images/extra/23S_Nat1.png" style="width:100%">
+    </div>
+    <br>
     <h1>2022-2023 Team Roster</h1>
     <h3>Coaching Staff</h3><br>
     <table>
@@ -895,5 +908,21 @@ body {font-family: "Lato", sans-serif;}
         <a href="http://www.colorado.edu/recreation/clubsports/">Collegiate Sport Clubs at the University of Colorado</a>
     </div>
 </footer>
- 
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+  }
+</script>
 </body></html>
