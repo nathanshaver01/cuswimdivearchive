@@ -96,6 +96,11 @@ body {font-family: "Lato", sans-serif;}
   display: table;
   clear: both;
 }
+.button1 {background-color: #CFB87C;}
+.sicon{
+  max-height:25px; 
+  width:auto;
+}
 .button {
   border: none;
   color: white;
