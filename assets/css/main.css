@@ -66,7 +66,10 @@ body {font-family: "Lato", sans-serif;}
 * {
   box-sizing: border-box;
 }
-
+#backnext:hover { 
+    background-color: #E7DBBD; 
+    text-decoration: underline; 
+} 
 .column {
   float: left;
   padding: 10px;
@@ -100,6 +103,7 @@ body {font-family: "Lato", sans-serif;}
   clear: both;
 }
 .button1 {background-color: #CFB87C;}
+
 .sicon{
   max-height:25px; 
   width:auto;
@@ -114,6 +118,13 @@ body {font-family: "Lato", sans-serif;}
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+#outer{
+width:100%;
+    text-align: center;
+}
+.inner{
+    display: inline-block;
 }
 #backnext {
   text-decoration: none;
