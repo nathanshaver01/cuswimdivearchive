@@ -28,6 +28,22 @@
     });
     </script>
     <style>
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .race {
+      width: 20%;
+    }
+    .timedate {
+      width: 22%;
+    }
+    .date{
+        width:15%
+    }
+    .name {
+      width: 43%;
+    }
     #info-content{
         height:4400px
     }
@@ -110,6 +126,12 @@
                     </ul>
                     <div id="WomensTeamRecords" style="height: 4000px" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
                         <table>
+                                    <colgroup>
+                                        <col class="race" />
+                                        <col class="timedate" />
+                                        <col class="name" />
+                                        <col class="timedate" />
+                                    </colgroup>
                                     <thead>
                                         <tr><th><strong>Event</strong></th>
                                         <th><strong>Time</strong></th>
@@ -164,27 +186,27 @@
                                     </tr>
                                      <tr>
                                         <td>200 Freestyle Relay</td>
-                                        <td>1. 1:40.17<br> <br> 2. 1:40.44<br> <br> 3. 1:40.51<br> <br> 4. 1:40.77 <br> <br> 5. 1:40.93<br> </td> 
-                                        <td>A. Scott, L. Fowler, K. Dahlquist, M. Rogers<br><hr> M. Fox, T. Dignam, J. Rubinstein, K. Booth<br><hr> A. Scott, K. Booth, L. Fowler, M. Rogers<br><hr> L. Sayles, C. Forde, A. Dravenstott, K. Livingood<br><hr>B. Gallery, K. Lance, A. Scott, T. Bleidt<br> </td> 
-                                        <td>4/2/11<br> <br> 4/21/13 <br> <br> 2/17/11 <br> <br> 4/2/23<br> <br> 4/5/09</td>
+                                        <td>1. 1:40.17<br> 2. 1:40.44<br> 3. 1:40.51<br> 4. 1:40.77 <br> 5. 1:40.93<br> </td> 
+                                        <td>A. Scott, L. Fowler, K. Dahlquist, M. Rogers<br> M. Fox, T. Dignam, J. Rubinstein, K. Booth<br> A. Scott, K. Booth, L. Fowler, M. Rogers<br> L. Sayles, C. Forde, A. Dravenstott, K. Livingood<br>B. Gallery, K. Lance, A. Scott, T. Bleidt<br> </td> 
+                                        <td>4/2/11<br> 4/21/13 <br> 2/17/11 <br> 4/2/23<br> 4/5/09</td>
                                     </tr>
                                     <tr>
                                         <td>200 Mixed Freestyle Relay</td>
-                                        <td>1. 1:32.22<br><br> 2. 1:32.86<br><br> 3. 1:33.66<br><br> 4. 1:33.70<br><br> 5. 1:34.22</td>
-                                        <td> D. Wielgus, N. DiPonzio, C. Forde, L. Sayles<br><hr>D. Wielgus, N. DiPonzio, K. Livingood, L. Sayles <br><hr> W. Dravenstott, J. Ulrich, A. Dravenstott, C. Forde<br><hr>J. Jang, B. Guthrie, A. Main, K. Livingood<br><hr>J. Nordgren, J. Goodrich, G. Blitz, I. Hardie</td>
-                                        <td>4/2/23 <br><br> 4/2/23 <br><br> 4/2/23 <br><br>  4/10/22<br> <br> 11/12/23 </td>
+                                        <td>1. 1:32.22<br> 2. 1:32.86<br> 3. 1:33.66<br> 4. 1:33.70<br> 5. 1:34.22</td>
+                                        <td> D. Wielgus, N. DiPonzio, C. Forde, L. Sayles<br>D. Wielgus, N. DiPonzio, K. Livingood, L. Sayles <br> W. Dravenstott, J. Ulrich, A. Dravenstott, C. Forde<br>J. Jang, B. Guthrie, A. Main, K. Livingood<br>J. Nordgren, J. Goodrich, G. Blitz, I. Hardie</td>
+                                        <td>4/2/23 <br> 4/2/23 <br> 4/2/23 <br>  4/10/22<br> 11/12/23 </td>
                                     </tr>
                                      <tr>
                                         <td>400 Freestyle Relay</td>
-                                        <td>1. 3:38.55<br> <br>2. 3:40.15<br> <br>3. 3:40.31<br> <br>4. 3:40.44 <br> <br>5. 3:41.30</td>
-                                        <td>C. Wilson, A. Gossett, G. Burns, A. Sall<br><hr> M. Fox, T. Dignam, J. Rubenstein, K. Booth <br><hr> T. Dignam, A. Sall, A. Gossett, K. Booth<br><hr> M. Rogers, K. Booth, A. Scott, L. Fowler<br><hr> D. Bland, T. Bleidt, A. Scott, K. Klane</td>
-                                        <td>4/11/15<br> <br>4/19/13<br> <br>4/5/14<br> <br> 2/19/11<br> <br> 4/12/08 </td>
+                                        <td>1. 3:38.55<br>2. 3:40.15<br>3. 3:40.31<br>4. 3:40.44 <br>5. 3:41.30</td>
+                                        <td>C. Wilson, A. Gossett, G. Burns, A. Sall<br> M. Fox, T. Dignam, J. Rubenstein, K. Booth <br> T. Dignam, A. Sall, A. Gossett, K. Booth<br> M. Rogers, K. Booth, A. Scott, L. Fowler<br> D. Bland, T. Bleidt, A. Scott, K. Klane</td>
+                                        <td>4/11/15<br>4/19/13<br>4/5/14<br> 2/19/11<br> 4/12/08 </td>
                                     </tr>
                                      <tr>
                                         <td>800 Freestyle Relay</td>
-                                        <td>1. 7:57.55<br> <br> 2. 8:01.28<br> <br> 3. 8:01.44<br> <br> 4. 8:03.36<br> <br> 5. 8:06.78</td>
-                                        <td>A. Gossett, A. Sall, T. Dignam, K. Booth<br><hr>M. Fox, T. Dignam, E. Spaeth, K. Booth<br><hr> A. Gossett, C. Wilson, T. Dignam, A. Sall<br><hr> K. Booth, D. Bland, M. Rogers, A. Scott<br><hr> G. Blum, T. Dignam, S. Abdalla, A. Gossett</td>
-                                        <td>4/04/14<br> <br> 4/19/13<br> <br> 4/10/15<br> <br> 3/30/12<br> <br> 4/1/16</td>
+                                        <td>1. 7:57.55<br> 2. 8:01.28<br> 3. 8:01.44<br> 4. 8:03.36<br> 5. 8:06.78</td>
+                                        <td>A. Gossett, A. Sall, T. Dignam, K. Booth<br>M. Fox, T. Dignam, E. Spaeth, K. Booth<br> A. Gossett, C. Wilson, T. Dignam, A. Sall<br> K. Booth, D. Bland, M. Rogers, A. Scott<br> G. Blum, T. Dignam, S. Abdalla, A. Gossett</td>
+                                        <td>4/04/14<br> 4/19/13<br> 4/10/15<br> 3/30/12<br> 4/1/16</td>
                                     </tr>
                                      <tr>
                                         <td>50 Butterfly</td>
@@ -260,44 +282,44 @@
                                     </tr>
                                     <tr>
                                         <td>200 Medley Relay</td>
-                                        <td>1. 1:50.67<br> <br> 2. 1:52.11<br> <br> 3. 1:52.12<br> <br> 4. 1:52.66<br> <br> 5. 1:52.91</td>
-                                        <td>A. Gossett, E. Borden, C. Wilson, A. Sall<br><hr> E. Shaub, A. Dravenstott, K. Livingood, G. Van Anne <br><hr> D. Coonrod, W. Fletcher, C. Wilson, M. Fox<br><hr> A. Gossett, C. Wilson, Z. Gossett, K. Booth<br><hr> E. Shaub, L. Sayles, K. Livingood, C. Forde</td>
-                                        <td>4/11/15<br> <br> 4/9/22<br> <br> 4/20/13<br> <br> 4/5/14<br> <br> 4/1/23</td>
+                                        <td>1. 1:50.67<br> 2. 1:52.11<br> 3. 1:52.12<br> 4. 1:52.66<br> 5. 1:52.91</td>
+                                        <td>A. Gossett, E. Borden, C. Wilson, A. Sall<br> E. Shaub, A. Dravenstott, K. Livingood, G. Van Anne <br> D. Coonrod, W. Fletcher, C. Wilson, M. Fox<br> A. Gossett, C. Wilson, Z. Gossett, K. Booth<br> E. Shaub, L. Sayles, K. Livingood, C. Forde</td>
+                                        <td>4/11/15<br> 4/9/22<br> 4/20/13<br> 4/5/14<br> 4/1/23</td>
                                     </tr>
                                     <tr>
                                         <td>400 Medley Relay</td>
-                                        <td>1. 4:01.74<br> <br> 2. 4:03.92<br> <br> 3. 4:06.42<br> <br> 4. 4:07.79<br> <br> 5. 4:08.10</td>
-                                        <td>A. Gossett, C. Wilson, E. Spaeth, K. Booth<br><hr> A. Gossett, C. Wilson, Z. Gossett, A. Sall<br><hr> D. Coonrod, C. Wilson, E. Spaeth, S. Dame<br><hr> A. Gossett, L. Majeticova, Z. Gossett, G. Blum<br><hr> A. Gossett, L. Majeticova, C. Burrow, A. Iwanski</td>
-                                        <td>4/4/14<br> <br> 4/10/15<br> <br> 3/30/12<br> <br> 4/1/16<br> <br> 4/7/17</td>
+                                        <td>1. 4:01.74<br> 2. 4:03.92<br> 3. 4:06.42<br> 4. 4:07.79<br> 5. 4:08.10</td>
+                                        <td>A. Gossett, C. Wilson, E. Spaeth, K. Booth<br> A. Gossett, C. Wilson, Z. Gossett, A. Sall<br> D. Coonrod, C. Wilson, E. Spaeth, S. Dame<br> A. Gossett, L. Majeticova, Z. Gossett, G. Blum<br> A. Gossett, L. Majeticova, C. Burrow, A. Iwanski</td>
+                                        <td>4/4/14<br> 4/10/15<br> 3/30/12<br> 4/1/16<br> 4/7/17</td>
                                     </tr>
                                     <tr>
                                         <td>6 Dive One Meter</td>
 
-                                        <td> 1. 229.01 <br> <br>2. 221.95<br> <br> 3. 218.47<br> <br> 4. 213.85<br> <br> 5. 209.02</td>
-                                        <td> G. Rump <br> <br> R. Jacobs<br> <br>M. Oscar<br>  <br>M. Trainor<br> <br> M. Coyle</td>
-                                        <td> 10/8/22 <br> <br>4/7/17<br> <br>10/20/18<br>  <br>10/23/21<br><br> 2/19/23</td>
+                                        <td> 1. 229.01 <br>2. 221.95<br> 3. 218.47<br> 4. 213.85<br> 5. 209.02</td>
+                                        <td> G. Rump <br> R. Jacobs<br>M. Oscar<br> M. Trainor<br> M. Coyle</td>
+                                        <td> 10/8/22 <br>4/7/17<br>10/20/18<br> 10/23/21<br> 2/19/23</td>
                                     </tr>
 				                    <tr>
                                         <td>6 Dive Three Meter</td>
 
-                                        <td> 1. 236.18 <br> <br>2. 209.18<br> <br> 3. 207.85 <br> <br> 4. 191.25 <br> <br>5. 186.45</td>
-                                        <td> G. Rump <br> <br>R. Jacobs<br> <br> E. Plentl<br> <br> R. Suter<br><br>N. Brummet</td>
-                                        <td> 2/19/23 <br> <br>11/15/19 <br> <br> 4/8/17<br> <br> 2/19/23 <br><br>4/8/17</td>
+                                        <td> 1. 236.18 <br>2. 209.18<br> 3. 207.85 <br> 4. 191.25 <br>5. 186.45</td>
+                                        <td> G. Rump <br>R. Jacobs<br> E. Plentl<br> R. Suter<br>N. Brummet</td>
+                                        <td> 2/19/23 <br>11/15/19 <br> 4/8/17<br> 2/19/23 <br>4/8/17</td>
                                     </tr>
 
                                     <tr>
                                         <td>11 Dive One Meter</td>
 
-                                        <td>1. 350.33<br> <br> 2. 341.62<br> <br> 3. 341.33<br> <br> 4. 329.50 <br> <br> 5. 324.09</td>
-                                        <td>R. Jacobs<br> <br>M. Coyle<br> <br>M. Trainor<br> <br> G. Rump <br> <br> R. Suter</td>
-                                        <td>1/22/22<br> <br>4/3/22<br> <br>1/22/22<br> <br> 1/21/23 <br> <br> 4/3/22</td>
+                                        <td>1. 350.33<br> 2. 341.62<br> 3. 341.33<br> 4. 329.50 <br> 5. 324.09</td>
+                                        <td>R. Jacobs<br>M. Coyle<br>M. Trainor<br> G. Rump <br> R. Suter</td>
+                                        <td>1/22/22<br>4/3/22<br>1/22/22<br> 1/21/23 <br> 4/3/22</td>
                                     </tr>
 			                        <tr>
                                         <td>11 Dive Three Meter</td>
 
-                                        <td>1. 354.15 <br> <br>2. 344.75 <br> <br>3. 283.85<br> <br> 4. 250.60<br> <br> 5. ---</td>
-                                        <td>G. Rump <br> <br> R. Suter <br> <br>M. Whelan<br> <br>N. Brummett<br> <br>---</td>
-                                        <td>1/20/23<br> <br>1/20/23<br> <br>1/20/18<br> <br>1/22/17<br> <br>---</td>
+                                        <td>1. 354.15 <br>2. 344.75 <br>3. 283.85<br> 4. 250.60<br> 5. ---</td>
+                                        <td>G. Rump <br> R. Suter <br>M. Whelan<br>N. Brummett<br>---</td>
+                                        <td>1/20/23<br>1/20/23<br>1/20/18<br>1/22/17<br>---</td>
                                     </tr>
                                     <!-- **********************************************************
                                     DONT EDIT WOMENS RECORDS PAST HERE
@@ -307,6 +329,12 @@
                     </div>
                     <div id="MensTeamRecords" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
                         <table>
+                                    <colgroup>
+                                        <col class="race" />
+                                        <col class="timedate" />
+                                        <col class="name" />
+                                        <col class="timedate" />
+                                    </colgroup>
                                     <thead>
                                         <tr><th><strong>Event</strong></th>
                                         <th><strong>Time</strong></th>
@@ -361,27 +389,27 @@
                                     </tr>
                                      <tr>
                                         <td>200 Freestyle Relay</td>
-                                        <td>1. 1:23.68<br> <br>2. 1:24.96<br> <br> 3. 1:26.25<br> <br> 4. 1:26.39<br> <br> 5. 1:26.44</td>
-                                        <td> P Paulus, B. Guthrie, J. Goodrich, J. Jang<br><hr> N. DiPonzio, D. Aparicio, J. Goodrich, D. Wielgus <br><hr>T. Cohan, C. Sharp, E. Benke, B. Morris<br><hr> P. Paulus, W. Dravenstott, J. Dodrill, J. Jang<br><hr>D. Aparicio, J. Goodrich, J. Nordgren, D. Wielgus</td>
-                                        <td> 4/10/22<br> <br>4/2/23<br> <br>3/31/19<br><br> 11/6/21<br> <br> 11/11/23</td>
+                                        <td>1. 1:23.68<br>2. 1:24.96<br> 3. 1:26.25<br> 4. 1:26.39<br> 5. 1:26.44</td>
+                                        <td> P Paulus, B. Guthrie, J. Goodrich, J. Jang<br> N. DiPonzio, D. Aparicio, J. Goodrich, D. Wielgus <br>T. Cohan, C. Sharp, E. Benke, B. Morris<br> P. Paulus, W. Dravenstott, J. Dodrill, J. Jang<br>D. Aparicio, J. Goodrich, J. Nordgren, D. Wielgus</td>
+                                        <td> 4/10/22<br>4/2/23<br>3/31/19<br> 11/6/21<br> 11/11/23</td>
                                     </tr>
                                     <tr>
                                         <td>200 Mixed Freestyle Relay</td>
-                                        <td>1. 1:32.22<br><br> 2. 1:32.86<br><br> 3. 1:33.66<br><br> 4. 1:33.70<br><br> 5. 1:34.22</td>
-                                        <td> D. Wielgus, N. DiPonzio, C. Forde, L. Sayles<br><hr>D. Wielgus, N. DiPonzio, K. Livingood, L. Sayles <br><hr> W. Dravenstott, J. Ulrich, A. Dravenstott, C. Forde<br><hr>J. Jang, B. Guthrie, A. Main, K. Livingood<br><hr>J. Nordgren, J. Goodrich, G. Blitz, I. Hardie</td>
-                                        <td>4/2/23 <br><br> 4/2/23 <br><br> 4/2/23 <br><br>  4/10/22<br> <br> 11/12/23 </td>
+                                        <td>1. 1:32.22<br> 2. 1:32.86<br> 3. 1:33.66<br> 4. 1:33.70<br> 5. 1:34.22</td>
+                                        <td> D. Wielgus, N. DiPonzio, C. Forde, L. Sayles<br>D. Wielgus, N. DiPonzio, K. Livingood, L. Sayles <br> W. Dravenstott, J. Ulrich, A. Dravenstott, C. Forde<br>J. Jang, B. Guthrie, A. Main, K. Livingood<br>J. Nordgren, J. Goodrich, G. Blitz, I. Hardie</td>
+                                        <td>4/2/23 <br> 4/2/23 <br> 4/2/23 <br>  4/10/22<br> 11/12/23 </td>
                                     </tr>
                                      <tr>
                                         <td>400 Freestyle Relay</td>
-                                        <td>1. 3:08.27 <br> <br>2. 3:08.68<br> <br> 3. 3:09.90<br> <br> 4. 3:10.30<br> <br> 5. 3:10.44</td>
-                                        <td>G. Cedergrund, D. Wielgus,  J. Goodrich, D. Aparicio <br><hr>P. Paulus, M. Grewe, D. Aparicio, J. Jang<br><hr> T. Hirabayashi, B. Bonack, M. Rezende, M. Wilson<br><hr> P. Dassow, R. Reichardt, J. Foley, J. Moss<br><hr> D. Wielgus, M. Grewe, J. Goodrich, D. Aparicio</td>
-                                        <td>4/1/23<br> <br>4/9/22 <br><br> 4/20/13<br><br>  1/23/85<br><br> 4/1/23<br></td>
+                                        <td>1. 3:08.27 <br>2. 3:08.68<br> 3. 3:09.90<br> 4. 3:10.30<br> 5. 3:10.44</td>
+                                        <td>G. Cedergrund, D. Wielgus,  J. Goodrich, D. Aparicio <br>P. Paulus, M. Grewe, D. Aparicio, J. Jang<br> T. Hirabayashi, B. Bonack, M. Rezende, M. Wilson<br> P. Dassow, R. Reichardt, J. Foley, J. Moss<br> D. Wielgus, M. Grewe, J. Goodrich, D. Aparicio</td>
+                                        <td>4/1/23<br>4/9/22 <br> 4/20/13<br>  1/23/85<br> 4/1/23<br></td>
                                     </tr>
                                      <tr>
                                         <td>800 Freestyle Relay</td>
-                                        <td>1. 6:56.79<br> <br> 2. 6:58.85<br> <br> 3. 7:03.57<br><br> 4. 7:04.11 <br><br> 5. 7:05.74<br></td>
-                                        <td>P. Paulus, J. Jang, D. Aparicio, M. Grewe<br><hr> B. Deakyne, E. Finger, G. Nemick, S. Nester<br><hr> B. Bonack, B. Searchinger, E. Finger, T. Hirabayashi<br><hr>V. Pelissari, A. Scholpp, D. Aparicio, M. Grewe <br><hr> E. Ung, A. Rejvani, M. Wilson, E. Finger</td>
-                                        <td>4/8/22<br> <br> 4/1/11<br> <br> 4/19/13<br><br> 3/31/23<br><br> 4/5/14<br></td>
+                                        <td>1. 6:56.79<br> 2. 6:58.85<br> 3. 7:03.57<br> 4. 7:04.11 <br> 5. 7:05.74<br></td>
+                                        <td>P. Paulus, J. Jang, D. Aparicio, M. Grewe<br> B. Deakyne, E. Finger, G. Nemick, S. Nester<br> B. Bonack, B. Searchinger, E. Finger, T. Hirabayashi<br>V. Pelissari, A. Scholpp, D. Aparicio, M. Grewe <br> E. Ung, A. Rejvani, M. Wilson, E. Finger</td>
+                                        <td>4/8/22<br> 4/1/11<br> 4/19/13<br> 3/31/23<br> 4/5/14<br></td>
                                     </tr>
                                      <tr>
                                         <td>50 Butterfly</td>
@@ -457,40 +485,40 @@
                                     </tr>
                                     <tr>
                                         <td>200 Medley Relay</td>
-                                        <td>1. 1:35.23 <br><br>2. 1:35.97 <br><br>3. 1:36.56 <br> <br> 4. 1:36.60 <br><br>  5. 1:36.71</td>
-                                        <td>W. Dravenstott, J. Ulrich, J. Goodrich, N. DiPonzio<br><hr>E. Daugherty, C. Amman, B. Morris, C. Sharp<br><hr> B. Bonack, W. Christie, T. Hirabayashi, M. Wilson<br><hr> P. Blyth, T. Driver, S. Urich, M. Wilson<br><hr> M. Grewe, J. Ulrich, J. Goodrich, D. Aparicio</td>
-                                        <td>4/1/23<br><br>4/8/18 <br><br> 4/20/13<br> <br> 4/4/09<br> <br> 4/9/22</td>
+                                        <td>1. 1:35.23 <br>2. 1:35.97 <br>3. 1:36.56 <br> 4. 1:36.60 <br>  5. 1:36.71</td>
+                                        <td>W. Dravenstott, J. Ulrich, J. Goodrich, N. DiPonzio<br>E. Daugherty, C. Amman, B. Morris, C. Sharp<br> B. Bonack, W. Christie, T. Hirabayashi, M. Wilson<br> P. Blyth, T. Driver, S. Urich, M. Wilson<br> M. Grewe, J. Ulrich, J. Goodrich, D. Aparicio</td>
+                                        <td>4/1/23<br>4/8/18 <br> 4/20/13<br> 4/4/09<br> 4/9/22</td>
                                     </tr>
                                     <tr>
                                         <td>400 Medley Relay</td>
-                                        <td>1. 3:29.21<br><br> 2. 3:30.21<br><br> 3. 3:30.23<br><br> 4. 3:30.23 <br><br>5. 3:31.69</td>
-                                        <td>M. Grewe, P. Paulus, J. Goodrich, N. DiPonzio <br><hr> B. Bonack, A. Mitoma, T. Hirabayashi, M. Wilson<br><hr> I. McLeod, J. Ulrich, W. Dravenstott, D. Aparicio<br><hr>M. Kondratenko, C. Amman, B. Morris, C. Sharp<br><hr> E. Daugherty, B. Morris, J. Gullett, T. Cohan</td>
-                                        <td>4/8/22<br> <br> 4/19/13<br> <br> 3/31/23 <br> <br>4/6/18<br> <br> 3/30/19</td>
+                                        <td>1. 3:29.21<br> 2. 3:30.21<br> 3. 3:30.23<br> 4. 3:30.23 <br>5. 3:31.69</td>
+                                        <td>M. Grewe, P. Paulus, J. Goodrich, N. DiPonzio <br> B. Bonack, A. Mitoma, T. Hirabayashi, M. Wilson<br> I. McLeod, J. Ulrich, W. Dravenstott, D. Aparicio<br>M. Kondratenko, C. Amman, B. Morris, C. Sharp<br> E. Daugherty, B. Morris, J. Gullett, T. Cohan</td>
+                                        <td>4/8/22<br> 4/19/13<br> 3/31/23 <br>4/6/18<br> 3/30/19</td>
                                     </tr>
                                     <tr>
                                         <td>6 Dive One Meter</td>
-                                        <td>1. 278.60<br> <br>2. 264.75 <br> <br> 3. 258.35<br> <br> 4. 224.10<br> <br> 5. 217.80</td>
-                                        <td>M. Jagiello<br> <br> N. Haseman <br> <br>J. Voltarel<br> <br>CJ. Gonzales<br> <br>D. Smegal</td>
-                                        <td>2/20/16<br> <br> 10/2/22<br> <br>4/12/15<br> <br>11/12/16<br> <br>3/9/20</td>
+                                        <td>1. 278.60<br>2. 264.75 <br> 3. 258.35<br> 4. 224.10<br> 5. 217.80</td>
+                                        <td>M. Jagiello<br> N. Haseman <br>J. Voltarel<br>CJ. Gonzales<br>D. Smegal</td>
+                                        <td>2/20/16<br> 10/2/22<br>4/12/15<br>11/12/16<br>3/9/20</td>
                                     </tr>
 				                    <tr>
                                         <td>6 Dive Three Meter</td>
-                                        <td>1. 278.78<br> <br> 2. 242.45<br> <br> 3. 323.23 <br> <br> 4. 212.47<br> <br> 5. 203.45</td>
-                                        <td>M. Jagiello<br> <br>J. Voltarel<br> <br> N. Haseman <br> <br> C. Busser<br> <br>T. Behrer</td>
-                                        <td>12/2/17<br> <br>4/12/15<br> <br> 10/1/22 <br> <br>10/24/15<br> <br>11/15/19</td>
+                                        <td>1. 278.78<br> 2. 242.45<br> 3. 323.23 <br> 4. 212.47<br> 5. 203.45</td>
+                                        <td>M. Jagiello<br>J. Voltarel<br> N. Haseman <br> C. Busser<br>T. Behrer</td>
+                                        <td>12/2/17<br>4/12/15<br> 10/1/22 <br>10/24/15<br>11/15/19</td>
                                     </tr>
 
                                     <tr>
                                         <td>11 Dive One Meter</td>
-                                        <td>1. 425.20<br> <br>2. 381.40<br> <br> 3. 281.03<br> <br> 4. ---<br> <br> 5. ---</td>
-                                        <td>N. Haseman<br> <br>M. Jagiello<br> <br>E. McAleavy<br> <br>---<br> <br>---</td>
-                                        <td>1/21/23<br> <br>1/21/17<br> <br>1/22/22<br> <br>---<br> <br>---</td>
+                                        <td>1. 425.20<br>2. 381.40<br> 3. 281.03<br> 4. ---<br> 5. ---</td>
+                                        <td>N. Haseman<br>M. Jagiello<br>E. McAleavy<br>---<br>---</td>
+                                        <td>1/21/23<br>1/21/17<br>1/22/22<br>---<br>---</td>
                                     </tr>
 			                        <tr>
                                         <td>11 Dive Three Meter</td>
-                                        <td>1. 432.90<br> <br> 2.  385.15<br> <br> 3. 261.65<br> <br> 4. ---<br> <br> 5. ---</td>
-                                        <td>M. Jagiello<br> <br>N. Haseman<br> <br>E. McAleavy<br> <br>---<br> <br>---</td>
-                                        <td>1/22/17<br> <br>1/20/23<br> <br>1/20/23<br> <br>---<br> <br>---</td>
+                                        <td>1. 432.90<br> 2.  385.15<br> 3. 261.65<br> 4. ---<br> 5. ---</td>
+                                        <td>M. Jagiello<br>N. Haseman<br>E. McAleavy<br>---<br>---</td>
+                                        <td>1/22/17<br>1/20/23<br>1/20/23<br>---<br>---</td>
                                     </tr>
                                     
                                     <!-- **********************************************************
