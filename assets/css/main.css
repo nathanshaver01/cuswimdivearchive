@@ -336,6 +336,8 @@ nav li{
 nav ul ul {
     position: absolute;
     width: 100%;
+    display:block;
+    right:50%
 } 
 
 nav li:hover a{ 
@@ -412,14 +414,13 @@ nav li li{
 
 #sub-nav ul {
     margin: 0 auto; 
-    padding-left: 152px;
 }
 
 #sub-nav ul li {
     text-decoration: none;
     display: inline;
     padding-right: 4%;
-/*    padding-left: 5%;*/
+    padding-left: 5%;
     line-height: 30px;
     margin: 0 auto;
 }
