@@ -981,7 +981,9 @@ small {
     #home-info ul li img {
 	    margin-left: 0px; 
     }
-    
+    nav ul ul{
+        right:50%
+    }
     nav {
         font-size: .8em;
         height: 25px;
@@ -1071,6 +1073,9 @@ small {
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+    nav ul ul{
+        right:10%;
     }
    
     #header-content {
