@@ -108,6 +108,28 @@ body {font-family: "Lato", sans-serif;}
   max-height:25px; 
   width:auto;
 }
+/* figcaption {
+  background-color: #ECECEC;
+  color: #020101;
+  padding: 3px;
+  text-align: center;
+  font-size: 10pt;
+  font-family:Arial, Helvetica, sans-serif;
+}
+figure{
+    display: inline-block;
+}
+.headshot {
+    border: thin #c0c0c0 solid;
+    display: inline-block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+}
+#images{
+    text-align:center;
+} */
 .button {
   border: none;
   color: white;
