@@ -118,29 +118,27 @@ body {font-family: "Lato", sans-serif;}
 .sicon{
   max-height:25px; 
   width:auto;
+  transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
 }
-/* figcaption {
-  background-color: #ECECEC;
-  color: #020101;
-  padding: 3px;
-  text-align: center;
-  font-size: 10pt;
-  font-family:Arial, Helvetica, sans-serif;
+.sicon:hover{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
-figure{
-    display: inline-block;
+.headshot{
+    max-height:200px;
+    max-width:100px;
+    height:auto;
+    width:auto;
 }
-.headshot {
-    border: thin #c0c0c0 solid;
-    display: inline-block;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 200px;
+#container {
+    text-align: center;
 }
-#images{
-    text-align:center;
-} */
 .button {
   border: none;
   color: white;
