@@ -1125,6 +1125,20 @@ small {
     .headshot {
         height: 130px; 
     }
+    #images{
+        text-align:center;
+    }
+    #images a{
+        margin:0px 20px auto;
+        display:inline-block;
+        font-size:10pt;
+      }
+    .caption {
+        background-color: #EBEBEB;
+        color: #000000;
+        padding: 3px;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 480px) {
     .ttcolumn {
@@ -1155,6 +1169,20 @@ small {
     }
     .headshot {
         height: 120px; 
+    }
+    #images{
+        text-align:center;
+    }
+    #images a{
+        margin:0px 20px auto;
+        display:inline-block;
+        font-size:10pt;
+      }
+    .caption {
+        background-color: #EBEBEB;
+        color: #000000;
+        padding: 3px;
+        text-align: center;
     }
   }
 /*---------------------------------------------
