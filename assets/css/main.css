@@ -130,12 +130,6 @@ body {font-family: "Lato", sans-serif;}
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-.headshot{
-    max-height:200px;
-    max-width:100px;
-    height:auto;
-    width:auto;
-}
 #container {
     text-align: center;
 }
@@ -596,7 +590,27 @@ td {
     width: 25%;
     text-align: center;
 }
+td:hover{
+    background-color:#EBEBEB;
+}
 
+.headshot {
+    height: 150px; 
+}
+#images{
+    text-align:center;
+}
+#images a{
+    margin:0px 20px auto;
+    display:inline-block;
+    font-size:10pt;
+  }
+.caption {
+    background-color: #EBEBEB;
+    color: #000000;
+    padding: 3px;
+    text-align: center;
+}
 #main-archive {
     padding-top: 15px;
     padding-top: 15px;
@@ -708,14 +722,10 @@ table td {
 	border-left: 1px solid #e0e0e0;
     font-size: 1.2em;
 	background: #fafafa;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
-	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
 }
 
 table tr.even td {
 	background: #f6f6f6;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
-	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
 }
 
 table tr:last-child td {
@@ -1112,6 +1122,9 @@ small {
     #info-content{
       height:6200px;
     }
+    .headshot {
+        height: 130px; 
+    }
 }
 @media screen and (max-width: 480px) {
     .ttcolumn {
@@ -1139,6 +1152,9 @@ small {
     }
     .left{
       height:250px;
+    }
+    .headshot {
+        height: 120px; 
     }
   }
 /*---------------------------------------------
