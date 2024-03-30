@@ -69,19 +69,17 @@ body {font-family: "Lato", sans-serif;}
 #backnext:hover { 
     background-color: #E7DBBD; 
     text-decoration: underline; 
-} 
+}
 .column {
   float: left;
   padding: 10px;
   height: 300px;
   overflow: auto;
 }
-
 .left {
   width: 25%;
   text-align: center;
 }
-
 .right {
   width: 75%;
 }
@@ -96,6 +94,19 @@ body {font-family: "Lato", sans-serif;}
   height:200px;
   text-align: center;
   overflow:hidden;
+}
+.ttcolumn{
+  float: left;
+  padding: 10px;
+  height: 525px;
+  overflow: auto;
+}
+.ttleft {
+  width: 25%;
+  text-align: center;
+}
+.ttright {
+    width: 75%;
 }
 .row:after {
   content: "";
@@ -1074,7 +1085,64 @@ small {
     }
     
 }
-
+/*---------------------------------------------
+----------------extra styles------------------
+---------------------------------------------*/
+@media screen and (min-width: 481px) and (max-width:599px) {
+    .ttcolumn {
+      width:100%;
+      height:300px;
+    }
+    .ttleft{
+      height:150px;
+    }
+    .ttright{
+      height:380px;
+      overflow:auto;
+    }
+    .column {
+      width:100%;
+      height:200px;
+    }
+    .right{
+      height:200px;
+      overflow:auto;
+    }
+    .left{
+      height:250px;
+    }
+    #info-content{
+      height:6200px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .ttcolumn {
+      width:100%;
+      height:250px;
+    }
+    .ttleft{
+      height:160px;
+    }
+    .ttright{
+      height:300px;
+      overflow:auto;
+    }
+    .column {
+      width:100%;
+      height:200px;
+    }
+    .right{
+      height:200px;
+      overflow:auto;
+    }
+    .right-dual{
+      height:110px;
+      overflow:auto;
+    }
+    .left{
+      height:250px;
+    }
+  }
 /*---------------------------------------------
 ----------------mobile styles------------------
 ---------------------------------------------*/
