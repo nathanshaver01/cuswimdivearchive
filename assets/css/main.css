@@ -600,6 +600,10 @@ td:hover{
     padding: 3px;
     text-align: center;
 }
+.caption1 {
+    padding: 3px;
+    text-align: center;
+}
 #main-archive {
     padding-top: 15px;
     padding-top: 15px;
@@ -1108,6 +1112,9 @@ small {
     }
     .headshot {
         height: 120px; 
+    }
+    .caption1 {
+        font-size:8.1pt;
     }
   }
 /*---------------------------------------------
