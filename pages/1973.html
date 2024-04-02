@@ -60,42 +60,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:4500px
+  height:4700px
 }
-@media screen and (max-width: 600px) {
-  .column {
-    width:100%;
-    height:200px;
-  }
-  .right{
-    height:200px;
-    overflow:auto;
-  }
-  .right-dual{
-    height:110px;
-    overflow:auto;
-  }
-  .left{
-    height:250px;
-  }
+@media screen and (max-width: 480px) {
   #info-content{
-    height:5500px;
+    height:5800px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
-  .column {
-    width:100%;
-    height:200px;
-  }
-  .right{
-    height:200px;
-    overflow:auto;
-  }
-  .left{
-    height:250px;
-  }
   #info-content{
-    height:6050px;
+    height:6350px;
   }
 }
 </style>
@@ -108,20 +82,24 @@
     </div><br><br>
     
     <h1>Team Roster</h1>
-    <h3>Coaching Staff</h3>
-    <br>
-    <table>
-      <tbody><tr>
-          <th style="text-align: center">Head Coach</th>
-          <th>Assistant Coach</th>
-          <th>Assistant Coach</th>
-      </tr>
-      <tr>
-          <td style="text-align: center">Ralph E. Bibler</td>
-          <td>Terry Danko</td>
-          <td>Dave Grisham</td>
-      </tr>
-    </tbody></table><br>
+    <h3>Coaching Staff</h3><br>
+    <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/ralph bibler.png" class="headshot" alt="Headshot of Ralph E. Bibler"><br>
+          <div class="caption"><b>Ralph E. Bibler</b></div>
+          <div class="caption"><i>Head Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/danktank.png" class="headshot" alt="Headshot of Terry Danko"><br>
+          <div class="caption"><b>Terry Danko</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/unknown.png" class="headshot" alt="Unknown Headshot"><br>
+          <div class="caption"><b>Dave Grisham</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
+    </div><br><br><br>
     <h3>Men's Team</h3>
     <br>
     <table>

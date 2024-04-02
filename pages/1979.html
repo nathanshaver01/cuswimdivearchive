@@ -61,120 +61,16 @@
         
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-/* Style the tab */
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    image-rendering: auto;
-    width: 100%;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 100%;
-  border-left: none;
-  height: 100%;
-}
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px;
-  overflow: auto;
-}
-
-.left {
-  width: 25%;
-  text-align: center;
-}
-
-.right {
-  width: 75%;
-}
-.right-dual {
-  width: 75%;
-}
-.full{
-  width:100%;
-  height:200px;
-  text-align: center;
-  overflow:hidden;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
 #info-content{
   height:5300px
 }
-#backnext {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #CFB87C;
-  color: rgb(0, 0, 0);
-}
-.center1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-
-
-@media screen and (max-width: 600px) {
-  .column {
-    width:100%;
-    height:200px;
-  }
-  .right{
-    height:200px;
-    overflow:auto;
-  }
-  .right-dual{
-    height:110px;
-    overflow:auto;
-  }
-  .left{
-    height:250px;
-  }
+@media screen and (max-width: 480px) {
   #info-content{
     height:6300px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
-  .column {
-    width:100%;
-    height:200px;
-  }
-  .right{
-    height:200px;
-    overflow:auto;
-  }
-  .left{
-    height:250px;
-  }
   #info-content{
     height:6550px;
   }
@@ -192,22 +88,29 @@ body {font-family: "Lato", sans-serif;}
     <img src="../assets/css/images/teamphoto1979men.png" alt="Men Team Photo 1978-79" class="center"><br>
     
     <h1>Team Roster</h1>
-    <h3>Coaching Staff</h3>
-    <br>
-    <table>
-      <tbody><tr>
-          <th style="text-align: center">Head Coach</th>
-          <th>Dive Coach</th>
-          <th>Assistant Coach</th>
-          <th>Assistant Coach</th>
-      </tr>
-      <tr>
-          <td style="text-align: center">Terry Danko</td>
-          <td>Jed Marquis</td>
-          <td>John Draz</td>
-          <td>Jim Kesslering</td>
-      </tr>
-    </tbody></table><br>
+    <h3>Coaching Staff</h3><br>
+    <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/danktank.png" class="headshot" alt="Headshot of Terry Danko"><br>
+          <div class="caption"><b>Terry Danko</b></div>
+          <div class="caption"><i>Head Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/jedmarquis.png" class="headshot" alt="Headshot of Jed Marquis"><br>
+          <div class="caption"><b>Jed Marquis</b></div>
+          <div class="caption"><i>Dive Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/johndraz.png" class="headshot" alt="Headshot of John Draz"><br>
+          <div class="caption"><b>John Draz</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/jimkesslering.png" class="headshot" alt="Headshot of Jim Kesslering"><br>
+          <div class="caption"><b>Jim Kesslering</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
+    </div><br><br><br>
     <h3>Women's Team</h3>
     <br>
     <table>
