@@ -9,11 +9,14 @@
     <meta property="og:image" content="https://github.com/nathanshaver01/cuswimdivearchive/blob/main/assets/css/images/thumbnails/novel.png?raw=true" />
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link href="../assets/css/tabs-style.css" rel="stylesheet">
-
+    <link href="./assets/css/tabs-style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/table-sort-js/table-sort.js"></script>
+    <link rel="stylesheet" href="../assets/css/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="..//assets/css/themes/nivo-slider.css" type="text/css" media="screen" />
     <script src="../assets/css/images/jquery-1.10.2.js.download"></script>
     <script src="../assets/css/images/jquery-ui-1.10.4.custom.js.download"></script>
-        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.nivo.slider.js"></script>
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
@@ -29,9 +32,24 @@
         $( "#divetabs2" ).tabs();
     });
     </script>
+    <script type="text/javascript">
+      $(window).load(function() {
+      $('#slider').nivoSlider();
+      });
+    </script>
     <style>
     #info-content{
-        height:1700px
+        height:1000px
+    }
+    @media screen and (max-width: 480px) {
+      #info-content{
+        height:1300px;
+      }
+    }
+    @media screen and (min-width: 481px) and (max-width:599px) {
+      #info-content{
+        height:1300px;
+      }
     }
     </style>
 </head> 
@@ -66,8 +84,25 @@
 <div id="info-content" >
 <div id="2023" class="tabcontent" style="display: block;">
     <br>
-    <h1>Coming Soon</h1>
-    <img src="../assets/css/images/novel.PNG" alt="Novel" class="center"><br>
+    <h1>Coming Soon</h1><br><hr><br>
+    <h1>A Complete History of Swimming &amp; Diving at the University of Colorado Boulder</h1><br>
+    <h3>Written &amp; Researched by Matt Lenneman &amp; Nathan Shaver</h3><br>
+    <div class="row">
+        <div class="nocolumn noleft" style="background-color:#eaebec;">
+            <img src="../assets/css/images/novel.PNG" alt="Novel" style ="max-height: 450px;  width: auto;" class="center"><br>
+        </div>
+        <div class="nocolumn noright" style="background-color:#eaebec;">    
+          <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider"> 
+                <img src="../assets/css/images/tt/n5.png" alt="Newspaper"/> 
+                <img src="../assets/css/images/tt/n1.png" alt="Marching"/> 
+                <img src="../assets/css/images/tt/n2.png" alt="Bev"/> 
+                <img src="../assets/css/images/tt/n3.png" alt="New Pool"/> 
+                <img src="../assets/css/images/tt/n4.png" alt="Big 8"/> 
+            </div>
+          </div>
+        </div>
+      </div><br><br><br>
       
 </div>
 </div>
