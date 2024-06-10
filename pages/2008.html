@@ -5,14 +5,18 @@
         <title>2007-2008 Archive</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Nathan Shaver, Jennifer Cozzette, Simon Alexander, Connor McAllister, Melissa Guba">
+        <meta property="og:title" content="2007-2008 Archive" />
+        <!-- <meta property="og:image" content="https://github.com/nathanshaver01/cuswimdivearchive/blob/main/assets/css/images/thumbnails/2012.png?raw=true" /> -->
         <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="stylesheet" href="../assets/css/main.css">
         <link href="./assets/css/tabs-style.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/table-sort-js/table-sort.js"></script>
-
+        <link rel="stylesheet" href="../assets/css/themes/default/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="..//assets/css/themes/nivo-slider.css" type="text/css" media="screen" />
         <script src="../assets/css/images/jquery-1.10.2.js.download"></script>
         <script src="../assets/css/images/jquery-ui-1.10.4.custom.js.download"></script>
-            
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery.nivo.slider.js"></script>
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
@@ -27,6 +31,11 @@
             $( "#divetabs" ).tabs();
             $( "#divetabs2" ).tabs();
         });
+        </script>
+        <script type="text/javascript">
+          $(window).load(function() {
+          $('#slider').nivoSlider();
+          });
         </script>
 
     </head> 
@@ -61,16 +70,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:3200px
+  height:4200px
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:4200px;
+    height:4800px;
   }
 }
 @media screen and (max-width: 480px) {
   #info-content{
-    height:3900px;
+    height:4300px;
   }
 }
 </style>
@@ -81,6 +90,7 @@
     <div class="center1">
       <a id = 'backnext' href="../" class="next">&laquo; Archive Directory</a>
     </div><br><br>
+    <img src="../assets/css/images/teamphoto2008.jpg" alt="Full Team Photo 2007-08" class="center"><br>
     
     <h1>Team Roster</h1>
     <h3>Coaching Staff</h3>
@@ -307,6 +317,22 @@
             <td>TBD</td>
           </tr>
         </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="ttcolumn ttleft" style="background-color:#eaebec;">
+        <h1>Training Trip</h1><hr>
+        <p>January, 2008</p>
+        <p>TBD</p>
+      </div>
+      <div class="ttcolumn ttright" style="background-color:#eaebec;">    
+        <div class="slider-wrapper theme-default">
+          <div id="slider" class="nivoSlider"> 
+            <img src="../assets/css/images/tt/08boat.png" alt="Going Sailing"/> 
+            <img src="../assets/css/images/tt/08group.png" alt="Group Photo"/> 
+            <img src="../assets/css/images/tt/08fishing.png" alt="Luke Going Fishing"/> 
+          </div>
+        </div>
       </div>
     </div><br><br><br>
     <div class="row">
