@@ -33,7 +33,7 @@ The project began in one messy document. Meet results gradually migrated into th
 - [ ] 1979/1980 Clean Up & Meet Results
 - [ ] 1974 Completion
 - [x] 1934-1942 Pages
-- [ ] 2006-2007 Pages
+- [x] 2006-2007 Pages
 - [ ] Dec 2004 Omaha Box Score
 - [ ] Headshots of Division Coaches on Every Page
 - [ ] Continue Writing on Novel
