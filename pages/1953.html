@@ -61,16 +61,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:4700px
+  height:5400px
 }
 @media screen and (max-width: 480px) {
   #info-content{
-    height:5050px;
+    height:5500px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:5900px;
+    height:6400px;
   }
 }
 </style>
@@ -94,42 +94,128 @@
     </div><br><br><br>
     <h3>Men's Team</h3>
     <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
+    <table class = "divisionroster">
+      <colgroup>
+        <col class="fullname" />
+        <col class="class" />
+        <col class="events" />
+      </colgroup>
+      <thead>
+        <tr><th style="text-align: center"><strong>Name</strong></th>
+        <th><strong>Year</strong></th>
+        <th><strong>Events</strong></th>
+      </tr></thead>
+      <tr>
+          <td style="text-align: center">Clarence Barnes</td>
+          <td>JR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Delbert Crosier</td>
+          <td>SO</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Harold Donnelly</td>
+          <td>SO</td>
+          <td>Free, Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Ferguson</td>
+          <td>SO</td>
+          <td>Free, Relay</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Alan Fox</td>
+          <td>JR</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Mal Heffelman</td>
+          <td>SR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dick Keller</td>
+          <td>SR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Alex Leong</td>
+          <td>SR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Lynn Miller</td>
+          <td>JR</td>
+          <td>Free, Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Henry Mulvihill</td>
+          <td>SR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jerry Raveling</td>
+          <td>JR</td>
+          <td>Diving, Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Takeshi Sato</td>
+          <td>SO</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Lee Venzke</td>
+          <td>SR</td>
+          <td>Diving, Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bob Watson</td>
+          <td>SO</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jack Watson</td>
+          <td>SR</td>
+          <td>Back</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dexter Weed</td>
+          <td>SO</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bill Yowell</td>
+          <td>SO</td>
+          <td>Back</td>
+      </tr>
+  </tbody></table><br><br><br>
+    <!--Box Summary-->
+    <div class="meetbox">
+      <table class = "meetsummary">
+        <thead>
+          <tr><th style="text-align: center"><strong>Overall</strong></th>
+          <th><strong>PCT</strong></th>
+          <th><strong>Home</strong></th>
+          <th><strong>Away</strong></th>
+          <th><strong>Conference</strong></th>
+        </tr></thead>
         <tr>
-            <td style="text-align: center">Clarence</td>
-            <td>Hal Donnelly</td>
-            <td>John Feguson</td>
-            <td>Alan Fox</td>
+          <td class="td-test" style="text-align: center;" >6-3</td>
+          <td class="td-test">.667</td>
+          <td class="td-test">2-3</td>
+          <td class="td-test">4-0</td>
+          <td class="td-test">3rd</td>
         </tr>
-        <tr>
-            <td style="text-align: center">Heffleman</td>
-            <td>Dick Keller</td>
-            <td>Jerry Raveling</td>
-            <td>Jack Sato</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Lee Venske</td>
-            <td>Jack Watson</td>
-            <td>Robert Watson</td>
-            <td>Dexter Weed</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Bill Yowell</td>
-        </tr>
-    </tbody></table><br>
-
+      </table>
+    </div><br><br><br>
     <!--Meets-->
     <div class="row">
       <div class="column left" style="background-color:#eaebec;">
         <h1>Colorado vs Colorado College</h1><hr>
         <p>January 10, 1953</p>
-        <p>Colorado Springs, CO</p>
+        <p>Camp Carson Pool, Colorado Springs, CO</p>
         <button class = "button button1"><a href="../assets/results/1950-1959/53S_CC.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
@@ -143,7 +229,7 @@
             <td>51</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img class="sicon" src="../assets/icons/coloradocollege.png"></td>
+            <td style="text-align: center; background: #000000;"><img alt="Colorado College" title="Colorado College" class="sicon" src="../assets/icons/coloradocollege.png"></td>
             <td>33</td>
           </tr>
         </table>
@@ -167,7 +253,7 @@
             <td>67</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #492F24;"><img class="sicon" src="../assets/icons/wyoming.png"></td>
+            <td style="text-align: center; background: #492F24;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming.png"></td>
             <td>27</td>
           </tr>
         </table>
@@ -235,7 +321,7 @@
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #512773;"><img class="sicon" src="../assets/icons/stu.png"></td>
+            <td style="text-align: center; background: #512773;"><img alt="University of St. Thomas (Minnesota)" title="University of St. Thomas (Minnesota)" class="sicon" src="../assets/icons/stu.png"></td>
             <td>45</td>
           </tr>
           <tr>
@@ -249,7 +335,7 @@
       <div class="column left" style="background-color:#eaebec;">
         <h1>Colorado vs Iowa State</h1><hr>
         <p>Feburary 7, 1953</p>
-        <p>Carlson Pool, Boulder, CO</p>
+        <p>Claire Small Pool, Boulder, CO</p>
         <button class = "button button1"><a href="../assets/results/1950-1959/54S_ISU.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
@@ -259,7 +345,7 @@
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #822433;"><img class="sicon" src="../assets/icons/iowastate.png"></td>
+            <td style="text-align: center; background: #822433;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate.png"></td>
             <td>63</td>
           </tr>
           <tr>
@@ -273,7 +359,7 @@
       <div class="column left" style="background-color:#eaebec;">
         <h1>Colorado vs Colorado Mines</h1><hr>
         <p>Feburary 11, 1953</p>
-        <p>Carlson Pool, Boulder, CO</p>
+        <p>Claire Small Pool, Boulder, CO</p>
         <button class = "button button1"><a href="../assets/results/1950-1959/53S_Mines.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
@@ -311,7 +397,7 @@
             <td>63</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CF152D;"><img class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
             <td>30</td>
           </tr>
         </table>
@@ -359,7 +445,7 @@
             <td>145</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #822433;"><img class="sicon" src="../assets/icons/iowastate.png"></td>
+            <td style="text-align: center; background: #822433;"><img alt="Iowa State Univeristy" title="Iowa State University" class="sicon" src="../assets/icons/iowastate.png"></td>
             <td>104</td>
           </tr>
           <tr>
@@ -371,7 +457,7 @@
             <td>31</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CF152D;"><img class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
             <td>28</td>
           </tr>
         </table>
