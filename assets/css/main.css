@@ -1193,6 +1193,13 @@ small {
     #sub-nav {
         display: none;   
     }
+    .sicon:hover, .sicon:active{
+        transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }/*delete if no work*/
     
     .container {
         text-align: center;
