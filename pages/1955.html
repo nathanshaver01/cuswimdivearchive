@@ -61,19 +61,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   #info-content{
-    height:4550px
+    height:5750px
   }
   @media screen and (max-width: 480px) {
     #info-content{
-      height:4900px;
+      height:6100px;
     }
   }
   @media screen and (min-width: 481px) and (max-width:599px) {
     #info-content{
-      height:5675px;
+      height:6900px;
     }
   }
-  .button1 {background-color: #CFB87C;}
 </style>
 
 <div id="info-content" >
@@ -95,38 +94,115 @@
     </div><br><br><br>
     <h3>Men's Team</h3>
     <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
-        <tr>
-            <td style="text-align: center">Federico Chocano</td>
-            <td>Bruce Clinton</td>
-            <td>John Dagenhardt</td>
-            <td>Kirk DeVries</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Gordon Greenley</td>
-            <td>Bill Hallum</td>
-            <td>P.L. Hay</td>
-            <td>Jerry Loar</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Bill Pribble</td>
-            <td>Bob Reed</td>
-            <td>Jim Schlittenhardt</td>
-            <td>Larry Smith</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Wally Snow</td>
-            <td>Bill Yowell</td>
-        </tr>
-    </tbody></table><br>
+    <table class = "divisionroster">
+      <colgroup>
+        <col class="fullname" />
+        <col class="class" />
+        <col class="events" />
+      </colgroup>
+      <thead>
+        <tr><th style="text-align: center"><strong>Name</strong></th>
+        <th><strong>Year</strong></th>
+        <th><strong>Events</strong></th>
+      </tr></thead>
+      <tr>
+          <td style="text-align: center">Federico Chocano</td>
+          <td>JR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bruce Clinton</td>
+          <td>SO</td>
+          <td>Back</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Dagenhardt</td>
+          <td>JR</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dirk DeVries</td>
+          <td>SO</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Gordon Greenley</td>
+          <td>SO</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bill Hallum</td>
+          <td>JR</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">P.L. Hay</td>
+          <td>SO</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jerry Loar</td>
+          <td>SO</td>
+          <td>I.M.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bill Pribble</td>
+          <td>SO</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bob Reed</td>
+          <td>SO</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jim Schlittenhardt</td>
+          <td>SO</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Larry Smith</td>
+          <td>SO</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Wally Snow</td>
+          <td>JR</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bill Yowell</td>
+          <td>SR</td>
+          <td>Back</td>
+      </tr>
+  </tbody></table><br>
+  <h4>*=Captain</h4><br><br><br>
 
     <!--Meets-->
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Wyoming Relays</h1><hr>
+        <p>December 4, 1954</p>
+        <p>Half Acre Pool, Laramie, WY</p>
+        <button class = "button button1">TBD</button>
+      </div>
+      <div class="column right" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #492F24;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_65.png"></td>
+            <td>TBD</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
     <div class="row">
       <div class="column left" style="background-color:#eaebec;">
         <h1>Colorado vs Wyoming</h1><hr>
@@ -142,7 +218,7 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
-            <td>54</td>
+            <td><b>54</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #492F24;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_65.png"></td>
@@ -166,7 +242,7 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #39244B;"><img alt="University of Northern Colroado" title="University of Northern Colorado" class="sicon" src="../assets/icons/unc_teachers70.png"></td>
-            <td>46</td>
+            <td><b>46</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
@@ -190,11 +266,11 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
-            <td>42</td>
+            <td><b>42</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska_old.png"></td>
-            <td>42</td>
+            <td><b>42</b></td>
           </tr>
         </table>
       </div>
@@ -214,7 +290,7 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
-            <td>70</td>
+            <td><b>70</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #07234B;"><img alt="Colorado School of Mines" title="Colorado School of Mines" class="sicon" src="../assets/icons/mines.png"></td>
@@ -227,7 +303,7 @@
       <div class="column left" style="background-color:#eaebec;">
         <h1>Colorado vs Colorado State</h1><hr>
         <p>February 11, 1955</p>
-        <p>Fort Collins, CO</p>
+        <p>Farmer Pool, Fort Collins, CO</p>
         <button class = "button button1"><a href="../assets/results/1950-1959/55S_CSU.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
@@ -238,7 +314,7 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #00664F;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_57.png"></td>
-            <td>46</td>
+            <td><b>46</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
@@ -262,7 +338,7 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #BC2234;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_69.png"></td>
-            <td>58</td>
+            <td><b>58</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
@@ -286,11 +362,35 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
-            <td>54</td>
+            <td><b>53</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #0051BA;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas.png"></td>
-            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Colorado vs Oklahoma</h1><hr>
+        <p>Feburary 19, 1955</p>
+        <p>Norman, OK</p>
+        <button class = "button button1">TBD</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #C20201;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_66.png"></td>
+            <td><b>54</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
+            <td>36</td>
           </tr>
         </table>
       </div>
@@ -299,7 +399,7 @@
       <div class="column left" style="background-color:#eaebec;">
         <h1>Colorado vs Northern Colorado</h1><hr>
         <p>February 23, 1955</p>
-        <p>Greeley, CO</p>
+        <p>Gunter Hall, Greeley, CO</p>
         <button class = "button button1"><a href="../assets/results/1950-1959/55S_UNC2.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
@@ -310,11 +410,47 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #39244B;"><img alt="University of Northern Colroado" title="University of Northern Colorado" class="sicon" src="../assets/icons/unc_teachers70.png"></td>
-            <td>54</td>
+            <td><b>54</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
             <td>30</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Missouri Valley Intercollegiate Athletic Association Swimming Championships</h1><hr>
+        <p>March 4 - 5, 1955</p>
+        <p>Coliseum Pool, Lincoln, NE</p>
+        <button class = "button button1">TBD</button>
+      </div>
+      <div class="column right" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #C20201;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_66.png"></td>
+            <td><b>150</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #BC2234;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_69.png"></td>
+            <td>123</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska_old.png"></td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0051BA;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas.png"></td>
+            <td>12</td>
           </tr>
         </table>
       </div>
