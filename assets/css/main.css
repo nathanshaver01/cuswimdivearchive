@@ -188,6 +188,7 @@ width:100%;
   padding: 8px 16px;
   background-color: #CFB87C;
   color: rgb(0, 0, 0);
+  margin: 5px;
 }
 .center1 {
   display: flex;
