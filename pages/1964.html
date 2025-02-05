@@ -38,6 +38,7 @@
                 <div id="logo-title" class="container">
                     <a href="../"><img src="../assets/css/images/official-ralphie-logo.png" alt="Ralphie Logo"></a>
                     <h1>COLORADO SWIMMING &amp; DIVING ARCHIVE</h1>
+                </div>
             </div>
             <nav class="shadow">
                 <div class="container">
@@ -60,7 +61,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:5900px
+  height:6400px
 }
 @media screen and (max-width: 600px) {
   #info-content{
@@ -69,7 +70,7 @@
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:8600px;
+    height:8000px;
   }
 }
 
@@ -96,33 +97,111 @@
     </div><br><br><br>
     <h3>Men's Team</h3>
     <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
+    <table class = "divisionroster">
+      <colgroup>
+        <col class="fullname" />
+        <col class="class" />
+        <col class="events" />
+      </colgroup>
+      <thead>
+        <tr><th style="text-align: center"><strong>Name</strong></th>
+        <th><strong>Year</strong></th>
+        <th><strong>Events</strong></th>
+      </tr></thead>
+      <tr>
+          <td style="text-align: center">David Bailey</td>
+          <td>SR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Richard Bennett</td>
+          <td>SO</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Charles Bush</td>
+          <td>SR</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Barry Carlson</td>
+          <td>JR</td>
+          <td>Back</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Russell Corrigan</td>
+          <td>--</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Terry Danko</td>
+          <td>SO</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Robert Haagensen</td>
+          <td>--</td>
+          <td>Back</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Donald Kopp</td>
+          <td>JR</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dale Leonhart</td>
+          <td>JR</td>
+          <td>Fly, I.M.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Roger Mondt</td>
+          <td>--</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tom Nichols</td>
+          <td>--</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Charles Riddell</td>
+          <td>SO</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Keith Shaw</td>
+          <td>SR</td>
+          <td>Breast</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jim Thompson</td>
+          <td>JR</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jim Waggoner</td>
+          <td>JR</td>
+          <td>Fly, I.M.</td>
+      </tr>
+    </tbody></table><br><br><br>
+    <div class="meetbox">
+      <table class = "meetsummary">
+        <thead>
+          <tr><th style="text-align: center"><strong>Overall</strong></th>
+          <th><strong>PCT</strong></th>
+          <th><strong>Home</strong></th>
+          <th><strong>Away</strong></th>
+          <th><strong>Conference</strong></th>
+        </tr></thead>
         <tr>
-            <td style="text-align: center">David Bailey</td>
-            <td>Charles Bush</td>
-            <td>Barry Carlson</td>
-            <td>Russell Corrigan</td>
+          <td class="td-test" style="text-align: center;" >3-10</td>
+          <td class="td-test">.231</td>
+          <td class="td-test">2-8</td>
+          <td class="td-test">1-2</td>
+          <td class="td-test">6th</td>
         </tr>
-        <tr>
-            <td style="text-align: center">Terry Danko</td>
-            <td>Donald Kopp</td>
-            <td>Roger Mondt</td>
-            <td>Charles Riddell</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Keith Shaw</td>
-            <td>James Thompson</td>
-            <td>James Waggoner</td>
-        </tr>
-    </tbody></table><br>
-    <h4>*=Captain</h4><br>
-
+      </table>
+    </div><br><br><br>
     <!--Meets-->
     <h1>Schedule/Results</h1>
     <div class="row">
@@ -229,7 +308,8 @@
       <div class="column left" style="background-color:#eaebec;">
         <h1>Iowa State Dual</h1><hr>
         <p>February 1, 1964</p>
-        <p>Ames, IA</p>
+        <p>State Gym, Ames, IA</p> <!--Note new pool next year-->
+        <!-- https://www.newspapers.com/image/54587921/?match=1&terms=iowa%20state%20swimming%20pool -->
         <button class = "button button1">PDF Coming Soon</button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
@@ -318,7 +398,7 @@
         <h1>Colorado vs Utah State vs Wyoming</h1><hr>
         <p>February 15, 1964</p>
         <p>Claire Small Pool, Boulder, CO</p>
-        <button class = "button button1"><a href="../assets/results/1960-1969/64S_OU_Utah.pdf">PDF Results</a></button>
+        <button class = "button button1"><a href="../assets/results/1960-1969/64S_USU_WY.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
         <table>
@@ -439,9 +519,49 @@
     </div><br><br><br>
     <div class="row">
       <div class="column left" style="background-color:#eaebec;">
+        <h1>Western Invitational Intercollegiate Swiming Championships</h1><hr>
+        <p>March, 1964</p>
+        <p>Denver University Arena Pool, Denver, CO</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FDAE44;"><img alt="University of Denver" title="University of Denver" class="sicon" src="../assets/icons/denver_60s.png"></td>
+            <td><b>196</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #F3932F;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_71.png"></td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000080;"><img alt="Utah State University" title="Utah State University" class="sicon" src="../assets/icons/utahstate_60S.png"></td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #F7821B;"><img alt="Idaho State University" title="Idaho State University" class="sicon" src="../assets/icons/isu_64.png"></td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_69.png"></td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #2122A1;"><img alt="Weber State University" title="Weber State University" class="sicon" src="../assets/icons/weber_64.png"></td>
+            <td>2</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
         <h1>Big 8 Swimming & Diving Championships</h1><hr>
         <p>March 5 - 7, 1964</p>
-        <p>Ames, IA</p>
+        <p>South Base Swimming Pool, Norman, OK</p>
         <button class = "button button1"><a href="../assets/results/1960-1969/64S_Big8.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
@@ -481,7 +601,7 @@
         </table>
       </div>
     </div><br><br><br>
-
+  </div>
     
 </div>
 
