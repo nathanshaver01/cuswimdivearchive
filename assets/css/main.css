@@ -82,12 +82,12 @@ body {font-family: "Lato", sans-serif;}
     background-color: #E7DBBD; 
     text-decoration: underline; 
 }
-.column1 {
+/* .column1 {
   float: left;
   padding: 10px;
   height: 320px;
   overflow: auto;
-}
+} */
 .column {
   float: left;
   padding: 10px;
@@ -98,11 +98,17 @@ body {font-family: "Lato", sans-serif;}
   width: 25%;
   text-align: center;
 }
+.left-dual {
+  width: 25%;
+  text-align: center;
+  height: 250px;
+}
 .right {
   width: 75%;
 }
 .right-dual {
   width: 75%;
+  height:250px;
 }
 .right-triple {
   width: 75%;
@@ -1186,12 +1192,16 @@ small {
       height:200px;
       overflow:auto;
     }
+    .left-dual{
+      height:200px;
+      overflow:auto;
+    }
     .right-dual{
       height:110px;
       overflow:auto;
     }
     .left{
-      height:250px;
+      height:230px;
     }
     .headshot {
         height: 120px; 
