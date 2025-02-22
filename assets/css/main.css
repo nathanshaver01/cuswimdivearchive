@@ -82,12 +82,12 @@ body {font-family: "Lato", sans-serif;}
     background-color: #E7DBBD; 
     text-decoration: underline; 
 }
-/* .column1 {
+.column1 {
   float: left;
   padding: 10px;
   height: 320px;
   overflow: auto;
-} */
+}
 .column {
   float: left;
   padding: 10px;
