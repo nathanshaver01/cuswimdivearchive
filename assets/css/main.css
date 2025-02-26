@@ -95,23 +95,27 @@ body {font-family: "Lato", sans-serif;}
   overflow: auto;
 }
 .left {
-  width: 25%;
+  width: 30%;
   text-align: center;
 }
 .left-dual {
-  width: 25%;
+  width: 30%;
   text-align: center;
   height: 250px;
 }
+.lefthead{
+    width: 30%;
+    text-align: center;
+}
 .right {
-  width: 75%;
+  width: 70%;
 }
 .right-dual {
-  width: 75%;
+  width: 70%;
   height:250px;
 }
 .right-triple {
-  width: 75%;
+  width: 70%;
 }
 .full{
   width:100%;
@@ -122,15 +126,15 @@ body {font-family: "Lato", sans-serif;}
 .ttcolumn{
   float: left;
   padding: 10px;
-  height: 525px;
+  height: 490px;
   overflow: auto;
 }
 .ttleft {
-  width: 25%;
+  width: 30%;
   text-align: center;
 }
 .ttright {
-    width: 75%;
+    width: 70%;
 }
 .nocolumn{
   float: left;
@@ -1147,6 +1151,9 @@ small {
     .left{
       height:250px;
     }
+    .lefthead{
+      height:260px;
+    }
     #info-content{
       height:6200px;
     }
@@ -1202,6 +1209,9 @@ small {
     }
     .left{
       height:230px;
+    }
+    .lefthead{
+      height:250px;
     }
     .headshot {
         height: 120px; 
