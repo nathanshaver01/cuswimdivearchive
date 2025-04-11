@@ -226,9 +226,8 @@ width:100%;
 table.table2 td { width:3%; }
   
 table.table2 th {
-    -webkit-writing-mode:vertical-rl; 
-    -ms-writing-mode:tb-rl; 
-    writing-mode:vertical-rl; }
+    writing-mode: vertical-rl;
+    text-orientation: mixed;}
 .table {
     display: none;
 }
