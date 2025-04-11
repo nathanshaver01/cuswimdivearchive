@@ -27,7 +27,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
-
+        <script>
+          function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+          }
+          
+          function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+          }
+        </script>
     </head> 
     <body>
         <!-- header -->
@@ -60,16 +76,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:3100px
+  height:3450px
 }
 @media screen and (max-width: 480px) {
   #info-content{
-    height:3100px;
+    height:3300px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:3500px;
+    height:3900px;
   }
 }
 </style>
@@ -94,7 +110,12 @@
       </a>
     </div><br><br><br>
     <h3>Men's Team</h3>
+    <div class="buttoncontainer">
+      <input class="button2" type="button" onclick="showTable('table1')" value="Overview"><br>
+      <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
+    </div>
     <br>
+    <div id="table1" class="show table">
     <table>
         <tbody><tr>
             <th>Roster</th>
@@ -124,7 +145,140 @@
             <td style="text-align: center">George Ward</td>
             <td>John Wolcott</td>
         </tr>
-    </tbody></table><br><br><br>
+    </tbody></table><br><br><br></div>
+    <div id="table2" class="table">
+      <div style="overflow-x:auto;">
+        <table class="table2">
+          <tbody><tr>
+              <th style="text-align: center; min-width: 110px;">Name</th>
+              <th>Wyo.</th>
+              <th>C.S.C.E.</th>
+              <th>C.S.C.E.</th>
+              <th>Weber</th>
+              <th>East. Div.</th>
+              <th>Total Points</th>
+          </tr>
+          <tr>
+              <td>Gerald Bauer</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>3</td>
+          </tr>
+          <tr>
+              <td>Burten Beers</td>
+              <td>3</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5</td>
+          </tr>
+          <tr>
+              <td>George Belders*</td>
+              <td>3</td>
+              <td>0</td>
+              <td>3</td>
+              <td>0</td>
+              <td>4</td>
+              <td>10</td>
+          </tr>
+          <tr>
+              <td>William Bigum*</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>3</td>
+              <td>10</td>
+              <td>43</td>
+          </tr>
+          <tr>
+              <td>Paul Clark*</td>
+              <td>3MR</td>
+              <td>1R</td>
+              <td>1R</td>
+              <td>3R</td>
+              <td>3R</td>
+              <td>11MR</td>
+          </tr>
+          <tr>
+              <td>Harold Daniels*</td>
+              <td>8R</td>
+              <td>5R</td>
+              <td>5R</td>
+              <td>8R</td>
+              <td>5R</td>
+              <td>31R</td>
+          </tr>
+          <tr>
+              <td>James Dumm*</td>
+              <td>5</td>
+              <td>3M</td>
+              <td>3MR</td>
+              <td>1</td>
+              <td>8RM</td>
+              <td>20MR</td>
+          </tr>
+          <tr>
+              <td>Eugene Eaton</td>
+              <td>5</td>
+              <td>5M</td>
+              <td>5M</td>
+              <td>5</td>
+              <td>5M</td>
+              <td>25M</td>
+          </tr>
+          <tr>
+              <td>Gordon Garland</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+          </tr>
+          <tr>
+              <td>Alvin List*</td>
+              <td>3R</td>
+              <td>3MR</td>
+              <td>3R</td>
+              <td>0R</td>
+              <td>0RM</td>
+              <td>9MR</td>
+          </tr>
+          <tr>
+              <td>Cameron Merrifield</td>
+              <td>10R</td>
+              <td>10R</td>
+              <td>10M</td>
+              <td>6R</td>
+              <td>5M</td>
+              <td>41MR</td>
+          </tr>
+          <tr>
+              <td>Robert G. Ward</td>
+              <td>0M</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0M</td>
+          </tr>
+          <tr>
+              <td>John E. Wolcott</td>
+              <td>0M</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>2</td>
+              <td>3M</td>
+          </tr>
+        </tbody></table><br>
+        <h4>*=Letterman</h4><br><br><br>
+      </div>
+      </div>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">
