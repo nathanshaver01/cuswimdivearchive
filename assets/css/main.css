@@ -155,7 +155,14 @@ body {font-family: "Lato", sans-serif;}
   clear: both;
 }
 .button1 {background-color: #CFB87C;}
-
+.button2 {padding:7px 15px;
+            margin: 5px;}
+.buttoncontainer {
+    display: flex; /* Enables CSS flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 10vh; /* Full height to demonstrate vertical centering */
+}
 .sicon{
   max-height:25px; 
   width:auto;
@@ -200,6 +207,20 @@ width:100%;
   color: rgb(0, 0, 0);
   margin: 5px;
 }
+.table2 {
+    margin: 0 auto;
+    width: 100%;
+    text-shadow: none;
+  }
+  table.table2 td { width:3%; }
+  table.table2 th {writing-mode: sideways-lr;}
+  .table {
+    display: none;
+  }
+  
+  .table.show {
+    display: block;
+  }
 .center1 {
   display: flex;
   justify-content: center;

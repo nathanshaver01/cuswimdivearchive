@@ -29,6 +29,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
+        <script>
+          function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+          }
+          
+          function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+          }
+        </script>
 
     </head> 
 
@@ -63,19 +80,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:4800px
+  height:4900px
 }
 @media screen and (max-width: 480px) {
   #info-content{
-    height:5100px;
+    height:5200px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:5900px;
+    height:6000px;
   }
 }
-
 </style>
 
 <div id="info-content" >
@@ -98,7 +114,11 @@
       </a>
     </div><br><br><br>
     <h3>Men's Team</h3>
-    <br>
+    <div class="buttoncontainer">
+      <input class="button2" type="button" onclick="showTable('table1')" value="Overview"><br>
+      <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
+    </div>
+    <div id="table1" class="show table">
     <table class = "divisionroster">
       <colgroup>
         <col class="fullname" />
@@ -211,7 +231,278 @@
           <td>Back</td>
       </tr>
   </tbody></table>
-  <h4>*=Captain</h4><br><br><br>
+  <h4>*=Captain</h4><br><br><br></div>
+  <div id="table2" class="table">
+  <div style="overflow-x:auto;">
+    <table class="table2">
+      <tbody><tr>
+          <th style="text-align: center">Name</th>
+          <th>Wyo. Relays</th>
+          <th>Wyoming</th>
+          <th>C.S.C.E.</th>
+          <th>Colo. A&M</th>
+          <th>UNL & KU</th>
+          <th>I.S.U.</th>
+          <th>Nebraska</th>
+          <th>Kansas</th>
+          <th>Conference</th>
+      </tr>
+      <tr>
+          <td>Niel Broderson*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Robert Campbell*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Roscoe Champion*</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Jack Chapman</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Jack Chapman</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>John Crancer</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Reggie Darley</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Robert Davis</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Harold Donnelly*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>John Ferguson*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Charles Harbaugh*</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Malcolm Heffelman*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>McDonald</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Pete Mayo*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Jack O'Donnell</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Jerry Raveling</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Lee Venzke*</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Louis Walstrom*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Jack Watson*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Robert Watson*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Bill Yowell*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+    </tbody></table><br>
+    <h4>*=Letterman</h4><br><br><br>
+  </div>
+  </div>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">
