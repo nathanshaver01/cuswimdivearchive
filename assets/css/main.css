@@ -159,6 +159,7 @@ body {font-family: "Lato", sans-serif;}
             margin: 5px;
             background-color: #ECECEC;
             border: none;
+            color: black;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -224,7 +225,10 @@ width:100%;
   }
 table.table2 td { width:3%; }
   
-table.table2 th {writing-mode: sideways-lr;}
+table.table2 th {
+    -webkit-writing-mode:vertical-rl; 
+    -ms-writing-mode:tb-rl; 
+    writing-mode:vertical-rl; }
 .table {
     display: none;
 }
@@ -994,7 +998,6 @@ small {
     #sub-nav ul {
         padding-left: 138px;
     }
-    table.table2 th {writing-mode: sideways-lr;}
     
     #contact ul li {
         width: 29.8%;
@@ -1035,8 +1038,6 @@ small {
     #news-feed h4 {
         font-size: 1.3em;   
     }
-    
-    table.table2 th {writing-mode: sideways-lr;}
     
     
 }
@@ -1114,8 +1115,6 @@ small {
     #news-feed h3 {
         font-size: 1.1em;
     }
-    
-    table.table2 th {writing-mode: sideways-lr;}
     #news-feed h4 {
         font-size: 1.1em;   
     }
@@ -1199,7 +1198,6 @@ small {
     .caption1 {
         font-size:8.8pt;
     }
-    table.table2 th {writing-mode: sideways-lr;}
 }
 @media screen and (max-width: 480px) {
     .nocolumn {
@@ -1378,7 +1376,6 @@ small {
     padding: 0;
     margin: 0;
     }
-    table.table2 th {writing-mode: sideways-lr;}
 
     #news-feed ul li {
     display: inline-block;
@@ -1550,8 +1547,6 @@ small {
         display: block;
         padding-bottom: 15px;
     }
-    
-    table.table2 th {writing-mode: sideways-lr;}
     #buttons {
         display: none;
     }
