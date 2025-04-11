@@ -27,7 +27,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
-
+        <script>
+          function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+          }
+          
+          function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+          }
+        </script>
     </head> 
 
     <body>
@@ -61,16 +77,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:3900px
+  height:4100px
 }
 @media screen and (max-width: 480px) {
   #info-content{
-    height:3900px;
+    height:4100px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:4600px;
+    height:4900px;
   }
 }
 </style>
@@ -95,7 +111,11 @@
       </a>
     </div><br><br><br>
     <h3>Men's Team</h3>
-    <br>
+    <div class="buttoncontainer">
+      <input class="button2" type="button" onclick="showTable('table1')" value="Overview"><br>
+      <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
+    </div>
+    <div id="table1" class="show table">
     <table>
         <tbody><tr>
             <th>Roster</th>
@@ -127,7 +147,164 @@
             <td>Frank Zaitz*</td>
         </tr>
       </tbody></table><br>
-      <h4>*=Captain</h4><br><br><br>
+      <h4>*=Captain</h4><br><br><br></div>
+      <div id="table2" class="table">
+        <div style="overflow-x:auto;">
+          <table class="table2">
+            <tbody><tr>
+                <th style="text-align: center; min-width: 110px;">Name</th>
+                <th>C.S.C.E.</th>
+                <th>Okla.</th>
+                <th>K.S.U.</th>
+                <th>Colo. A&M</th>
+                <th>U.N.L.</th>
+                <th>K.U.</th>
+                <th>M.V.I.A.A.</th>
+            </tr>
+            <tr>
+                <td>Hugh Berger*</td>
+                <td>0</td>
+                <td>5</td>
+                <td>4</td>
+                <td>8</td>
+                <td>1</td>
+                <td>9</td>
+                <td>2&frac13;R</td>
+            </tr>
+            <tr>
+                <td>James Berry*</td>
+                <td>2R</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Bruce Bowers*</td>
+                <td>1R</td>
+                <td>2</td>
+                <td>4</td>
+                <td>5</td>
+                <td>7</td>
+                <td>8</td>
+                <td>1&frac23;R</td>
+            </tr>
+            <tr>
+                <td>Gordon Bradt</td>
+                <td>3</td>
+                <td>0</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0R</td>
+            </tr>
+            <tr>
+                <td>Summer Downing</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>6</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Clarence Herbst*</td>
+                <td>5</td>
+                <td>6&frac13;</td>
+                <td>7</td>
+                <td>7</td>
+                <td>4</td>
+                <td>7</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Conrad Horine*</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Richard Lepman*</td>
+                <td>10R</td>
+                <td>6</td>
+                <td>12</td>
+                <td>3</td>
+                <td>0</td>
+                <td>7</td>
+                <td>1&frac23;</td>
+            </tr>
+            <tr>
+                <td>Wendell Peterson</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Robert Powloski</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Dick Ready*</td>
+                <td>5M</td>
+                <td>4&frac13;</td>
+                <td>7</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>2&frac23;</td>
+            </tr>
+            <tr>
+                <td>Dan Telk*</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>John Yantis</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Frank Zaitz*</td>
+                <td>1RM</td>
+                <td>3&frac13;</td>
+                <td>2</td>
+                <td>6</td>
+                <td>8</td>
+                <td>4</td>
+                <td>1&frac23;R</td>
+            </tr>
+          </tbody></table><br>
+          <h4>*=Letterman</h4><br><br><br>
+        </div>
+        </div>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">

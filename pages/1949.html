@@ -27,7 +27,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
-
+        <script>
+          function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+          }
+          
+          function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+          }
+        </script>
     </head> 
 
     <body>
@@ -61,16 +77,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:4100px
+  height:4400px
 }
 @media screen and (max-width: 480px) {
   #info-content{
-    height:4400px;
+    height:4700px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:5100px;
+    height:5400px;
   }
 }
 </style>
@@ -95,7 +111,11 @@
       </a>
     </div><br><br><br>
     <h3>Men's Team</h3>
-    <br>
+    <div class="buttoncontainer">
+      <input class="button2" type="button" onclick="showTable('table1')" value="Overview"><br>
+      <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
+    </div>
+    <div id="table1" class="show table">
     <table>
         <tbody><tr>
             <th>Roster</th>
@@ -132,7 +152,212 @@
           <td>Edward Timberlake</td>
         </tr>
     </tbody></table><br>
-    <h4>*=Captain</h4><br><br><br>
+    <h4>*=Captain</h4><br><br><br></div>
+    <div id="table2" class="table">
+      <div style="overflow-x:auto;">
+        <table class="table2">
+          <tbody><tr>
+              <th style="text-align: center; min-width: 110px;">Name</th>
+              <th>Wyo. R.</th>
+              <th>U.N.L.</th>
+              <th>C.S.C.E.</th>
+              <th>Colo. A&M</th>
+              <th>I.S.U.</th>
+              <th>K.U.</th>
+              <th>Okla.</th>
+              <th>M.V.I.A.A.</th>
+          </tr>
+          <tr>
+              <td>J.C. Baumgartner</td>
+              <td>0</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Hugh Berger*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>James Berry*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>Richard Bingham</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Stan Black*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>Gordon Bradt</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Arthur Daman</td>
+              <td>0</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Tom Duesterberg*</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Tom Guggenheim*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>William Hamilton</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Clarence Herbst</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Conrad Horine</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Robert Pickens</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>Dick Ready*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>Dick Symes*</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>Louis Telk</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Edward Timberlake</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+        </tbody></table><br>
+        <h4>*=Letterman</h4><br><br><br>
+      </div>
+      </div>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">
