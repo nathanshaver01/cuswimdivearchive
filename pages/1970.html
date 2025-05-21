@@ -61,16 +61,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:5300px
+  height:5800px
 }
 @media screen and (max-width: 600px) {
   #info-content{
-    height:6300px;
+    height:6800px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:6550px;
+    height:7000px;
   }
 }
 </style>
@@ -86,61 +86,241 @@
     <h1>Team Roster</h1>
     <h3>Coaching Staff</h3>
     <br>
-    <table>
-      <tbody><tr>
-          <th style="text-align: center">Head Coach</th>
-          <th>Assistant Coach</th>
-          <th>Assistant Coach</th>
-      </tr>
-      <tr>
-          <td style="text-align: center">Ralph E. Bibler</td>
-          <td>Kenneth Correa</td>
-          <td>Howard Ross</td>
-      </tr>
-    </tbody></table><br>
+    <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/ralph bibler.png" class="headshot" alt="Headshot of Ralph E. Bibler"><br>
+          <div class="caption1"><b>Ralph E. Bibler</b></div>
+          <div class="caption1"><i>Head Coach</i></div>
+      </a>
+      <a>
+        <img src="../assets/css/images/headshots/unknown.png" class="headshot" alt="Unknown Headshot"><br>
+          <div class="caption1"><b>Kenneth Correa</b></div>
+          <div class="caption1"><i>Assistant Coach</i></div>
+      </a>
+      <a>
+        <img src="../assets/css/images/headshots/unknown.png" class="headshot" alt="Unknown Headshot"><br>
+          <div class="caption1"><b>Howard Ross</b></div>
+          <div class="caption1"><i>Assistant Coach</i></div>
+      </a>
+    </div><br><br><br>
     <h3>Men's Team</h3>
     <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
-        <tr>
-            <td style="text-align: center">Don Branwell</td>
-            <td>Bob Bunting</td>
-            <td>Mike Chandler</td>
-            <td>Charlie Cowan</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Jim Cumming*</td>
-            <td>Tom Cummins</td>
-            <td>Kevine Fitzgerald</td>
-            <td>John Fountain</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Steve Gardner</td>
-            <td>Dave Heppe</td>
-            <td>Peter Huisveld</td>
-            <td>Steve Katz</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Bill Miller</td>
-            <td>Bob Munoz</td>
-            <td>Dan Palmquist</td>
-            <td>Mike Pratt</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Bill Rake*</td>
-            <td>Chris Rock</td>
-            <td>Kurt Schmitt</td>
-            <td>Ron Sherwood</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Rich Spurlin</td>
-            <td>Les Wells</td>
-        </tr>
+    <table class = "divisionroster">
+      <colgroup>
+        <col class="fullname" />
+        <col class="class" />
+        <col class="events" />
+      </colgroup>
+      <thead>
+        <tr><th style="text-align: center"><strong>Name</strong></th>
+        <th><strong>Year</strong></th>
+        <th><strong>Events</strong></th>
+      </tr></thead>
+      <tr>
+          <td style="text-align: center">Mark Bailey</td>
+          <td>SO</td>
+          <td>Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Paul Baker</td>
+          <td>FR</td>
+          <td>Freestyle, I.M.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">David Bennet</td>
+          <td>SO</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Don Branwell</td>
+          <td>FR</td>
+          <td>Breaststroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Robert Brooks</td>
+          <td>SO</td>
+          <td>Backstroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Robert Bunting</td>
+          <td>SO</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Michael Chandler</td>
+          <td>SO</td>
+          <td>Butterfly, I.M.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Charles Cowan</td>
+          <td>JR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Kim Cowles</td>
+          <td>SO</td>
+          <td>Freestyle, Manager</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jim Cumming*</td>
+          <td>SR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tom Cummins</td>
+          <td>SR</td>
+          <td>Freestyle, Backstroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Michael Farnsword</td>
+          <td>JR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Fountain</td>
+          <td>FR</td>
+          <td>I.M., Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Kevin Fitzgerald</td>
+          <td>FR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Michael Gaines</td>
+          <td>FR</td>
+          <td>Freestyle, I.M.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Steven Garder</td>
+          <td>SR</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dave Heppe</td>
+          <td>SO</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Pete Huisveld</td>
+          <td>FR</td>
+          <td>I.M., Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stephen Katz</td>
+          <td>JR</td>
+          <td>Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Steve McCarthy</td>
+          <td>JR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">George Miller</td>
+          <td>FR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">William Miller</td>
+          <td>FR</td>
+          <td>Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">James Mitchell</td>
+          <td>FR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Russell Moore</td>
+          <td>FR</td>
+          <td>Breaststroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Robert Munoz</td>
+          <td>FR</td>
+          <td>Breaststroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Jorge Oteo</td>
+          <td>JR</td>
+          <td>Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dan Palmquist</td>
+          <td>SO</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Michael Pratt</td>
+          <td>FR</td>
+          <td>Butterfly, Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Bill Rake*</td>
+          <td>SR</td>
+          <td>I.M., Backstroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Christopher Rock</td>
+          <td>SR</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Kurt Schmitt</td>
+          <td>SO</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Lee Schwanke</td>
+          <td>SO</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Robert Seibert</td>
+          <td>FR</td>
+          <td>Breaststroke, I.M.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Ron Sherwood</td>
+          <td>SO</td>
+          <td>Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tim Smith</td>
+          <td>SO</td>
+          <td>Backstroke, Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Paul Snyder</td>
+          <td>FR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Richard Spurlin</td>
+          <td>FR</td>
+          <td>Freestyle, Breaststroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Stryker</td>
+          <td>SR</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Steven Tronstein</td>
+          <td>SO</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Paul Turner</td>
+          <td>SO</td>
+          <td>Diving</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Lester Wells</td>
+          <td>FR</td>
+          <td>Butterfly, Freestyle</td>
+      </tr>
     </tbody></table><br>
     <h4>*=Captain</h4><br>
 
@@ -171,11 +351,55 @@
       </div>
     </div><br><br><br>
     <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Big 8 Swimming & Diving Relays</h1><hr>
+        <p>December 12 - 13, 1969</p>
+        <p>Beyer Gymnasium Pool, Ames, IA</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/69F_Big8Relay.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_71.png"></td>
+            <td><b>126</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
+            <td>84</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
+            <td>62</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska_69.png"></td>
+            <td>33</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
+            <td>23</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Nebraska Dual</h1><hr>
         <p>January 17, 1970</p>
-        <p>Lincoln, NE</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <p>Coliseum Pool, Lincoln, NE</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/70S_UNL.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
@@ -199,7 +423,7 @@
         <h1>Denver Dual</h1><hr>
         <p>January 23, 1970</p>
         <p>Claire Small Pool, Boulder, CO</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/70S_DU.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
@@ -270,8 +494,8 @@
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Western Colorado Dual</h1><hr>
         <p>February 7, 1970</p>
-        <p>Gunnison, CO</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <p>Paul Wright Natatorium, Gunnison, CO</p>
+        <button class = "button button1">Results Unavailable</button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
@@ -333,7 +557,7 @@
         <h1>Colorado vs Iowa State vs Iowa</h1><hr>
         <p>February 15, 1970</p>
         <p>Beyer Gymnasium Pool, Ames, IA</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/70S_ISU_UI.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
         <table>
@@ -406,7 +630,7 @@
     </div><br><br><br>
     <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
-        <h1>Colorado vs Colorado State</h1><hr>
+        <h1>Colorado State Dual</h1><hr>
         <p>February 24, 1970</p>
         <p>Claire Small Pool, Boulder, CO</p>
         <button class = "button button1"><a href="../assets/results/1970-1980/70S_CSU.pdf">PDF Results</a></button>
