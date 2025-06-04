@@ -61,16 +61,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:5300px
+  height:4700px
 }
 @media screen and (max-width: 600px) {
   #info-content{
-    height:6300px;
+    height:5700px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:6550px;
+    height:6100px;
   }
 }
 </style>
@@ -86,62 +86,150 @@
     <h1>Team Roster</h1>
     <h3>Coaching Staff</h3>
     <br>
-    <table>
-      <tbody><tr>
-          <th style="text-align: center">Head Coach</th>
-          <th>Assistant Coach</th>
-      </tr>
-      <tr>
-          <td style="text-align: center">Ralph E. Bibler</td>
-          <td>Michael Wallace</td>
-      </tr>
-    </tbody></table><br>
+    <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/ralph bibler.png" class="headshot" alt="Headshot of Ralph E. Bibler"><br>
+          <div class="caption1"><b>Ralph E. Bibler</b></div>
+          <div class="caption1"><i>Head Coach</i></div>
+      </a>
+      <a>
+        <img src="../assets/css/images/headshots/unknown.png" class="headshot" alt="Unknown Headshot"><br>
+          <div class="caption1"><b>Michael Wallace</b></div>
+          <div class="caption1"><i>Assistant Coach</i></div>
+      </a>
+    </div><br><br><br>
     <h3>Men's Team</h3>
     <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
-        <tr>
-            <td style="text-align: center">Don Branwell</td>
-            <td>John Bustard</td>
-            <td>John Chandler</td>
-            <td>Charles Cowan</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Thomas Cummins</td>
-            <td>John Dees</td>
-            <td>Arthur Degener</td>
-            <td>John Fountain</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Kevin Fitzgerald</td>
-            <td>Peter Huisveld</td>
-            <td>William Miller</td>
-            <td>David McCulloh</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Kurt Schmitt*</td>
-            <td>Robert Walish</td>
-            <td>David Wells</td>
-            <td>Lester Wells</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Dennis Williams</td>
-        </tr>
+    <table class = "divisionroster">
+      <colgroup>
+        <col class="fullname" />
+        <col class="class" />
+        <col class="events" />
+      </colgroup>
+      <thead>
+        <tr><th style="text-align: center"><strong>Name</strong></th>
+        <th><strong>Year</strong></th>
+        <th><strong>Events</strong></th> <!--4707-->
+      </tr></thead>
+      <tr>
+          <td style="text-align: center">Don Branwell</td>
+          <td>SO</td>
+          <td>Breaststroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Bustard</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Chandler</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Kim Cowles</td>
+          <td>JR</td>
+          <td>Manager</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Charles Cowan</td>
+          <td>SR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tom Cummins</td>
+          <td>SR</td>
+          <td>Freestyle, Backstroke</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Dees</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Art Degener</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">John Fountain</td>
+          <td>SO</td>
+          <td>I.M., Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Kevin Fitzgerald</td>
+          <td>SO</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Pete Huisveld</td>
+          <td>SO</td>
+          <td>I.M., Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">William Miller</td>
+          <td>SO</td>
+          <td>Butterfly</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">David McCulloh</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Kurt Schmitt</td>
+          <td>JR</td>
+          <td>Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Robert Walish</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dave Wells</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Lester Wells</td>
+          <td>SO</td>
+          <td>Butterfly, Freestyle</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Dennis Williams</td>
+          <td>FR</td>
+          <td>--</td>
+      </tr>
     </tbody></table><br>
     <h4>*=Captain</h4><br>
 
-    <!--Meets-->
     <h1>Schedule/Results</h1>
+    <!--Box Summary-->
+    <div class="meetbox">
+     <table class = "meetsummary">
+       <thead>
+         <tr><th style="text-align: center"><strong>Overall</strong></th>
+         <th><strong>PCT</strong></th>
+         <th><strong>Home</strong></th>
+         <th><strong>Away</strong></th>
+         <th><strong>Conference</strong></th>
+       </tr></thead>
+       <tr>
+         <td class="td-test" style="text-align: center;" >6-7</td>
+         <td class="td-test">.462</td>
+         <td class="td-test">3-2</td>
+         <td class="td-test">3-5</td>
+         <td class="td-test">7th</td>
+       </tr>
+     </table>
+   </div><br><br><br>
+    <!--Meets-->
     <div class="row">
       <div class="column left" style="background-color:#eaebec;">
         <h1>Big 8 Swimming & Diving Relays</h1><hr>
         <p>December 4, 1970</p>
-        <p>University of Kansas, Laurence, KS</p>
+        <p>Robinson Natatorium, Lawrence, KS</p>
         <button class = "button button1"><a href="../assets/results/1970-1980/70F_Big8Relay.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
@@ -210,7 +298,7 @@
         <h1>Colorado vs Northern Colorado vs Iowa State</h1><hr>
         <p>January 16, 1971</p>
         <p>Claire Small Pool, Boulder, CO</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/71S_ISU_UNC.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
         <table>
@@ -248,7 +336,7 @@
         <h1>Colorado vs Colorado State vs Denver</h1><hr>
         <p>January 23, 1971</p>
         <p>Moby Pool, Fort Collins, CO</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/71S_CSU_DU.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
         <table>
@@ -399,8 +487,8 @@
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Denver Dual</h1><hr>
         <p>February 20, 1971</p>
-        <p>Denver, CO</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <p>Denver University Arena Pool, Denver, CO</p>
+         <button class = "button button1"><a href="../assets/results/1970-1980/71S_DU.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
@@ -424,7 +512,7 @@
         <h1>Oregon Dual</h1><hr>
         <p>February 27, 1971</p>
         <p>Claire Small Pool, Boulder, CO</p>
-        <button class = "button button1">PDF Coming Soon</button>
+         <button class = "button button1"><a href="../assets/results/1970-1980/71S_UO.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
@@ -448,7 +536,7 @@
         <h1>Big 8 Swimming & Diving Championships</h1><hr>
         <p>March 4 - 6, 1971</p>
         <p>South Base Swimming Pool, Norman, OK</p>
-        <button class = "button button1">PDF Coming Soon</button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/71S_Big8.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
         <table>
