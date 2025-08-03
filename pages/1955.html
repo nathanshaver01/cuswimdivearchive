@@ -29,6 +29,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
+        <script>
+          function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+          }
+          
+          function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+          }
+        </script>
 
     </head> 
     <body>
@@ -62,16 +79,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   #info-content{
-    height:5500px
+    height:5600px
   }
   @media screen and (max-width: 480px) {
     #info-content{
-      height:5800px;
+      height:5900px;
     }
   }
   @media screen and (min-width: 481px) and (max-width:599px) {
     #info-content{
-      height:6700px;
+      height:6800px;
     }
   }
 </style>
@@ -101,7 +118,11 @@
       </a>
     </div><br><br><br>
     <h3>Men's Team</h3>
-    <br>
+    <div class="buttoncontainer">
+      <input class="button2" type="button" onclick="showTable('table1')" value="Overview"><br>
+      <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
+    </div>
+    <div id="table1" class="show table">
     <table class = "divisionroster">
       <colgroup>
         <col class="fullname" />
@@ -114,7 +135,7 @@
         <th><strong>Events</strong></th>
       </tr></thead>
       <tr>
-          <td style="text-align: center">Federico Chocano</td>
+          <td style="text-align: center">Fred Chocano</td>
           <td>JR</td>
           <td>Freestyle</td>
       </tr>
@@ -194,7 +215,224 @@
           <td>Backstroke</td>
       </tr>
   </tbody></table><br>
-  <h4>*=Captain</h4><br><br><br>
+  <h4>*=Captain</h4><br><br><br></div>
+  <div id="table2" class="table">
+  <div style="overflow-x:auto;">
+    <table class="table2">
+      <tbody><tr>
+          <th style="text-align: center; min-width: 110px;">Name</th>
+          <th>Wyo. R.</th>
+          <th>Wyo.</th>
+          <th>C.S.C.E.</th>
+          <th>U.N.L.</th>
+          <th>Colo. Mines</th>
+          <th>Colo. A&M</th>
+          <th>I.S.U.</th>
+          <th>K.U.</th>
+          <th>O.U.</th>
+          <th>C.S.C.E.</th>
+          <th>M.V.I.A.A.</th>
+      </tr>
+      <tr>
+          <td>Fred Chocano</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Bruce Clinton</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Hugh Curtis</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Dirk De Vries*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Mike DesJardins</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Gordon Greenley*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Bill Hallum*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Park L. Hay</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Jerry Loar*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Bill Pribble </td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Bob Reed</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Larry Smith*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>0</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Wally Snow*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+      <tr>
+          <td>Bill Yowell*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+      </tr>
+    </tbody></table><br>
+    <h4>*=Letterman</h4><br><br><br>
+  </div>
+  </div>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">
