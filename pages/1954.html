@@ -29,6 +29,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
+        <script>
+          function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+          }
+          
+          function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+          }
+        </script>
 
     </head> 
     <body>
@@ -62,16 +79,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #info-content{
-  height:5200px
+  height:5250px
 }
 @media screen and (max-width: 480px) {
   #info-content{
-    height:5500px;
+    height:5600px;
   }
 }
 @media screen and (min-width: 481px) and (max-width:599px) {
   #info-content{
-    height:6200px;
+    height:6300px;
   }
 }
 </style>
@@ -96,7 +113,11 @@
       </a>
     </div><br><br><br>
     <h3>Men's Team</h3>
-    <br>
+    <div class="buttoncontainer">
+      <input class="button2" type="button" onclick="showTable('table1')" value="Overview"><br>
+      <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
+    </div>
+    <div id="table1" class="show table">
     <table class = "divisionroster">
       <colgroup>
         <col class="fullname" />
@@ -174,7 +195,157 @@
           <td>Backstroke</td>
       </tr>
   </tbody></table><br>
-  <h4>*=Captain</h4><br><br><br>
+  <h4>*=Captain</h4><br><br><br></div>
+  <div id="table2" class="table">
+  <div style="overflow-x:auto;">
+    <table class="table2">
+      <tbody><tr>
+          <th style="text-align: center; min-width: 110px;">Name</th>
+          <th>Colo. Mines</th>
+          <th>Wyo.</th>
+          <th>Colo. A&M</th>
+          <th>K.U.</th>
+          <th>UNL & KU</th>
+          <th>I.S.U.</th>
+          <th>C.S.C.E.</th>
+          <th>U.N.L.</th>
+          <th>M.V.I.A.A.</th>
+          <th>Total Points</th>
+      </tr>
+      <tr>
+          <td>Clarence Barnes*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>13 &frac34;</td>
+      </tr>
+      <tr>
+          <td>Hal Donnelly*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>57 &frac34;</td>
+      </tr>
+      <tr>
+          <td>Alan Fox*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>62 &frac34;</td>
+      </tr>
+      <tr>
+          <td>William Hallum</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>24</td>
+      </tr>
+      <tr>
+          <td>Richard Hausz*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>46 &frac23;</td>
+      </tr>
+      <tr>
+          <td>Takeshi Sato*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>10</td>
+      </tr>
+      <tr>
+          <td>Wally Snow*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>56</td>
+      </tr>
+      <tr>
+          <td>Charles Toms*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>78 &frac34;</td>
+      </tr>
+      <tr>
+          <td>John Watson*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>25 &frac23;</td>
+      </tr>
+      <tr>
+          <td>Bill Yowell*</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>X</td>
+          <td>43</td>
+      </tr>
+    </tbody></table><br>
+    <h4>*=Letterman</h4><br><br><br>
+  </div>
+  </div>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">
