@@ -2,7 +2,7 @@
 <!-- saved from url=(0034)http://cuswimdive.com/records.html -->
 <html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-    <title>Pool Records of CU Swim & Dive</title>
+    <title>Club Records of CU Swim & Dive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Nathan Shaver, Jennifer Cozzette, Simon Alexander, Connor McAllister, Melissa Guba">
     <link rel="stylesheet" href="../assets/css/normalize.css">
@@ -27,7 +27,81 @@
         $( "#divetabs2" ).tabs();
     });
     </script>
-
+    <script>
+        function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+        }
+          
+        function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+        }
+    </script>
+    
+    
+    <style>
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .race {
+      width: 20%;
+    }
+    .timedate {
+      width: 22%;
+    }
+    .date{
+        width:15%
+    }
+    .name {
+      width: 43%;
+    }
+    #info-content{
+        height:1300px
+    }
+    @media screen and (max-width: 755px){
+        #info-content{
+            height:1500px
+        }
+    }
+    @media screen and (max-width: 640px){
+        #info-content{
+            height:1400px
+        }
+    }
+    @media screen and (max-width: 590px){
+        #info-content{
+            height:1600px
+        }
+    }
+    @media screen and (max-width: 520px){
+        #info-content{
+            height:1700px
+        }
+    }
+    @media screen and (max-width: 480px){
+        #info-content{
+            height:1100px
+        }
+    }
+    @media screen and (max-width: 400px){
+        #info-content{
+            height:1200px
+        }
+    }
+    @media screen and (max-width: 345px){
+        #info-content{
+            height:1300px
+        }
+    }
+    </style>
 </head> 
     
         <body>
@@ -59,323 +133,329 @@
             </header>
         
         <!-- main content -->
-        <div id="info-content" style="height: 1500px">
-            <h2 id="swim-header" style="font-size: 2.7em"><span>CU Recreation Pool Records</span></h2>
-            <h3>**RECORDS ARE NOT ACCURATE, WILL BE UPDATED UPON DIGITIZATION OF ALL DIVISION MEET RESULTS</h3>
-            <div class="content-wrap">
-                <div id="tabs2" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-                    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
-                        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="WomensTeamRecords" aria-labelledby="ui-id-1" aria-selected="true"><a href="http://cuswimdive.com/records.html#WomensTeamRecords" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Women's Swimming Top Times</a></li>
-                        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="MensTeamRecords" aria-labelledby="ui-id-2" aria-selected="false"><a href="http://cuswimdive.com/records.html#MensTeamRecords" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Men's Swimming Top Times</a></li>
-                    </ul>
-                    <div id="WomensTeamRecords" style="height: 4000px" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
-                        <table>
-                                    <thead><!--IMG_3514.HEIC-->
-                                        <tr><th><strong>Event</strong></th>
-                                        <th><strong>Time</strong></th>
-                                        <th><strong>Swimmer</strong></th>
-                                        <th><strong>School</strong></th>
-                                        <th><strong>Date/Meet</strong></th>
-                                    </tr></thead>
-                                    <!-- **********************************************************
-                                    EDIT MENS RECORDS HERE
-                                    SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
-                                    <tr>
-                                        <td>Event Name</td>
-                                        <td>Time</td>
-                                        <td>Swimmer</td>
-                                        <td>Date</td>
-                                    </tr>
-                                    *********************************************************** -->
-                                    <tbody>
-                                        <tr>
-                                            <td>50 Freestyle</td>
-                                            <td>24.748</td>
-                                            <td>Gail Amundrud</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Freestyle</td>
-                                            <td>52.292</td>
-                                            <td>Gail Amundrud</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Freestyle</td>
-                                            <td>1:53.527</td>
-                                            <td>Gail Amundrud</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>500 Freestyle</td>
-                                            <td>5:05.771</td>
-                                            <td>Gail Amundrud</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1650 Freestyle</td>
-                                            <td>17:53.968</td>
-                                            <td>Sandy Thompson</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>50 Backstroke</td>
-                                            <td>28.566</td>
-                                            <td>Lyn Griggs</td>
-                                            <td>Colorado State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Backstroke</td>
-                                            <td>1:00.627</td>
-                                            <td>Lelei Finoimoana</td>
-                                            <td>Brigham Young</td>
-                                            <td>1979, Buff Invitational</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Backstroke</td>
-                                            <td>2:12.414</td>
-                                            <td>Lyn Griggs</td>
-                                            <td>Colorado State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>50 Breaststroke</td>
-                                            <td>30.277</td>
-                                            <td>Pam Rogers</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Breaststroke</td>
-                                            <td>1:06.112</td>
-                                            <td>Pam Rogers</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Breaststroke</td>
-                                            <td>2:25.624</td>
-                                            <td>Yolanda Mendiola</td>
-                                            <td>Brigham Young</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>50 Butterfly</td>
-                                            <td>26.476</td>
-                                            <td>Peggy Tosdal</td>
-                                            <td>Arizona State</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Butterfly</td>
-                                            <td>57.727</td>
-                                            <td>Leli Finoiomana</td>
-                                            <td>Brigham Young</td>
-                                            <td>1979, Buff Invitational</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Butterfly</td>
-                                            <td>2:09.095</td>
-                                            <td>Leli Finoiomana</td>
-                                            <td>Brigham Young</td>
-                                            <td>1979, Buff Invitational</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 I.M.</td>
-                                            <td>59.915</td>
-                                            <td>Diane Johnson</td>
-                                            <td>Arizona</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 I.M.</td>
-                                            <td>2:11.212</td>
-                                            <td>Leli Finoiomana</td>
-                                            <td>Brigham Young</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>400 I.M.</td>
-                                            <td>4:41.318</td>
-                                            <td>Diane Johnson</td>
-                                            <td>Arizona</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>One Meter 6 Dives</td>
-                                            <td>260.40</td>
-                                            <td>Bev Beauchamp</td>
-                                            <td>Colorado</td>
-                                            <td>1979, Wyoming Dual</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Three Meter 6 Dives</td>
-                                            <td>281.50</td>
-                                            <td>Bev Beauchamp</td>
-                                            <td>Colorado</td>
-                                            <td>1979, New Mexico Dual</td>
-                                        </tr>
-                                        
-                                </tbody></table>
-                                <br>
-                                <h4 style="text-align: center">Record Archive</h4><br>
-                                <h4 style="text-align: center"><a href="./records_pool">Current</a></h4>
-                                <h4 style="text-align: center"><a href="./records_pool1969">March, 1969</a></h4>
-                    </div>
-                    <div id="MensTeamRecords" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
-                        <table>
-                            <thead>
-                                <tr><th><strong>Event</strong></th>
-                                <th><strong>Time</strong></th>
-                                <th><strong>Swimmer</strong></th>
-                                <th><strong>School</strong></th>
-                                <th><strong>Date/Meet</strong></th>
-                            </tr></thead>
-                                <tr>
-                                    <td>50 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>500 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>1650 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>50 Backstroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Backstroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Backstroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>50 Breaststroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Breaststroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Breaststroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>50 Butterfly</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Butterfly</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Butterfly</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 I.M.</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 I.M.</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>400 I.M.</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>One Meter 6 Dives</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>Three Meter 6 Dives</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                        </tbody></table>
-                    </div>
+        <div id="info-content"><br><br>
+            <h1>CU Recreation Pool Records</h1><br>
+            <h4 style="text-align: center">Not Fully Updated. Still WIP</h4>
+            
+            <div class="buttoncontainer">
+                <input class="button2" type="button" onclick="showTable('table1')" value="Women's"><br>
+                <input class="button2" type="button" onclick="showTable('table2')" value="Men's">
+            </div>
+
+            <div id="table1" class="show table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
+                <table>
+                    <thead><!--IMG_3514.HEIC-->
+                    <tr>
+                    <th><strong>Event</strong></th>
+                    <th><strong>Time</strong></th>
+                    <th><strong>Swimmer</strong></th>
+                    <th><strong>School</strong></th>
+                    <th><strong>Date/Meet</strong></th>
+                    </tr>
+                    </thead>
+                <!-- **********************************************************
+                EDIT MENS RECORDS HERE
+                SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
+                <tr>
+                    <td>Event Name</td>
+                    <td>Time</td>
+                    <td>Swimmer</td>
+                    <td>Date</td>
+                </tr>
+                *********************************************************** -->
+                <tbody>
+                    <tr>
+                        <td>50 Freestyle</td>
+                        <td>24.748</td>
+                        <td>Gail Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>100 Freestyle</td>
+                        <td>52.292</td>
+                        <td>Gail Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>200 Freestyle</td>
+                        <td>1:53.527</td>
+                        <td>Gail Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>500 Freestyle</td>
+                        <td>5:05.771</td>
+                        <td>Gail Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>1650 Freestyle</td>
+                        <td>17:53.968</td>
+                        <td>Sandy Thompson</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>50 Backstroke</td>
+                        <td>28.566</td>
+                        <td>Lyn Griggs</td>
+                        <td>Colorado State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>100 Backstroke</td>
+                        <td>1:00.627</td>
+                        <td>Lelei Finoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>1979, Buff Invitational</td>
+                    </tr>
+                    <tr>
+                        <td>200 Backstroke</td>
+                        <td>2:12.414</td>
+                        <td>Lyn Griggs</td>
+                        <td>Colorado State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>50 Breaststroke</td>
+                        <td>30.277</td>
+                        <td>Pam Rogers</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>100 Breaststroke</td>
+                        <td>1:06.112</td>
+                        <td>Pam Rogers</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>200 Breaststroke</td>
+                        <td>2:25.624</td>
+                        <td>Yolanda Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>50 Butterfly</td>
+                        <td>26.476</td>
+                        <td>Peggy Tosdal</td>
+                        <td>Arizona State</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>100 Butterfly</td>
+                        <td>57.727</td>
+                        <td>Leli Finoiomana</td>
+                        <td>Brigham Young</td>
+                        <td>1979, Buff Invitational</td>
+                    </tr>
+                    <tr>
+                        <td>200 Butterfly</td>
+                        <td>2:09.095</td>
+                        <td>Leli Finoiomana</td>
+                        <td>Brigham Young</td>
+                        <td>1979, Buff Invitational</td>
+                    </tr>
+                    <tr>
+                        <td>100 I.M.</td>
+                        <td>59.915</td>
+                        <td>Diane Johnson</td>
+                        <td>Arizona</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>200 I.M.</td>
+                        <td>2:11.212</td>
+                        <td>Leli Finoiomana</td>
+                        <td>Brigham Young</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>400 I.M.</td>
+                        <td>4:41.318</td>
+                        <td>Diane Johnson</td>
+                        <td>Arizona</td>
+                        <td>1978, AIAW Regionals</td>
+                    </tr>
+                    <tr>
+                        <td>One Meter 6 Dives</td>
+                        <td>260.40</td>
+                        <td>Bev Beauchamp</td>
+                        <td>Colorado</td>
+                        <td>1979, Wyoming Dual</td>
+                    </tr>
+                    <tr>
+                        <td>Three Meter 6 Dives</td>
+                        <td>281.50</td>
+                        <td>Bev Beauchamp</td>
+                        <td>Colorado</td>
+                        <td>1979, New Mexico Dual</td>
+                    </tr>
+                    
+                </tbody>
+                </table>
                 </div>
             </div>
+            <div id="table2" class="table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
+                    <table>
+                        <thead>
+                            <tr><th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>School</strong></th>
+                            <th><strong>Date/Meet</strong></th>
+                        </tr></thead>
+                            <tr>
+                                <td>50 Freestyle</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>100 Freestyle</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>200 Freestyle</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>500 Freestyle</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>1650 Freestyle</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>50 Backstroke</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>100 Backstroke</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>200 Backstroke</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>50 Breaststroke</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>100 Breaststroke</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>200 Breaststroke</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>50 Butterfly</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>100 Butterfly</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>200 Butterfly</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>100 I.M.</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>200 I.M.</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>400 I.M.</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>One Meter 6 Dives</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>Three Meter 6 Dives</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                                <td>TBD</td>
+                            </tr>
+                    </tbody></table>
+                </div>
+            </div>
+            <h4 style="text-align: center">Record Archive</h4><br>
+            <h4 style="text-align: center"><a href="./records_pool">Current</a></h4>
+            <h4 style="text-align: center"><a href="./records_pool1969">March, 1969</a></h4>
         </div>
         
+    
+    
     <footer class="shadow2">
         <div class="container">
             <small>© 2025 University of Colorado Club Swimming &amp; Diving <br></small>
