@@ -932,10 +932,6 @@ small {
     #info-content h1 {
         font-size: 1.8em;
     }
-    
-    #info-content {
-        height: 3000px;
-    }
 
     #info-content h2 {
         font-size: 1.4em;
@@ -1189,9 +1185,6 @@ small {
     }
     .lefthead{
       height:260px;
-    }
-    #info-content{
-      height:6200px;
     }
     .headshot {
         height: 130px; 
