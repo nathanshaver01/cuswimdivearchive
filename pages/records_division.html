@@ -27,7 +27,43 @@
         $( "#divetabs2" ).tabs();
     });
     </script>
-
+    <script>
+        function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+        }
+          
+        function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+        }
+    </script>
+    
+    
+    <style>
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .race {
+      width: 20%;
+    }
+    .timedate {
+      width: 22%;
+    }
+    .date{
+        width:15%
+    }
+    .name {
+      width: 43%;
+    }
+    </style>
 </head> 
     
         <body>
@@ -59,321 +95,325 @@
             </header>
         
         <!-- main content -->
-        <div id="info-content" style="height: 1500px">
-            <h2 id="swim-header" style="font-size: 2.7em"><span>Division Swim Team Records</span></h2>
-            <h3>**RECORDS ARE NOT ACCURATE, WILL BE UPDATED UPON DIGITIZATION OF ALL DIVISION MEET RESULTS</h3>
-            <div class="content-wrap">
-                <div id="tabs2" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-                    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
-                        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="WomensTeamRecords" aria-labelledby="ui-id-1" aria-selected="true"><a href="http://cuswimdive.com/records.html#WomensTeamRecords" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Women's Swimming Top Times</a></li>
-                        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="MensTeamRecords" aria-labelledby="ui-id-2" aria-selected="false"><a href="http://cuswimdive.com/records.html#MensTeamRecords" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Men's Swimming Top Times</a></li>
-                    </ul><div id="WomensTeamRecords" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
-                        <table>
-                                    <thead>
-                                        <tr><th><strong>Event</strong></th>
-                                        <th><strong>Time</strong></th>
-                                        <th><strong>Swimmer</strong></th>
-                                        <th><strong>Date/Meet</strong></th>
-                                    </tr></thead>
-                                    <!-- **********************************************************
-                                    EDIT MENS RECORDS HERE
-                                    SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
-                                    <tr>
-                                        <td>Event Name</td>
-                                        <td>Time</td>
-                                        <td>Swimmer</td>
-                                        <td>Date</td>
-                                    </tr>
-                                    *********************************************************** -->
-                                    <tbody>
-                                        <tr>
-                                            <td>50 Freestyle</td>
-                                            <td>24.500</td>
-                                            <td>Sharon Little</td>
-                                            <td>1979, Brigham Young Invitational</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Freestyle</td>
-                                            <td>52.800</td>
-                                            <td>Sharon Little</td>
-                                            <td>1979, AIAW Nationals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Freestyle</td>
-                                            <td>1:56.900</td>
-                                            <td>Kathy Howe</td>
-                                            <td>1978, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>500 Freestyle</td>
-                                            <td>5:11.259</td>
-                                            <td>Kathey Howe</td>
-                                            <td>1978, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1650 Freestyle</td>
-                                            <td>17:40.000</td>
-                                            <td>Kathy Howe</td>
-                                            <td>1977, Husker Invitational</td>
-                                        </tr>
-                                        <tr>
-                                            <td>50 Backstroke</td>
-                                            <td>28.300</td>
-                                            <td>Sharon Little</td>
-                                            <td>1979, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Backstroke</td>
-                                            <td>1:00.300</td>
-                                            <td>Sharon Little</td>
-                                            <td>1979, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Backstroke</td>
-                                            <td>2:13.92</td>
-                                            <td>Wendy Kasting</td>
-                                            <td>1877, AIAW Nationals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>50 Breaststroke</td>
-                                            <td>31.050</td>
-                                            <td>Kris Reeves</td>
-                                            <td>1980, Air Force Dual</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Breaststroke</td>
-                                            <td>1:10.400</td>
-                                            <td>Kris Reeves</td>
-                                            <td>1978, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Breaststroke</td>
-                                            <td>2:33.700</td>
-                                            <td>Kris Reeves</td>
-                                            <td>1978, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>50 Butterfly</td>
-                                            <td>27.676</td>
-                                            <td>Kris Reeves</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 Butterfly</td>
-                                            <td>1:00.249</td>
-                                            <td>Kathy Howe</td>
-                                            <td>1978, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Butterfly</td>
-                                            <td>2:11.200</td>
-                                            <td>Kathy Howe</td>
-                                            <td>1978, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100 I.M.</td>
-                                            <td>1:02.600</td>
-                                            <td>Kris Reeves</td>
-                                            <td>1978, Big 8 Prelims</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 I.M.</td>
-                                            <td>2:18.000</td>
-                                            <td>Marcia King</td>
-                                            <td>1977, Husker Invitational</td>
-                                        </tr>
-                                        <tr>
-                                            <td>400 I.M.</td>
-                                            <td>4:41.66</td>
-                                            <td>Jackie Armstrong</td>
-                                            <td>1980, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Medley Relay</td>
-                                            <td>1:53.060</td>
-                                            <td>Frangos <br> Reeves <br> King <br> Little</td>
-                                            <td>1978, Brigham Young Dual</td>
-                                        </tr>
-                                        <tr>
-                                            <td>400 Medley Relay</td>
-                                            <td>4:12.268</td>
-                                            <td>Frangos <br> Reeves <br> King <br> Little</td>
-                                            <td>1978, Texas Tech Dual</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200 Freestyle Relay</td>
-                                            <td>1:43.000</td>
-                                            <td>King <br> Little <br> Reeves <br> Howe</td>
-                                            <td>1978, Brigham Young Dual</td>
-                                        </tr>
-                                        <tr>
-                                            <td>400 Freestyle Relay</td>
-                                            <td>3:47.880</td>
-                                            <td>Reeves <br> Little <br> King <br> Howe</td>
-                                            <td>1977, AIAW Nationals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>800 Freestyle Relay</td>
-                                            <td>8:09.235</td>
-                                            <td>Howe <br> Little <br> King <br> Frangos</td>
-                                            <td>1978, AIAW Regionals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>One Meter 11 Dives</td>
-                                            <td>449.15</td>
-                                            <td>Bev Beauchamp</td>
-                                            <td>1979, Big 8 Championship</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Three Meter 11 Dives</td>
-                                            <td>476.15</td>
-                                            <td>Bev Beauchamp</td>
-                                            <td>1979, Big 8 Championship</td>
-                                        </tr>
-                                    
-                                    <!-- **********************************************************
-                                    DONT EDIT MENS RECORDS PAST HERE
-                                    *********************************************************** -->
-                                </tbody></table>
-                    </div>
-                    <div id="MensTeamRecords" style="height: 4000px" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
-                        <table>
-                                    <thead>
-                                        <tr><th><strong>Event</strong></th>
-                                        <th><strong>Time</strong></th>
-                                        <th><strong>Swimmer</strong></th>
-                                        <th><strong>Date/Meet</strong></th>
-                                    </tr></thead>
-                                    <!-- **********************************************************
-                                    EDIT WOMENS RECORDS HERE
-                                    SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
-                                    <tr>
-                                        <td>Event Name</td>
-                                        <td>Time</td>
-                                        <td>Swimmer</td>
-                                        <td>Date</td>
-                                    </tr>
-                                    *********************************************************** -->
-                                    <tbody>
-                                    <tr>
-                                        <td>50 Freestyle</td>
-                                        <td>21.039</td>
-                                        <td>Kurt Brekke</td>
-                                        <td>1977, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Freestyle</td>
-                                        <td>46.544</td>
-                                        <td>Kurt Brekke</td>
-                                        <td>1977, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Freestyle</td>
-                                        <td>1:42.000</td>
-                                        <td>George Tidmarsh</td>
-                                        <td>1979 Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>500 Freestyle</td>
-                                        <td>4:32.160</td>
-                                        <td>George Tidmarsh</td>
-                                        <td>1979, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1000 Freestyle</td>
-                                        <td>9:37.600</td>
-                                        <td>George Tidmarsh</td>
-                                        <td>1979, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1650 Freestyle</td>
-                                        <td>15:41.700</td>
-                                        <td>George Tidmarsh</td>
-                                        <td>1979, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Breaststroke</td>
-                                        <td>58.940</td>
-                                        <td>Frank Orten</td>
-                                        <td>1979, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Breaststroke</td>
-                                        <td>2:07.990</td>
-                                        <td>Frank Orten</td>
-                                        <td>1979, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Backstroke</td>
-                                        <td>54.400</td>
-                                        <td>Paul Almeida</td>
-                                        <td>1977, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Backstroke</td>
-                                        <td>1:58.650</td>
-                                        <td>Paul Almeida</td>
-                                        <td>1978, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Butterfly</td>
-                                        <td>51.510</td>
-                                        <td>Paul Almeida</td>
-                                        <td>1978, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Butterfly</td>
-                                        <td>1:54.678</td>
-                                        <td>Bruce Wencel</td>
-                                        <td>1977, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 I.M.</td>
-                                        <td>1:53.780</td>
-                                        <td>Frank Orten</td>
-                                        <td>1978, CU Qualifying Meet</td>
-                                    </tr>
-                                    <tr>
-                                        <td>400 I.M.</td>
-                                        <td>4:07.100</td>
-                                        <td>Phillip Wrist</td>
-                                        <td>1977, NCAA Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>400 Medley Relay</td>
-                                        <td>3:31.530</td>
-                                        <td>Keith <br> Almeida <br> Brekke <br> Orten</td>
-                                        <td>1978, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>400 Freestyle Relay</td>
-                                        <td>3:07.230</td>
-                                        <td>Orten <br> Bush <br> Bowman <br> Brekke </td>
-                                        <td>1978, Big 8 Championship</td>
-                                    </tr>
-                                    <tr>
-                                        <td>800 Freestyle Relay</td>
-                                        <td>6:55.600</td>
-                                        <td>Brekke <br> Bowman <br> Orten <br> Wrist</td>
-                                        <td>1978, Big 8 Championship</td>
-                                    </tr>
-                                    <!-- **********************************************************
-                                    DONT EDIT WOMENS RECORDS PAST HERE
-                                    *********************************************************** -->
-                                    
-                                </tbody></table><br>
-                                <h4 style="text-align: center">Record Archive</h4><br>
-                                <h4 style="text-align: center"><a href="./records_division">1980</a></h4>
+        <div id="info-content"><br><br>
+            <h1>Division Team Records</h1><br>
+            <h4 style="text-align: center">Record Archive</h4><br>
+             <h4 style="text-align: center"><a href="./records_division">March, 1980</a></h4>
                                 <h4 style="text-align: center"><a href="./records_division1969">March, 1969</a></h4>
                                 <h4 style="text-align: center"><a href="./records_division1967">March, 1967</a></h4>
                                 <h4 style="text-align: center"><a href="./records_division1963">March, 1963</a></h4>
-                                <h4 style="text-align: center"><a href="./records_division1951">March, 1951</a></h4>
-                    </div>
+                                <h4 style="text-align: center"><a href="./records_division1951">March, 1951</a></h4><br>
+            <h4 style="text-align: center">Updated March 1980</h4>
+            
+            <div class="buttoncontainer">
+                <input class="button2" type="button" onclick="showTable('table1')" value="Women's"><br>
+                <input class="button2" type="button" onclick="showTable('table2')" value="Men's">
+            </div>
+
+            <div id="table1" class="show table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
+                <table>
+                    <thead>
+                        <tr><th><strong>Event</strong></th>
+                        <th><strong>Time</strong></th>
+                        <th><strong>Swimmer</strong></th>
+                        <th><strong>Date/Meet</strong></th>
+                    </tr></thead>
+                    <!-- **********************************************************
+                    EDIT MENS RECORDS HERE
+                    SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
+                    <tr>
+                        <td>Event Name</td>
+                        <td>Time</td>
+                        <td>Swimmer</td>
+                        <td>Date</td>
+                    </tr>
+                    *********************************************************** -->
+                    <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>24.500</td>
+                            <td>Sharon Little</td>
+                            <td>1979, Brigham Young Invitational</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>52.800</td>
+                            <td>Sharon Little</td>
+                            <td>1979, AIAW Nationals</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:56.900</td>
+                            <td>Kathy Howe</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:11.259</td>
+                            <td>Kathey Howe</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>1650 Freestyle</td>
+                            <td>17:40.000</td>
+                            <td>Kathy Howe</td>
+                            <td>1977, Husker Invitational</td>
+                        </tr>
+                        <tr>
+                            <td>50 Backstroke</td>
+                            <td>28.300</td>
+                            <td>Sharon Little</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>1:00.300</td>
+                            <td>Sharon Little</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:13.92</td>
+                            <td>Wendy Kasting</td>
+                            <td>1877, AIAW Nationals</td>
+                        </tr>
+                        <tr>
+                            <td>50 Breaststroke</td>
+                            <td>31.050</td>
+                            <td>Kris Reeves</td>
+                            <td>1980, Air Force Dual</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>1:10.400</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:33.700</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>50 Butterfly</td>
+                            <td>27.676</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, AIAW Regionals</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>1:00.249</td>
+                            <td>Kathy Howe</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:11.200</td>
+                            <td>Kathy Howe</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 I.M.</td>
+                            <td>1:02.600</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, Big 8 Prelims</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:18.000</td>
+                            <td>Marcia King</td>
+                            <td>1977, Husker Invitational</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>4:41.66</td>
+                            <td>Jackie Armstrong</td>
+                            <td>1980, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Medley Relay</td>
+                            <td>1:53.060</td>
+                            <td>Frangos <br> Reeves <br> King <br> Little</td>
+                            <td>1978, Brigham Young Dual</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>4:12.268</td>
+                            <td>Frangos <br> Reeves <br> King <br> Little</td>
+                            <td>1978, Texas Tech Dual</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle Relay</td>
+                            <td>1:43.000</td>
+                            <td>King <br> Little <br> Reeves <br> Howe</td>
+                            <td>1978, Brigham Young Dual</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:47.880</td>
+                            <td>Reeves <br> Little <br> King <br> Howe</td>
+                            <td>1977, AIAW Nationals</td>
+                        </tr>
+                        <tr>
+                            <td>800 Freestyle Relay</td>
+                            <td>8:09.235</td>
+                            <td>Howe <br> Little <br> King <br> Frangos</td>
+                            <td>1978, AIAW Regionals</td>
+                        </tr>
+                        <tr>
+                            <td>One Meter 11 Dives</td>
+                            <td>449.15</td>
+                            <td>Bev Beauchamp</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>Three Meter 11 Dives</td>
+                            <td>476.15</td>
+                            <td>Bev Beauchamp</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
                     
+                    <!-- **********************************************************
+                    DONT EDIT MENS RECORDS PAST HERE
+                    *********************************************************** -->
+                </tbody></table>
+                </div>
+            </div>
+            <div id="table2" class="table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
+                    <table>
+                        <thead>
+                            <tr><th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date/Meet</strong></th>
+                        </tr></thead>
+                        <!-- **********************************************************
+                        EDIT WOMENS RECORDS HERE
+                        SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
+                        <tr>
+                            <td>Event Name</td>
+                            <td>Time</td>
+                            <td>Swimmer</td>
+                            <td>Date</td>
+                        </tr>
+                        *********************************************************** -->
+                        <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>21.039</td>
+                            <td>Kurt Brekke</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>46.544</td>
+                            <td>Kurt Brekke</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:42.000</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979 Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>4:32.160</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>9:37.600</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>1650 Freestyle</td>
+                            <td>15:41.700</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>58.940</td>
+                            <td>Frank Orten</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:07.990</td>
+                            <td>Frank Orten</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>54.400</td>
+                            <td>Paul Almeida</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>1:58.650</td>
+                            <td>Paul Almeida</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>51.510</td>
+                            <td>Paul Almeida</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>1:54.678</td>
+                            <td>Bruce Wencel</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>1:53.780</td>
+                            <td>Frank Orten</td>
+                            <td>1978, CU Qualifying Meet</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>4:07.100</td>
+                            <td>Phillip Wrist</td>
+                            <td>1977, NCAA Championship</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:31.530</td>
+                            <td>Keith <br> Almeida <br> Brekke <br> Orten</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:07.230</td>
+                            <td>Orten <br> Bush <br> Bowman <br> Brekke </td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>800 Freestyle Relay</td>
+                            <td>6:55.600</td>
+                            <td>Brekke <br> Bowman <br> Orten <br> Wrist</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <!-- **********************************************************
+                        DONT EDIT WOMENS RECORDS PAST HERE
+                        *********************************************************** -->
+                        
+                    </tbody></table>
                 </div>
             </div>
         </div>
         
+    
+    
     <footer class="shadow2">
         <div class="container">
             <small>© 2025 University of Colorado Club Swimming &amp; Diving <br></small>

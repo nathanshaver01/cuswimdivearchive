@@ -2,7 +2,7 @@
 <!-- saved from url=(0034)http://cuswimdive.com/records.html -->
 <html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-    <title>Pool Records of CU Swim & Dive</title>
+    <title>Division Records of CU Swim & Dive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Nathan Shaver, Jennifer Cozzette, Simon Alexander, Connor McAllister, Melissa Guba">
     <link rel="stylesheet" href="../assets/css/normalize.css">
@@ -27,7 +27,43 @@
         $( "#divetabs2" ).tabs();
     });
     </script>
-
+    <script>
+        function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+        }
+          
+        function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+        }
+    </script>
+    
+    
+    <style>
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .race {
+      width: 20%;
+    }
+    .timedate {
+      width: 22%;
+    }
+    .date{
+        width:15%
+    }
+    .name {
+      width: 43%;
+    }
+    </style>
 </head> 
     
         <body>
@@ -59,254 +95,152 @@
             </header>
         
         <!-- main content -->
-        <div id="info-content">
+        <div id="info-content"><br><br>
             <h1>Clare Small Pool Records</h1><br>
             <h4 style="text-align: center">Record Archive</h4><br>
             <h4 style="text-align: center"><a href="./records_pool">Current</a></h4>
             <h4 style="text-align: center"><a href="./records_pool1969">March, 1969</a></h4><br><br>
-            <h4 style="text-align: center">Not Fully Updated. Still WIP</h4>
-            <div class="content-wrap">
-                <div id="tabs2" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-                    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
-                        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="WomensTeamRecords" aria-labelledby="ui-id-1" aria-selected="true"><a href="http://cuswimdive.com/records.html#WomensTeamRecords" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Women's Swimming Top Times</a></li>
-                        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="MensTeamRecords" aria-labelledby="ui-id-2" aria-selected="false"><a href="http://cuswimdive.com/records.html#MensTeamRecords" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Men's Swimming Top Times</a></li>
-                    </ul><div id="WomensTeamRecords" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
-                        <table>
-                            <thead>
-                                <tr><th><strong>Event</strong></th>
-                                <th><strong>Time</strong></th>
-                                <th><strong>Swimmer</strong></th>
-                                <th><strong>School</strong></th>
-                                <th><strong>Date</strong></th>
-                            </tr></thead>
-                            <tbody>
-                                <tr>
-                                    <td>50 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>500 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>1000 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>1650 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Backstroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Backstroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Breaststroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Breaststroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Butterfly</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Butterfly</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 I.M.</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>400 I.M.</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                        </tbody></table>
-                    </div>
-                    <div id="MensTeamRecords"aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
-                        <table>
-                            <thead>
-                                <tr><th><strong>Event</strong></th>
-                                <th><strong>Time</strong></th>
-                                <th><strong>Swimmer</strong></th>
-                                <th><strong>School</strong></th>
-                                <th><strong>Date</strong></th>
-                            </tr></thead>
-                                <tr>
-                                    <td>50 Freestyle</td>
-                                    <td>21.6</td>
-                                    <td>D. O'Connor</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Freestyle</td>
-                                    <td>48.4</td>
-                                    <td>D. O'Connor</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Freestyle</td>
-                                    <td>1:52.3</td>
-                                    <td>J. Cumming</td>
-                                    <td>C.U.</td>
-                                    <td>2/7/69</td>
-                                </tr>
-                                <tr>
-                                    <td>500 Freestyle</td>
-                                    <td>5:27.7</td>
-                                    <td>C. Ridenour</td>
-                                    <td>K.S.U.</td>
-                                    <td>1/13/68</td>
-                                </tr>
-                                <tr>
-                                    <td>1000 Freestyle</td>
-                                    <td>10:57.5</td>
-                                    <td>D. Kerr</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                                <tr>
-                                    <td>1650 Freestyle</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Backstroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Backstroke</td>
-                                    <td>2:06.1</td>
-                                    <td>A. Picadura</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Breaststroke</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Breaststroke</td>
-                                    <td>2:23.2</td>
-                                    <td>P. Watts</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/17/68</td>
-                                </tr>
-                                <tr>
-                                    <td>100 Butterfly</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>200 Butterfly</td>
-                                    <td>2:10.5</td>
-                                    <td>R. Cooley</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                                <tr>
-                                    <td>200 I.M.</td>
-                                    <td>2:07.4</td>
-                                    <td>R. Cooley</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                                <tr>
-                                    <td>400 I.M.</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
-                                </tr>
-                                <tr>
-                                    <td>400 Medley Relay</td>
-                                    <td>3:47.8</td>
-                                    <td>A. Picadura<br>P. Watts<br>Fuller<br>M. Fuller</td>
-                                    <td>C.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                                <tr>
-                                    <td>400 Freestyle Relay</td>
-                                    <td>3:22.1</td>
-                                    <td>J. Cunningham<br>G. Phillips<br>D. Johnson<br>K. Lemaster</td>
-                                    <td>O.S.U.</td>
-                                    <td>2/16/68</td>
-                                </tr>
-                        </tbody></table>
-                    </div>
+            <h4 style="text-align: center">Updated March, 1969</h4>
+            
+            <div class="buttoncontainer">
+                <input class="button2" type="button" onclick="showTable('table2')" value="Women's"><br>
+                <input class="button2" type="button" onclick="showTable('table1')" value="Men's">
+            </div>
+
+            <div id="table1" class="show table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
+                    <table>
+                        <thead>
+                            <tr><th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>School</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr></thead>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>21.6</td>
+                            <td>D. O'Connor</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>48.4</td>
+                            <td>D. O'Connor</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:52.3</td>
+                            <td>J. Cumming</td>
+                            <td>C.U.</td>
+                            <td>2/7/69</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:27.7</td>
+                            <td>C. Ridenour</td>
+                            <td>K.S.U.</td>
+                            <td>1/13/68</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>10:57.5</td>
+                            <td>D. Kerr</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>1650 Freestyle</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:06.1</td>
+                            <td>A. Picadura</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:23.2</td>
+                            <td>P. Watts</td>
+                            <td>C.S.U.</td>
+                            <td>2/17/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:10.5</td>
+                            <td>R. Cooley</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:07.4</td>
+                            <td>R. Cooley</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:47.8</td>
+                            <td>A. Picadura<br>P. Watts<br>Fuller<br>M. Fuller</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:22.1</td>
+                            <td>J. Cunningham<br>G. Phillips<br>D. Johnson<br>K. Lemaster</td>
+                            <td>O.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                </tbody></table>
+                </div>
+            </div>
+            <div id="table2" class="table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
+                    
                 </div>
             </div>
         </div>
         
+    
+    
     <footer class="shadow2">
         <div class="container">
             <small>© 2025 University of Colorado Club Swimming &amp; Diving <br></small>

@@ -27,7 +27,43 @@
         $( "#divetabs2" ).tabs();
     });
     </script>
-
+    <script>
+        function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+        }
+          
+        function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+        }
+    </script>
+    
+    
+    <style>
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .race {
+      width: 20%;
+    }
+    .timedate {
+      width: 22%;
+    }
+    .date{
+        width:15%
+    }
+    .name {
+      width: 43%;
+    }
+    </style>
 </head> 
     
         <body>
@@ -59,153 +95,158 @@
             </header>
         
         <!-- main content -->
-        <div id="info-content" style="height: 1500px">
-            <h2 id="swim-header" style="font-size: 2.7em"><span>Division Swim Team Records</span></h2><br>
-            <h4 style="text-align: center">Updated Mar. 1967</h4>
-            <div class="content-wrap">
-                <div id="tabs2" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-                    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
-                        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="MensTeamRecords" aria-labelledby="ui-id-2" aria-selected="false"><a href="http://cuswimdive.com/records.html#MensTeamRecords" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Men's Swimming Top Times</a></li>
-                    </ul><div id="WomensTeamRecords" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
-                        
-                    </div>
-                    <div id="MensTeamRecords" style="height: 1000px" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
-                        <table>
-                                    <thead>
-                                        <tr><th><strong>Event</strong></th>
-                                        <th><strong>Time</strong></th>
-                                        <th><strong>Swimmer</strong></th>
-                                        <th><strong>Date</strong></th>
-                                    </tr></thead>
-                                    <!-- **********************************************************
-                                    EDIT WOMENS RECORDS HERE
-                                    SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
-                                    <tr>
-                                        <td>Event Name</td>
-                                        <td>Time</td>
-                                        <td>Swimmer</td>
-                                        <td>Date</td>
-                                    </tr>
-                                    *********************************************************** -->
-                                    <tbody>
-                                    <tr>
-                                        <td>50 Freestyle</td>
-                                        <td>22.8</td>
-                                        <td>A. Wilson</td>
-                                        <td>2/23/63</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Freestyle</td>
-                                        <td>50.1</td>
-                                        <td>R. Cornell</td>
-                                        <td>3/4/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Freestyle</td>
-                                        <td>1:56.7</td>
-                                        <td>C. Kaufman</td>
-                                        <td>1/6/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>500 Freestyle</td>
-                                        <td>5:18.7</td>
-                                        <td>M. McElroy</td>
-                                        <td>3/7/63</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1000 Freestyle</td>
-                                        <td>12:04.6</td>
-                                        <td>C. Kaufman</td>
-                                        <td>2/10/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1650 Freestyle</td>
-                                        <td>18:53.6</td>
-                                        <td>C. Kaufman</td>
-                                        <td>3/4/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Backstroke</td>
-                                        <td>57.6</td>
-                                        <td>K. Krueger</td>
-                                        <td>3/4/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Backstroke</td>
-                                        <td>2:17.4</td>
-                                        <td>B. Elliott</td>
-                                        <td>2/19/66</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Butterfly</td>
-                                        <td>57.6</td>
-                                        <td>C. Kaufman</td>
-                                        <td>3/4/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Butterfly</td>
-                                        <td>2:17.4</td>
-                                        <td>J. Waggoner</td>
-                                        <td>3/5/65</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100 Breaststroke</td>
-                                        <td>1:03.8</td>
-                                        <td>D. Zemer</td>
-                                        <td>3/3/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 Breaststroke</td>
-                                        <td>2:22.7</td>
-                                        <td>T. Danko</td>
-                                        <td>2/18/66</td>
-                                    </tr>
-                                    <tr>
-                                        <td>200 I.M.</td>
-                                        <td>2:14.3</td>
-                                        <td>J. Waggoner</td>
-                                        <td>2/5/65</td>
-                                    </tr>
-                                    <tr>
-                                        <td>400 I.M.</td>
-                                        <td>5:03.0</td>
-                                        <td>J. Waggoner</td>
-                                        <td>3/5/64</td>
-                                    </tr>
-                                    <tr>
-                                        <td>400 Medley Relay</td>
-                                        <td>3:39.1</td>
-                                        <td>C. Kaufman <br>D. Zemer <br> K. Krueger <br> R. Cornell</td>
-                                        <td>3/2/67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>400 Freestyle Relay</td>
-                                        <td>3:29.1</td>
-                                        <td>K. Krueger <br>C. Kaufman <br> W. Rogers <br> R. Cornell</td>
-                                        <td>1/14/67</td>
-                                    </tr>
-                                    <!-- **********************************************************
-                                    DONT EDIT WOMENS RECORDS PAST HERE
-                                    *********************************************************** -->
-                                    
-                                </tbody></table><br>
-                                <h4 style="text-align: center">Record Archive</h4><br>
-                                <h4 style="text-align: center"><a href="./records_division">1980</a></h4>
+        <div id="info-content"><br><br>
+            <h1>Division Team Records</h1><br>
+            <h4 style="text-align: center">Record Archive</h4><br>
+             <h4 style="text-align: center"><a href="./records_division">March, 1980</a></h4>
                                 <h4 style="text-align: center"><a href="./records_division1969">March, 1969</a></h4>
                                 <h4 style="text-align: center"><a href="./records_division1967">March, 1967</a></h4>
                                 <h4 style="text-align: center"><a href="./records_division1963">March, 1963</a></h4>
-                                <h4 style="text-align: center"><a href="./records_division1951">March, 1951</a></h4>
-                    </div>
+                                <h4 style="text-align: center"><a href="./records_division1951">March, 1951</a></h4><br>
+            <h4 style="text-align: center">Updated March 1967</h4>
+            
+            <div class="buttoncontainer">
+                <input class="button2" type="button" onclick="showTable('table2')" value="Women's"><br>
+                <input class="button2" type="button" onclick="showTable('table1')" value="Men's">
+            </div>
+
+            <div id="table1" class="show table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
+                    <table>
+                        <thead>
+                            <tr><th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr></thead>
+                        <!-- **********************************************************
+                        EDIT WOMENS RECORDS HERE
+                        SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
+                        <tr>
+                            <td>Event Name</td>
+                            <td>Time</td>
+                            <td>Swimmer</td>
+                            <td>Date</td>
+                        </tr>
+                        *********************************************************** -->
+                        <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>22.8</td>
+                            <td>A. Wilson</td>
+                            <td>2/23/63</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>50.1</td>
+                            <td>R. Cornell</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:56.7</td>
+                            <td>C. Kaufman</td>
+                            <td>1/6/67</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:18.7</td>
+                            <td>M. McElroy</td>
+                            <td>3/7/63</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>12:04.6</td>
+                            <td>C. Kaufman</td>
+                            <td>2/10/67</td>
+                        </tr>
+                        <tr>
+                            <td>1650 Freestyle</td>
+                            <td>18:53.6</td>
+                            <td>C. Kaufman</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>57.6</td>
+                            <td>K. Krueger</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:17.4</td>
+                            <td>B. Elliott</td>
+                            <td>2/19/66</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>57.6</td>
+                            <td>C. Kaufman</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:17.4</td>
+                            <td>J. Waggoner</td>
+                            <td>3/5/65</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>1:03.8</td>
+                            <td>D. Zemer</td>
+                            <td>3/3/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:22.7</td>
+                            <td>T. Danko</td>
+                            <td>2/18/66</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:14.3</td>
+                            <td>J. Waggoner</td>
+                            <td>2/5/65</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>5:03.0</td>
+                            <td>J. Waggoner</td>
+                            <td>3/5/64</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:39.1</td>
+                            <td>C. Kaufman <br>D. Zemer <br> K. Krueger <br> R. Cornell</td>
+                            <td>3/2/67</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:29.1</td>
+                            <td>K. Krueger <br>C. Kaufman <br> W. Rogers <br> R. Cornell</td>
+                            <td>1/14/67</td>
+                        </tr>
+                        <!-- **********************************************************
+                        DONT EDIT WOMENS RECORDS PAST HERE
+                        *********************************************************** -->
+                        
+                    </tbody></table>
+                </div>
+            </div>
+            <div id="table2" class="table">
+                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
                     
                 </div>
             </div>
         </div>
         
+    
+    
     <footer class="shadow2">
         <div class="container">
             <small>© 2025 University of Colorado Club Swimming &amp; Diving <br></small>
             <a href="https://www.colorado.edu/sportclubs/co-ed-sports/swimming-and-diving">Collegiate Sport Clubs at the University of Colorado</a>
         </div>
     </footer>
-</div>
+    
 </body></html>
