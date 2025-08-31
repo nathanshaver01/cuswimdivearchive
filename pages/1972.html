@@ -27,6 +27,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
+        <script>
+            function showTable(tableIdToShow) {
+                hideAllTables();
+                
+                let tableElement = document.getElementById(tableIdToShow);
+              
+                tableElement.classList.add('show');
+            }
+              
+            function hideAllTables() {
+                let allTableElements = document.querySelectorAll('.table');
+              
+                for (tableElement of allTableElements) {
+                  tableElement.classList.remove('show')
+                }
+            }
+        </script>
 
     </head> 
 
@@ -67,8 +84,12 @@
       <a id = 'backnext' href="./1971" class="next">&laquo; 1971</a><br>
       <a id = 'backnext' href="../" class="next">&uArr; Archive Directory</a>
       <a id = 'backnext' href="./1973" class="next">1973 &raquo;</a>
-    </div><br><br>
-    
+    </div>
+    <div class="buttoncontainer">
+        <input class="button2" type="button" onclick="showTable('table1')" value="Men's Swimming"><br>
+        <input class="button2" type="button" onclick="showTable('table2')" value="Women's Swimming">
+    </div>
+    <div id="table1" class="show table">
     <h1>Team Roster</h1>
     <h3>Coaching Staff</h3><br>
     <div id="images">
@@ -214,30 +235,6 @@
      </table>
    </div><br><br><br>
     <!--Meets-->
-    <div class="row">
-      <div class="column left-dual" style="background-color:#eaebec;">
-        <h1>Colorado State Dual</h1><hr>
-        <p>November 17, 1971</p>
-        <p>Moby Pool, Fort Collins, CO</p>
-        <button class = "button button1">Results Unavailable</button>
-      </div>
-      <div class="column right-dual" style="background-color:#eaebec;">
-        <table>
-          <tr>
-            <th style="text-align: center">Team</th>
-            <th>Final Score (Women)</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
-            <td><b>TBD</b></td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>TBD</td>
-          </tr>
-        </table>
-      </div>
-    </div><br><br><br>
     <div class="row">
       <div class="column left" style="background-color:#eaebec;">
         <h1>Big 8 Swimming & Diving Relays</h1><hr>
@@ -471,6 +468,105 @@
     </div><br><br><br>
     <div class="row">
       <div class="column left" style="background-color:#eaebec;">
+        <h1>Big 8 Swimming & Diving Championships</h1><hr>
+        <p>March 2 - 4, 1972</p>
+        <p>University Natatorium, Columbia, MO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/72S_Big8.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
+            <td><b>501</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
+            <td>317</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
+            <td>286</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State Universityi" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
+            <td>256</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td>155</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td>89</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    </div>
+    <div id="table2" class="table">
+      <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/unknown.png" class="headshot" alt="Unknown Headshot"><br>
+          <div class="caption"><b>Barb Fish</b></div>
+          <div class="caption"><i>Head Coach</i></div>
+      </a>
+    </div><br><br><br>
+    <h3>Women's Team</h3>
+    <br>
+    <table class = "divisionroster">
+        <colgroup>
+          <col class="fullname" />
+          <col class="class" />
+          <col class="events" />
+        </colgroup>
+        <thead>
+          <tr><th style="text-align: center"><strong>Name</strong></th>
+          <th><strong>Year</strong></th>
+          <th><strong>Events</strong></th>
+        </tr></thead>
+        <tr>
+            <td style="text-align: center">TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+    </tbody></table><br>
+    <!--Meets-->
+    <h1>Schedule/Results</h1>
+    
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Colorado State Dual</h1><hr>
+        <p>November 17, 1971</p>
+        <p>Moby Pool, Fort Collins, CO</p>
+        <button class = "button button1">Results Unavailable</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score (Women)</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td><b>TBD</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td>TBD</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
         <h1>Intermountain Championships</h1><hr>
         <p>February 25 - 26, 1972</p>
         <p>Moby Pool, Fort Collins, CO</p>
@@ -517,51 +613,7 @@
         </table>
       </div>
     </div><br><br><br>
-    <div class="row">
-      <div class="column left" style="background-color:#eaebec;">
-        <h1>Big 8 Swimming & Diving Championships</h1><hr>
-        <p>March 2 - 4, 1972</p>
-        <p>University Natatorium, Columbia, MO</p>
-        <button class = "button button1"><a href="../assets/results/1970-1980/72S_Big8.pdf">PDF Results</a></button>
-      </div>
-      <div class="column right" style="background-color:#eaebec;">
-        <table>
-          <tr>
-            <th style="text-align: center">Team</th>
-            <th>Final Score</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
-            <td><b>501</b></td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
-            <td>317</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
-            <td>286</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State Universityi" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
-            <td>256</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
-            <td>250</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>155</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
-            <td>89</td>
-          </tr>
-        </table>
-      </div>
-    </div><br><br><br>
-    
+    </div>
 </div>
 
 </div>
