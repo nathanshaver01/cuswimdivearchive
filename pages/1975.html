@@ -27,6 +27,23 @@
             $( "#divetabs2" ).tabs();
         });
         </script>
+        <script>
+            function showTable(tableIdToShow) {
+                hideAllTables();
+                
+                let tableElement = document.getElementById(tableIdToShow);
+              
+                tableElement.classList.add('show');
+            }
+              
+            function hideAllTables() {
+                let allTableElements = document.querySelectorAll('.table');
+              
+                for (tableElement of allTableElements) {
+                  tableElement.classList.remove('show')
+                }
+            }
+        </script>
 
     </head> 
 
@@ -65,10 +82,14 @@
     <h1> 1974 - 1975 Division I Swimming & Diving Archive </h1>
     <div class="center1">
       <a id = 'backnext' href="../" class="next">&laquo;Archive Directory</a>
-    </div><br><br>
-    
+    </div>
+    <div class="buttoncontainer">
+        <input class="button2" type="button" onclick="showTable('table1')" value="Men's Swimming"><br>
+        <input class="button2" type="button" onclick="showTable('table2')" value="Women's Swimming">
+    </div>
     <h1>Team Roster</h1>
     <h3>Coaching Staff</h3><br>
+    <div id="table1" class="show table">
     <div id="images">
       <a>
           <img src="../assets/css/images/headshots/danktank.png" class="headshot" alt="Headshot of Terry Danko"><br>
@@ -270,12 +291,12 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #920000;"><img alt="University of Wisconsin" title="University of Wisonsin" class="sicon" src="../assets/icons/wisconsin.png"></td>
-            <td>141</td>
+            <td style="text-align: center; background: #D31145;"><img alt="University of Wisconsin" title="University of Wisonsin" class="sicon" src="../assets/icons/wisconsin.png"></td>
+            <td><b>141</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
@@ -313,30 +334,6 @@
       </div>
     </div><br><br><br>
     <br><div class="row">
-      <div class="column left-dual" style="background-color:#eaebec;">
-        <h1>Colorado vs Mexican National Team</h1><hr>
-        <p>January 18, 1975</p>
-        <p>TBD</p>
-        <button class = "button button1">PDF Coming Soon</button>
-      </div>
-      <div class="column right-dual" style="background-color:#eaebec;">
-        <table>
-          <tr>
-            <th style="text-align: center">Team</th>
-            <th>Final Score</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img class="sicon" src="../assets/icons/mexico.png"></td>
-            <td>TBD</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>TBD</td>
-          </tr>
-        </table>
-      </div>
-    </div><br><br><br>
-    <br><div class="row">
       <div class="column left" style="background-color:#eaebec;">
         <h1>Colorado vs Colorado State vs Denver vs Wyoming</h1><hr>
         <p>January 25, 1975</p>
@@ -346,12 +343,12 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>73</td>
+            <td><b>73</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
@@ -360,12 +357,12 @@
         </table><br>
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>97</td>
+            <td><b>97</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #DDDDDD;"><img alt="University of Denver" title="University of Denver" class="sicon" src="../assets/icons/denver_85.png"></td>
@@ -374,12 +371,12 @@
         </table><br>
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>87</td>
+            <td><b>87</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #F5B702;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_06.png"></td>
@@ -398,12 +395,12 @@
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #0162AE;"><img alt="Air Force Academy" title="Air Force Academy" class="sicon" src="../assets/icons/airforce_95.png"></td>
-            <td>70</td>
+            <td><b>70</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
@@ -422,12 +419,12 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #EE2C5E;"><img alt="University of Utah" title="University of Utah" class="sicon" src="../assets/icons/utah_87.png"></td>
-            <td>563</td>
+            <td><b>563</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
@@ -462,12 +459,12 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
-            <td>59</td>
+            <td><b>59</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
@@ -476,12 +473,12 @@
         </table><br>
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #FFC423;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
-            <td>80</td>
+            <td><b>80</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
@@ -500,26 +497,26 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #0051BA;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas.png"></td>
-            <td>31</td>
+            <td><b>81</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>81</td>
+            <td>31</td>
           </tr>
         </table><br>
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
-            <td>59</td>
+            <td><b>59</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
@@ -533,46 +530,34 @@
         <h1>Colorado vs Wyoming vs Western Colorado</h1><hr>
         <p>February 21, 1975</p>
         <p>Student Recreation Pool, Boulder, CO</p>
-        <button class = "button button1"><a href="../assets/results/1970-1980/75S_WYO_W.pdf">PDF Results</a></button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/75S_WYO_WCU_M.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Women</th>
-            <th>Men</th>
-            <th>Combined</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>77</td>
-            <td>82</td>
-            <td>159</td>
+            <td><b>82</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #F5B702;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_06.png"></td>
-            <td>24</td>
             <td>30</td>
-            <td>54</td>
           </tr>
         </table><br>
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Women</th>
-            <th>Men</th>
-            <th>Combined</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>-</td>
-            <td>80</td>
-            <td>80</td>
+            <td><b>80</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #D1D3D4;"><img alt="Western Colorado University" title="Western Colorado University" class="sicon" src="../assets/icons/western_90s.png"></td>
-            <td>-</td>
-            <td>25</td>
             <td>25</td>
           </tr>
         </table>
@@ -588,12 +573,12 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team (Men)</th>
+            <th style="text-align: center">Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
-            <td>383</td>
+            <td><b>383</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #FFC423;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
@@ -622,7 +607,150 @@
         </table>
       </div>
     </div><br><br><br>
-    
+    </div>
+    <div id="table2" class="table">
+      <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/tinamoir.png" class="headshot" alt="Headshot of Tina Moir"><br>
+          <div class="caption"><b>Tina Moir</b></div>
+          <div class="caption"><i>Head Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/unknown.png" class="headshot" alt="Unknown Headshot"><br>
+          <div class="caption"><b>Lew Samerio</b></div>
+          <div class="caption"><i>Dive Coach</i></div>
+      </a>
+    </div><br><br><br>
+    <h3>Women's Team</h3>
+    <br>
+    <table class = "divisionroster">
+        <colgroup>
+          <col class="fullname" />
+          <col class="class" />
+          <col class="events" />
+        </colgroup>
+        <thead>
+          <tr><th style="text-align: center"><strong>Name</strong></th>
+          <th><strong>Year</strong></th>
+          <th><strong>Events</strong></th>
+        </tr></thead>
+        <tr>
+            <td style="text-align: center">Pam Allen</td>
+            <td>FR</td>
+            <td>Diving</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Nancy Baker</td>
+            <td>SO</td>
+            <td>Freestyle, I.M.</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Hallie Bond</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Jane Cowen</td>
+            <td>TBD</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Kathy Fenn</td>
+            <td>FR</td>
+            <td>Diving</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Diane Francois</td>
+            <td>SR</td>
+            <td>Breaststroke, Butterfly</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Teresa Harkleroad</td>
+            <td>TBD</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Lisa Hawryluk</td>
+            <td>TBD</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Lisa Lindstrom</td>
+            <td>TBD</td>
+            <td>Breaststroke, Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Celene Moffitt</td>
+            <td>FR</td>
+            <td>Diving</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Gwen Shipe</td>
+            <td>JR</td>
+            <td>Freetstyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Debbie Whisler</td>
+            <td>FR</td>
+            <td>Diving</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Susi Wilkens</td>
+            <td>TBD</td>
+            <td>Freestyle, Butterfly</td>
+        </tr>
+    </tbody></table><br>
+    <!--Meets-->
+    <h1>Schedule/Results</h1><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Colorado State Dual</h1><hr>
+        <p>February 4, 1975</p>
+        <p>Moby Pool, Fort Collins, CO</p>
+        <button class = "button button1">Results Unavailable</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td><b>91</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td>21</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Colorado vs Wyoming</h1><hr>
+        <p>February 21, 1975</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/75S_WYO_WCU_W.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td><b>77</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #F5B702;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_06.png"></td>
+            <td>24</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+  </div>
 </div>
 
 </div>
