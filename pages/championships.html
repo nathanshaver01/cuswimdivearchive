@@ -33,7 +33,50 @@
                 }
             }
         </script>
-
+        <style>
+          .dropdown-content {
+            min-width: 115px;
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          .dropdown-link:hover .dropdown-content {
+            display: block;
+          }
+          .dropdown-link {
+            position: relative;
+            display: inline-block;
+            line-height: 30px; 
+          }
+          @media only screen and (min-width: 481px) and (max-width: 620px) {
+            .dropdown-link {
+              line-height: 25px; 
+            }
+            .dropdown-content a {
+              padding: 6px 8px;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .dropdown-link {
+              line-height: 25px; 
+            }
+            .dropdown-content a {
+              padding: 4px 6px;
+            }
+            .dropdown-content {
+              min-width: 80px;
+            }
+          }
+        </style>
     </head> 
 
     <body>
@@ -50,19 +93,20 @@
                 <div class="container">
                   <ul>
                       <li class="main-link"><a href="../">YEARLY ARCHIVE</a></li>
-                      <li class="main-link"><a href="#">TEAM RECORDS</a>
-                          <ul class="dropdown">
-                            <li><a href="./records">Club Records</a></li>
-                            <li><a href="./records_division">Division Records</a></li>
-                            <li><a href="./records_pool">Pool Records</a></li>
-                          </ul>
+                      <li class="dropdown-link"><a href="#">TEAM RECORDS</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="#">Club Records</a>
+                            <a href="#">Division Records</a>
+                            <a href="#">Pool Records</a>
+                          </div>
+                      </li>
                       </li>
                       <li class="main-link"><a href="./novel">NOVEL</a></li>
-                      <li class="main-link"><a href="#">ADDITIONAL</a>
-                          <ul class="dropdown">
-                            <li><a href="./coaches.html">Coaches</a></li>
-                            <li><a href="./championships.html">Championships</a></li>
-                          </ul>
+                      <li class="dropdown-link"><a href="#">ADDITIONAL</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="#">Coaches</a>
+                            <a href="#">Championships</a>
+                          </div>
                       </li>
                   </ul>
                 </div>
