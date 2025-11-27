@@ -603,6 +603,9 @@ nav li li{
     background: rgba(221,222,222, 1.0);
 }
 
+.divisionLarge{
+    table-layout: fixed;
+}
 #home-info ul {
     padding: 0;
     margin: 0;

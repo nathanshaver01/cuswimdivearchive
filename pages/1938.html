@@ -80,42 +80,113 @@
     </div><br><br><br>
     <h3>Men's Team</h3>
     <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
+    <table class = "divisionroster">
+        <colgroup>
+          <col class="fullname" />
+          <col class="class" />
+          <col class="events" />
+        </colgroup>
+        <thead>
+          <tr><th style="text-align: center"><strong>Name</strong></th>
+          <th><strong>Year</strong></th>
+          <th><strong>Events</strong></th>
+        </tr></thead>
         <tr>
             <td style="text-align: center">Thomas Atkinson</td>
-            <td>Finken</td>
-            <td>James Glass</td>
-            <td>John Hayes</td>
+            <td>JR</td>
+            <td>Backstroke</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Walter Finken</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">James Glass</td>
+            <td>JR</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">John Hayes</td>
+            <td>SR</td>
+            <td>Backstroke</td>
         </tr>
         <tr>
             <td style="text-align: center">George Holdredge</td>
-            <td>Horace Holmes</td>
-            <td>Jack Lee</td>
-            <td>Aubrey Leonard</td>
+            <td>SR</td>
+            <td>Diving</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Horace Holmes</td>
+            <td>JR</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Jack Lee</td>
+            <td>--</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Aubrey Leonard</td>
+            <td>--</td>
+            <td>Backstroke</td>
         </tr>
         <tr>
             <td style="text-align: center">Julian Lloyd</td>
-            <td>Robert Mains</td>
-            <td>Bill Mark</td>
-            <td>Rawson McCotter</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Robert Mains</td>
+            <td>SR</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Bill Mark</td>
+            <td>SR</td>
+            <td>Diving</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Rawson McCotter</td>
+            <td>SO</td>
+            <td>Freestyle</td>
         </tr>
         <tr>
             <td style="text-align: center">Peyton Musselwhite</td>
-            <td>John Poyen</td>
-            <td>Orville Opperman</td>
-            <td>Carleton Reed</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">John Poyen</td>
+            <td>SR</td><!--grad-->
+            <td>Freestyle</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Orville Opperman</td>
+            <td>FR</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Carleton Reed</td>
+            <td>SO</td>
+            <td>Breaststroke</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Michael Seerba</td>
+            <td>--</td>
+            <td>Freestyle</td>
         </tr>
         <tr>
             <td style="text-align: center">Raymond Vandapool</td>
-            <td>Sidney Wilson</td>
+            <td>SO</td>
+            <td>Freestyle</td>
         </tr>
-    </tbody></table><br><br><br>
+        <tr>
+            <td style="text-align: center">Sidney Wilson</td>
+            <td>--</td>
+            <td>Freestyle</td>
+        </tr>
+      </tbody></table><br>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">
@@ -128,9 +199,9 @@
           <th><strong>Conference</strong></th>
         </tr></thead>
         <tr>
-          <td class="td-test" style="text-align: center;" >5-0</td>
+          <td class="td-test" style="text-align: center;" >4-0</td>
           <td class="td-test">1.000</td>
-          <td class="td-test">3-0</td>
+          <td class="td-test">2-0</td>
           <td class="td-test">2-0</td>
           <td class="td-test">1st</td>
         </tr>
@@ -190,7 +261,7 @@
         <h1>Wyoming Dual</h1><hr>
         <p>February 12, 1938</p>
         <p>Carlson Pool, Boulder, CO</p>
-        <button class = "button button1">Results Unavailable</button>
+        <button class = "button button1"><a href="../assets/results/1930-1939/38S_WYO.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
@@ -200,7 +271,7 @@
           </tr>
           <tr>
             <td style="text-align: center; background: #000000"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_42.png"></td>
-            <td><b>W</b></td>
+            <td><b>56</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #63301F;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_old.png"></td>
@@ -229,30 +300,6 @@
           <tr>
             <td style="text-align: center; background: #0D452A;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_aggies.png"></td>
             <td>18</td>
-          </tr>
-        </table>
-      </div>
-    </div><br><br><br>
-    <div class="row">
-      <div class="column left-dual" style="background-color:#eaebec;">
-        <h1>Northern Colorado Dual</h1><hr>
-        <p>February 20, 1937</p>
-        <p>Carlson Pool, Boulder, CO</p>
-        <button class = "button button1">Results Unvailable</button>
-      </div>
-      <div class="column right-dual" style="background-color:#eaebec;">
-        <table>
-          <tr>
-            <th style="text-align: center">Team</th>
-            <th>Final Score</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_42.png"></td>
-            <td><b>59</b></td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #463456;"><img alt="University of Northern Colorado" title="University of Northern Colorado" class="sicon" src="../assets/icons/unc_teachers.png"></td>
-            <td>22</td>
           </tr>
         </table>
       </div>
