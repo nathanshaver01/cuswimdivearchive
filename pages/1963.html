@@ -16,16 +16,21 @@
         <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
         <script>
-        $(function() {
-            $( "#tabs" ).tabs();
-            $( "#tabs2" ).tabs();
-        });
-        </script>
-        <script>
-        $(function() {
-            $( "#divetabs" ).tabs();
-            $( "#divetabs2" ).tabs();
-        });
+          function showTable(tableIdToShow) {
+            hideAllTables();
+            
+            let tableElement = document.getElementById(tableIdToShow);
+          
+            tableElement.classList.add('show');
+          }
+          
+          function hideAllTables() {
+            let allTableElements = document.querySelectorAll('.table');
+          
+            for (tableElement of allTableElements) {
+              tableElement.classList.remove('show')
+            }
+          }
         </script>
 
     </head> 
@@ -80,95 +85,421 @@
       </a>
     </div><br><br><br>
     <h3>Men's Team</h3>
-    <br>
-    <table class = "divisionroster">
-      <colgroup>
-        <col class="fullname" />
-        <col class="class" />
-        <col class="events" />
-      </colgroup>
+    <div class="buttoncontainer">
+      <input class="button2" type="button" onclick="showTable('table1')" value="Overview"><br>
+      <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
+    </div>
+    <div id="table1" class="show table">
+    <table class="divisionLarge">
       <thead>
         <tr><th style="text-align: center"><strong>Name</strong></th>
         <th><strong>Year</strong></th>
         <th><strong>Events</strong></th>
+        <th><strong>Height</strong></th>
+        <th><strong>Weight</strong></th>
       </tr></thead>
       <tr>
           <td style="text-align: center">David Bailey</td>
           <td>JR</td>
           <td>Freestyle</td>
+          <td>6-0</td>
+          <td>170</td>
       </tr>
       <tr>
           <td style="text-align: center">Charles Bush</td>
           <td>JR</td>
           <td>Diving</td>
+          <td>6-1</td>
+          <td>180</td>
       </tr>
       <tr>
           <td style="text-align: center">Barry Carlson</td>
           <td>SO</td>
           <td>Backstroke</td>
+          <td>6-0</td>
+          <td>150</td>
       </tr>
       <tr>
           <td style="text-align: center">Don Kopp</td>
           <td>SO</td>
           <td>Breaststroke</td>
+          <td>6-3</td>
+          <td>170</td>
       </tr>
       <tr>
           <td style="text-align: center">Dale Leonhart</td>
           <td>SO</td>
           <td>Butterfly, I.M.</td>
+          <td>5-10</td>
+          <td>150</td>
       </tr>
       <tr>
           <td style="text-align: center">Mel McElroy</td>
           <td>SR</td>
           <td>Freestyle</td>
+          <td>5-10</td>
+          <td>150</td>
       </tr>
       <tr>
           <td style="text-align: center">Stanley McNiel</td>
           <td>SR</td>
           <td>Freestyle</td>
+          <td>6-2</td>
+          <td>165</td>
       </tr>
       <tr>
           <td style="text-align: center">Ken Nestler</td>
           <td>SR</td>
           <td>Backstroke</td>
+          <td>6-2</td>
+          <td>150</td>
       </tr>
       <tr>
           <td style="text-align: center">Keith Shaw</td>
           <td>JR</td>
           <td>Breaststroke</td>
+          <td>5-9</td>
+          <td>145</td>
       </tr>
       <tr>
           <td style="text-align: center">Jim Thompson</td>
           <td>SO</td>
           <td>Freestyle</td>
+          <td>6-3</td>
+          <td>195</td>
       </tr>
       <tr>
           <td style="text-align: center">Jim Waggoner</td>
           <td>SO</td>
           <td>Butterfly, I.M.</td>
+          <td>5-10</td>
+          <td>140</td>
       </tr>
       <tr>
           <td style="text-align: center">Tony Wilson*</td>
           <td>SR</td>
           <td>Freestyle</td>
+          <td>6-2</td>
+          <td>175</td>
       </tr>
       <tr>
           <td style="text-align: center">Henry Wise*</td>
           <td>SR</td>
           <td>Breaststroke, I.M.</td>
+          <td>6-0</td>
+          <td>160</td>
       </tr>
       <tr>
           <td style="text-align: center">John Wise</td>
           <td>SO</td>
           <td>Freestyle</td>
+          <td>5-10</td>
+          <td>150</td>
       </tr>
       <tr>
           <td style="text-align: center">Bob Zika</td>
           <td>SR</td>
           <td>Diving</td>
+          <td>5-7</td>
+          <td>160</td>
       </tr>
     </tbody></table><br>
-    <h4>*=Captain</h4><br>
+    <h4>*=Captain</h4><br><br><br></div>
+    <div id="table2" class="table">
+      <div style="overflow-x:auto;">
+        <table class="table2">
+          <tbody><tr>
+              <th style="text-align: center; min-width: 110px;">Name</th>
+              <th>Wyo. R.</th>
+              <th>I.S.U.</th>
+              <th>D.U. R.</th>
+              <th>KU & KSU</th>
+              <th>OU & TTU</th>
+              <th>UNM & Mines</th>
+              <th>USU & UU</th>
+              <th>U.S.A.F.A.</th>
+              <th>UNL & TTU</th>
+              <th>C.S.C.</th>
+              <th>Mines</th>
+              <th>C.S.U.</th>
+              <th>Wyo.</th>
+              <th>Big 8</th>
+              <th>N.C.A.A.</th>
+          </tr>
+          <tr>
+              <td>David Bailey*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Charles Bush*</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Barry Carlson*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Donald Kopp*</td>
+              <td>0</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Dale Leonhart</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Mel McElroy*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>Stanley McNeil*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Ken Nestler</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Keith Shaw</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>James Thompson*</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>James Waggoner*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Tony Wilson*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+          </tr>
+          <tr>
+              <td>Henry Wise*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>John Wise*</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Bob Zika*</td>
+              <td>0</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+          </tr>
+        </tbody></table><br>
+        <h4>*=Letterman</h4><br><br><br>
+      </div>
+    </div>
     <!--Box Summary-->
     <h1>Schedule/Results</h1>
     <div class="meetbox">
@@ -680,15 +1011,15 @@
           </tr>
           <tr>
             <td style="text-align: center">Mel McElroy</td>
-            <td>500 Yard Freestylestyle<br>1650 Yard Freestylestyle</td>
+            <td>500 Yard Freestyle<br>1650 Yard Freestyle</td>
           </tr>
           <tr>
             <td style="text-align: center">Tony Wilson</td>
-            <td>50 Yard Freestylestyle<br>100 Yard Freestylestyle</td>
+            <td>50 Yard Freestyle<br>100 Yard Freestyle</td>
           </tr>
         </table>
-      </div><br><br><br>
-    </div>
+      </div>
+    </div><br><br><br>
 </div>
 
 </div>

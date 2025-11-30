@@ -16,19 +16,6 @@
             
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
-
-        <script>
-        $(function() {
-            $( "#tabs" ).tabs();
-            $( "#tabs2" ).tabs();
-        });
-        </script>
-        <script>
-        $(function() {
-            $( "#divetabs" ).tabs();
-            $( "#divetabs2" ).tabs();
-        });
-        </script>
         <script>
           function showTable(tableIdToShow) {
             hideAllTables();
@@ -108,106 +95,139 @@
       <input class="button2" type="button" onclick="showTable('table2')" value="Participation">
     </div>
     <div id="table1" class="show table">
-    <table class = "divisionroster">
-      <colgroup>
-        <col class="fullname" />
-        <col class="class" />
-        <col class="events" />
-      </colgroup>
+    <table class="divisionLarge">
       <thead>
         <tr><th style="text-align: center"><strong>Name</strong></th>
         <th><strong>Year</strong></th>
         <th><strong>Events</strong></th>
+        <th><strong>Height</strong></th>
+        <th><strong>Weight</strong></th>
       </tr></thead>
       <tr>
           <td style="text-align: center">Bob Adelstein</td>
           <td>JR</td>
           <td>Freestyle</td>
+          <td>5-6</td>
+          <td>170</td>
       </tr>
       <tr>
           <td style="text-align: center">Bruce Allen</td>
           <td>JR</td>
           <td>Backstroke</td>
+          <td>6-4</td>
+          <td>180</td>
       </tr>
       <tr>
           <td style="text-align: center">Paul Anderson</td>
           <td>SO</td>
           <td>Diving</td>
+          <td>5-9</td>
+          <td>148</td>
       </tr>
       <tr>
           <td style="text-align: center">Aaron Bodin</td>
           <td>JR</td>
           <td>Backstroke</td>
+          <td>6-0</td>
+          <td>175</td>
       </tr>
       <tr>
           <td style="text-align: center">Al Braeseke</td>
           <td>SO</td>
           <td>Breaststroke</td>
+          <td>6-0</td>
+          <td>175</td>
       </tr>
       <tr>
           <td style="text-align: center">Phil Galsgow</td>
           <td>SO</td>
           <td>Freestyle</td>
+          <td>5-10</td>
+          <td>152</td>
       </tr>
       <tr>
           <td style="text-align: center">Gordon Greenley</td>
           <td>SR</td>
           <td>Freestyle</td>
+          <td>5-11</td>
+          <td>135</td>
       </tr>
       <tr>
           <td style="text-align: center">Ray Hatch</td>
           <td>JR</td>
           <td>Freestyle</td>
+          <td>6-2</td>
+          <td>190</td>
       </tr>
       <tr>
           <td style="text-align: center">Ken Helms</td>
           <td>SO</td>
           <td>Diving</td>
+          <td>5-10</td>
+          <td>165</td>
       </tr>
       <tr>
           <td style="text-align: center">Pete Hughes</td>
           <td>JR</td>
           <td>Freestyle</td>
+          <td>5-11</td>
+          <td>180</td>
       </tr>
       <tr>
           <td style="text-align: center">John Knudson</td>
           <td>SR</td>
           <td>Freestyle</td>
+          <td>5-10</td>
+          <td>175</td>
       </tr>
       <tr>
           <td style="text-align: center">Jay Mills</td>
           <td>SO</td>
           <td>Freestyle</td>
+          <td>5-7</td>
+          <td>155</td>
       </tr>
       <tr>
           <td style="text-align: center">Jim Ogilvie</td>
           <td>SO</td>
           <td>Diving</td>
+          <td>5-9</td>
+          <td>145</td>
       </tr>
       <tr>
           <td style="text-align: center">Bill Pribble</td>
           <td>SR</td>
           <td>Freestyle</td>
+          <td>6-2</td>
+          <td>200</td>
       </tr>
       <tr>
           <td style="text-align: center">Jim Sheff</td>
           <td>SO</td>
           <td>Freestyle</td>
+          <td>5-10</td>
+          <td>155</td>
       </tr>
       <tr>
           <td style="text-align: center">Chuck Shom</td>
           <td>JR</td>
           <td>Breaststroke</td>
+          <td>5-7</td>
+          <td>170</td>
       </tr>
       <tr>
           <td style="text-align: center">Don Welsh</td>
           <td>SO</td>
           <td>Backstroke</td>
+          <td>5-11</td>
+          <td>155</td>
       </tr>
       <tr>
           <td style="text-align: center">Geoffrey York</td>
           <td>JR</td>
           <td>Breaststroke</td>
+          <td>5-11</td>
+          <td>180</td>
       </tr>
     </tbody></table><br><br><br></div>
     <div id="table2" class="table">
@@ -246,7 +266,7 @@
             <td>X</td>
         </tr>
         <tr>
-            <td>Paul Anderson*</td>
+            <td>Paul Anderson*#</td>
             <td>0</td>
             <td>0</td>
             <td>0</td>
@@ -354,6 +374,22 @@
             <td>0</td>
             <td>X</td>
             <td>X</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Pete Hughes%</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
             <td>0</td>
             <td>0</td>
         </tr>
@@ -470,7 +506,7 @@
             <td>X</td>
         </tr>
       </tbody></table><br>
-      <h4>*=Letterman</h4><br><br><br>
+      <h4>*=Letterman #=eligible spring semester %=lettered in 1952</h4><br><br><br>
     </div>
     </div>
     <!--Box Summary-->
