@@ -18,7 +18,23 @@
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
-        
+        <script>
+            function showTable(tableIdToShow) {
+                hideAllTables();
+                
+                let tableElement = document.getElementById(tableIdToShow);
+              
+                tableElement.classList.add('show');
+            }
+              
+            function hideAllTables() {
+                let allTableElements = document.querySelectorAll('.table');
+              
+                for (tableElement of allTableElements) {
+                  tableElement.classList.remove('show')
+                }
+            }
+        </script>
 
     </head> 
 
@@ -56,9 +72,15 @@
 <div id="2022" class="tabcontent" style="display: block;"><br>
     <h1> 1978 - 1979 Division I Swimming & Diving Archive </h1>
     <div class="center1">
-      <a id = 'backnext' href="../" class="next">&laquo; Archive Directory</a>
-    </div><br><br>
-    <img src="../assets/css/images/teamphoto1979women.png" alt="Women Team Photo 1978-79" class="center"><br>
+      <a id = 'backnext' href="./1978" class="next">&laquo; 1978</a><br>
+      <a id = 'backnext' href="../" class="next">&uArr; Archive Directory</a>
+      <a id = 'backnext' href="./1980" class="next">1980 &raquo;</a>
+    </div>
+    <div class="buttoncontainer">
+        <input class="button2" type="button" onclick="showTable('table1')" value="Men's Swimming"><br>
+        <input class="button2" type="button" onclick="showTable('table2')" value="Women's Swimming">
+    </div>
+    <div id="table1" class="show table">
     <img src="../assets/css/images/teamphoto1979men.png" alt="Men Team Photo 1978-79" class="center"><br>
     
     <h1>Team Roster</h1>
@@ -85,248 +107,447 @@
           <div class="caption"><i>Assistant Coach</i></div>
       </a>
     </div><br><br><br>
-    <h3>Women's Team</h3>
-    <br>
-    <table class = "divisionroster">
-        <colgroup>
-          <col class="fullname" />
-          <col class="class" />
-          <col class="events" />
-        </colgroup>
-        <thead>
-          <tr><th style="text-align: center"><strong>Name</strong></th>
-          <th><strong>Year</strong></th>
-          <th><strong>Events</strong></th>
-        </tr></thead>
-        <tr>
-            <td style="text-align: center">Bev Beauchamp</td>
-            <td>SR</td>
-            <td>Diving</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Kathy Bernard</td>
-            <td>SO</td>
-            <td>Diving</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Niki Frangos</td>
-            <td>SO</td>
-            <td>backstroke, I.M.</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Kim Griffis</td>
-            <td>FR</td>
-            <td>Freestyle, Backstroke</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Kathleen Howe</td>
-            <td>SO</td>
-            <td>Freestyle, Butterfly</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Marcia King</td>
-            <td>SO</td>
-            <td>Freestyle</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Sharon Little</td>
-            <td>SO</td>
-            <td>Freestyle</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Terri Price</td>
-            <td>FR</td>
-            <td>Diving</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Carol Rabe</td>
-            <td>JR</td>
-            <td>Diving</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Anne Robb</td>
-            <td>SO</td>
-            <td>Freestyle</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Sarah Shannon</td>
-            <td>JR</td>
-            <td>Freestyle</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Lisa Taylor</td>
-            <td>FR</td>
-            <td>Freestyle</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Margaret Toren</td>
-            <td>JR</td>
-            <td>Freestyle, Breaststroke</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Deborah VAughn</td>
-            <td>FR</td>
-            <td>Diving</td>
-        </tr>
-    </tbody></table>
-    <br>
     <h3>Men's Team</h3>
     <br>
-    <table class = "divisionroster">
-        <colgroup>
-          <col class="fullname" />
-          <col class="class" />
-          <col class="events" />
-        </colgroup>
+    <table class = "divisionLarge">
         <thead>
           <tr><th style="text-align: center"><strong>Name</strong></th>
           <th><strong>Year</strong></th>
           <th><strong>Events</strong></th>
+          <th><strong>Height</strong></th>
+          <th><strong>Weight</strong></th>
         </tr></thead>
         <tr>
             <td style="text-align: center">Paul Almeida</td>
             <td>JR</td>
             <td>Freestyle, Butterfly</td>
+            <td>5-11</td>
+            <td>160</td>
         </tr>
         <tr>
             <td style="text-align: center">Kurt Brekke</td>
             <td>JR</td>
             <td>Freestyle</td>
+            <td>6-2</td>
+            <td>184</td>
         </tr>
         <tr>
             <td style="text-align: center">Chris Burton</td>
             <td>FR</td>
             <td>Diving</td>
+            <td>5-8</td>
+            <td>145</td>
         </tr>
         <tr>
             <td style="text-align: center">Keith Bush</td>
             <td>SR</td>
             <td>Freestyle, I.M.</td>
+            <td>6-6</td>
+            <td>215</td>
         </tr>
         <tr>
             <td style="text-align: center">James Calhoun</td>
             <td>SO</td>
             <td>Freestyle</td>
+            <td>6-3</td>
+            <td>175</td>
         </tr>
         <tr>
             <td style="text-align: center">Mike Carruthers</td>
             <td>SR</td>
-            <td>backstroke, Freestyle</td>
+            <td>Backstroke, Freestyle</td>
+            <td>6-2</td>
+            <td>180</td>
         </tr>
         <tr>
             <td style="text-align: center">Paul Catalano</td>
             <td>FR</td>
             <td>Diving</td>
+            <td>6-0</td>
+            <td>155</td>
         </tr>
         <tr>
             <td style="text-align: center">Mark Collings</td>
             <td>FR</td>
             <td>Freestyle</td>
+            <td>6-1</td>
+            <td>175</td>
         </tr>
         <tr>
             <td style="text-align: center">Bob Goold</td>
             <td>FR</td>
             <td>Freestyle</td>
+            <td>6-1</td>
+            <td>176</td>
         </tr>
         <tr>
             <td style="text-align: center">Bob Grabau</td>
             <td>FR</td>
-            <td>backstroke, Butterfly</td>
+            <td>Backstroke, Butterfly</td>
+            <td>6-3</td>
+            <td>191</td>
         </tr>
         <tr>
             <td style="text-align: center">Curt Jonas</td>
             <td>FR</td>
-            <td>backstroke, Butterfly</td>
+            <td>Backstroke, Butterfly</td>
+            <td>6-3</td>
+            <td>162</td>
         </tr>
         <tr>
             <td style="text-align: center">Mike Keenan</td>
             <td>SO</td>
             <td>Diving</td>
+            <td>5-9</td>
+            <td>170</td>
         </tr>
         <tr>
             <td style="text-align: center">Tom Nutter</td>
             <td>SO</td>
             <td>Freestyle, Butterfly</td>
+            <td>6-1</td>
+            <td>175</td>
         </tr>
         <tr>
             <td style="text-align: center">Frank Orten</td>
             <td>JR</td>
             <td>Breaststroke, I.M.</td>
+            <td>6-0</td>
+            <td>165</td>
         </tr>
         <tr>
             <td style="text-align: center">Jim Rabe</td>
             <td>FR</td>
             <td>Freestyle</td>
+            <td>5-11</td>
+            <td>162</td>
         </tr>
         <tr>
             <td style="text-align: center">Chris Rogers</td>
             <td>FR</td>
             <td>Freestyle</td>
+            <td>5-11</td>
+            <td>162</td>
         </tr>
         <tr>
             <td style="text-align: center">George Tidmarsh</td>
             <td>FR</td>
             <td>I.M., Freestyle</td>
+            <td>6-1</td>
+            <td>178</td>
         </tr>
         <tr>
             <td style="text-align: center">Tad Tinnell</td>
             <td>FR</td>
             <td>Diving</td>
+            <td>5-9</td>
+            <td>140</td>
         </tr>
         <tr>
             <td style="text-align: center">Mark Vitcenda</td>
             <td>JR</td>
             <td>Freestyle, Backstroke</td>
+            <td>6-2</td>
+            <td>150</td>
         </tr>
         <tr>
             <td style="text-align: center">Philip Wrist</td>
             <td>JR</td>
             <td>Breaststroke, I.M.</td>
+            <td>6-0</td>
+            <td>160</td>
         </tr>
         <tr>
             <td style="text-align: center">Rick Zube</td>
             <td>SO</td>
             <td>Freestyle, Butterfly</td>
+            <td>5-10</td>
+            <td>155</td>
         </tr>
     </tbody></table><br>
 
     <!--Meets-->
-    <h1>Schedule/Results</h1>
-    <br><div class="row">
+    <h1>Schedule/Results</h1><br>
+    <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Colorado State Dual</h1><hr>
         <p>November 17, 1978</p> 
-        <p>Moby Pool, Fort Collins, CO</p> <!--Location Guess-->
-        <button class = "button button1"><a href="../assets/results/1970-1980/78F_CSU.pdf">PDF Results</a></button>
+        <p>Moby Pool, Fort Collins, CO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/78F_CSU_M.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table class="table-sort table-arrows">
           <tr>
-            <th class="disable-sort"  style="text-align: center">Team</th>
-            <th class="order-by-desc">Women</th>
-            <th class="order-by-desc">Men</th>
-            <th class="order-by-desc">Combined</th>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
-            <td>34</td>
             <td><b>81</b></td>
-            <td><b>115</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
-            <td><b>78</b></td>
             <td>31</td>
-            <td>109</td>
           </tr>
         </table>
       </div>
     </div><br><br><br>
-    <br><div class="row">
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Big 8 Swimming & Diving Relays</h1><hr>
+        <p>December 1 - 2, 1978</p>
+        <p>South Base Swimming Pool, Norman, OK</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/78F_Big8_R.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
+            <td><b>120</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
+            <td>84</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
+            <td>83</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td>56</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #006BB7;"><img alt="University of Texas Arlington" title="University of Texas Arlington" class="sicon" src="../assets/icons/uta.png"></td>
+            <td>48</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
+            <td>48</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #72BF44;"><img alt="University of Missouri Science & Technology" title="University of Missouri Science & Technology" class="sicon" src="../assets/icons/umr.png"></td>
+            <td>5</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Arkansas Dual</h1><hr>
+        <p>February 8, 1979</p> 
+        <p>Fafetteville, AR</p> <!--Unknown Pool-->
+        <button class = "button button1"><a href="../assets/results/1970-1980/79S_UA_M.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CE0F42;"><img alt="University of Arkansas" title="University of Arkansas" class="sicon" src="../assets/icons/arkansas.png"></td>
+            <td><b>82</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td>33</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Oklahoma State Dual</h1><hr>
+        <p>February 9, 1979</p> 
+        <p>Colvin Center Pool, Stillwater, OK</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/79S_OSU_M.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td><b>60</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
+            <td>50</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    </div>
+    <div id="table2" class="table">
+    <img src="../assets/css/images/teamphoto1979women.png" alt="Women Team Photo 1978-79" class="center"><br>
+    <h1>Team Roster</h1>
+    <h3>Coaching Staff</h3><br>
+    <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/danktank.png" class="headshot" alt="Headshot of Terry Danko"><br>
+          <div class="caption"><b>Terry Danko</b></div>
+          <div class="caption"><i>Head Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/jedmarquis.png" class="headshot" alt="Headshot of Jed Marquis"><br>
+          <div class="caption"><b>Jed Marquis</b></div>
+          <div class="caption"><i>Dive Coach</i></div>
+      </a>
+    </div><br><br><br>
+    <h3>Women's Team</h3><br>
+    <table class = "divisionLarge">
+        <thead>
+          <tr><th style="text-align: center"><strong>Name</strong></th>
+          <th><strong>Year</strong></th>
+          <th><strong>Events</strong></th>
+          <th><strong>Height</strong></th>
+          <th><strong>Weight</strong></th>
+        </tr></thead>
+        <tr>
+            <td style="text-align: center">Bev Beauchamp</td>
+            <td>SR</td>
+            <td>Diving</td>
+            <td>5-5</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Kathy Bernard</td>
+            <td>SO</td>
+            <td>Diving</td>
+            <td>5-4</td>
+            <td>115</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Niki Frangos</td>
+            <td>SO</td>
+            <td>Backstroke, I.M.</td>
+            <td>5-8</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Kim Griffis</td>
+            <td>FR</td>
+            <td>Freestyle, Backstroke</td>
+            <td>5-6</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Kathleen Howe</td>
+            <td>SO</td>
+            <td>Freestyle, Butterfly</td>
+            <td>5-4</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Marcia King</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+            <td>5-6</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Sharon Little</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+            <td>5-7</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Terri Price</td>
+            <td>FR</td>
+            <td>Diving</td>
+            <td>5-1</td>
+            <td>113</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Carol Rabe</td>
+            <td>JR</td>
+            <td>Diving</td>
+            <td>5-4</td>
+            <td>115</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Anne Robb</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+            <td>5-6</td>
+            <td>115</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Sarah Shannon</td>
+            <td>JR</td>
+            <td>Freestyle</td>
+            <td>5-8</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Lisa Taylor</td>
+            <td>FR</td>
+            <td>Freestyle</td>
+            <td>5-7</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Margaret Toren</td>
+            <td>JR</td>
+            <td>Freestyle, Breaststroke</td>
+            <td>5-6</td>
+            <td>125</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Deborah Vaughn</td>
+            <td>FR</td>
+            <td>Diving</td>
+            <td>5-4</td>
+            <td>115</td>
+        </tr>
+      </tbody>
+    </table><br>
+    <h1>Schedule/Results</h1><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Colorado State Dual</h1><hr>
+        <p>November 17, 1978</p> 
+        <p>Moby Pool, Fort Collins, CO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/78F_CSU_W.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td><b>78</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td>34</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
       <div class="column left" style="background-color:#eaebec;">
         <h1>Wyoming Relays</h1><hr>
         <p>November 18, 1978</p> 
-        <p>Laramie, WY</p>
+        <p>Corbett Pool, Laramie, WY</p>
         <button class = "button button1"><a href="../assets/results/1970-1980/78F_WYO_R_W.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
@@ -362,7 +583,7 @@
         </table>
       </div>
     </div><br><br><br>
-    <br><div class="row">
+    <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Nebraska Dual</h1><hr>
         <p>December 8, 1978</p> 
@@ -386,7 +607,7 @@
         </table>
       </div>
     </div><br><br><br>
-    <br><div class="row">
+    <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>New Mexico Dual</h1><hr>
         <p>January 18, 1979</p> 
@@ -397,10 +618,10 @@
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Final Score (Women)</th>
+            <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #B70C30;"><img alt="University of New Mexico" title="University of New Mexico" class="sicon" src="../assets/icons/newmexico.png"></td>
+            <td style="text-align: center; background: #EA0A2A;"><img alt="University of New Mexico" title="University of New Mexico" class="sicon" src="../assets/icons/unm_99.png"></td>
             <td><b>69</b></td>
           </tr>
           <tr>
@@ -410,11 +631,11 @@
         </table>
       </div>
     </div><br><br><br>
-    <br><div class="row">
+    <div class="row">
       <div class="column left" style="background-color:#eaebec;">
         <h1>UC Santa Barbara 13th Annual Women's Swimming & Diving Invitational</h1><hr>
         <p>January 26 - 27, 1979</p> 
-        <p>Santa Barbara, CA</p>
+        <p>Campus Pool, Santa Barbara, CA</p>
         <button class = "button button1"><a href="../assets/results/1970-1980/79S_Barb.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
@@ -506,62 +727,50 @@
         </table>
       </div>
     </div><br><br><br>
-    <br><div class="row">
+    <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Arkansas Dual</h1><hr>
         <p>February 8, 1979</p> 
         <p>Fafetteville, AR</p> <!--Unknown Pool-->
-        <button class = "button button1"><a href="../assets/results/1970-1980/79S_UA.pdf">PDF Results</a></button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/79S_UA_W.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
-        <table class="table-sort table-arrows">
+        <table>
           <tr>
-            <th class="disable-sort"  style="text-align: center">Team</th>
-            <th class="order-by-desc">Women</th>
-            <th class="order-by-desc">Men</th>
-            <th class="order-by-desc">Combined</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #CE0F42;"><img alt="University of Arkansas" title="University of Arkansas" class="sicon" src="../assets/icons/arkansas.png"></td>
-            <td>61</td>
-            <td><b>82</b></td>
-            <td><b>143</b></td>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td><b>68</b></td>
-            <td>33</td>
-            <td>101</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CE0F42;"><img alt="University of Arkansas" title="University of Arkansas" class="sicon" src="../assets/icons/arkansas.png"></td>
+            <td>61</td>
           </tr>
         </table>
       </div>
     </div><br><br><br>
-    <br><div class="row">
+    <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Oklahoma State Dual</h1><hr>
         <p>February 9, 1979</p> 
         <p>Colvin Center Pool, Stillwater, OK</p>
-        <button class = "button button1"><a href="../assets/results/1970-1980/79S_OSU.pdf">PDF Results</a></button>
+        <button class = "button button1"><a href="../assets/results/1970-1980/79S_OSU_W.pdf">PDF Results</a></button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
-        <table class="table-sort table-arrows">
+        <table>
           <tr>
-            <th class="disable-sort"  style="text-align: center">Team</th>
-            <th class="order-by-desc">Women</th>
-            <th class="order-by-desc">Men</th>
-            <th class="order-by-desc">Combined</th>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td><b>77</b></td>
-            <td><b>60</b></td>
-            <td><b>137</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
             <td>50</td>
-            <td>50</td>
-            <td>100</td>
           </tr>
         </table>
       </div>
@@ -570,14 +779,14 @@
       <div class="column left" style="background-color:#eaebec;">
         <h1>Big 8 Swimming & Diving Championships</h1><hr>
         <p>February 22 - 24, 1979</p>
-        <p>Norman, OK</p>
+        <p>South Base Swimming Pool, Norman, OK</p>
         <button class = "button button1"><a href="../assets/results/1970-1980/79S_WomenBig8.pdf">PDF Results</a></button>
       </div>
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Final Score (Women)</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
@@ -610,7 +819,8 @@
         </table>
       </div>
     </div><br><br><br>
-    
+
+    </div>
 </div>
 
 </div>
