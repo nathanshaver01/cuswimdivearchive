@@ -17,7 +17,23 @@
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
-        
+        <script>
+            function showTable(tableIdToShow) {
+                hideAllTables();
+                
+                let tableElement = document.getElementById(tableIdToShow);
+              
+                tableElement.classList.add('show');
+            }
+              
+            function hideAllTables() {
+                let allTableElements = document.querySelectorAll('.table');
+              
+                for (tableElement of allTableElements) {
+                  tableElement.classList.remove('show')
+                }
+            }
+        </script>
 
     </head> 
 
@@ -52,11 +68,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div id="info-content" >
-<div id="2022" class="tabcontent" style="display: block;"><br>
+<div class="tabcontent" style="display: block;"><br>
     <h1> 1979 - 1980 Division I Swimming & Diving Archive </h1>
     <div class="center1">
-      <a id = 'backnext' href="../" class="next">&laquo; Archive Directory</a>
-    </div><br><br>
+      <a id = 'backnext' href="./1979" class="next">&laquo; 1979</a><br>
+      <a id = 'backnext' href="../" class="next">&uArr; Archive Directory</a>
+      <a id = 'backnext' href="./1981" class="next">1981 &raquo;</a>
+    </div>
+    <div class="buttoncontainer">
+        <input class="button2" type="button" onclick="showTable('table1')" value="Men's Swimming"><br>
+        <input class="button2" type="button" onclick="showTable('table2')" value="Women's Swimming">
+    </div>
+    <div id="table1" class="show table">
     <img src="../assets/css/images/teamphoto1980.png" alt="Full Team Photo 1979-80" class="center"><br>
     
     <h1>Team Roster</h1>
@@ -72,81 +95,159 @@
           <div class="caption"><b>Jed Marquis</b></div>
           <div class="caption"><i>Dive Coach</i></div>
       </a>
+      <a>
+          <img src="../assets/css/images/headshots/russmarsh.png" class="headshot" alt="Headshot of Russ Marsh"><br>
+          <div class="caption"><b>Russ Marsh</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/tonifromberg.png" class="headshot" alt="Headshot of Toni Fromberg"><br>
+          <div class="caption"><b>Toni Fromberg</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
     </div><br><br><br>
-    <h3>Women's Team</h3>
-    <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
-        <tr>
-            <td style="text-align: center">Jackie Armstrong</td>
-            <td>Zoe Baumann</td>
-            <td>Suzanne Fahey</td>
-            <td>Niki Frangos</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Heidi Hagelstien</td>
-            <td>Kathy Howe</td>
-            <td>Sharon Little</td>
-            <td>Natalie Marshall</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Kristen Miller</td>
-            <td>Carol Rabe</td>
-            <td>Kris Reeves</td>
-            <td>Carol Toren</td>
-        </tr>
-        <tr>
-            <td style="text-align: center">Debbie Vaughn</td>
-        </tr>
-    </tbody></table>
     <br>
     <h3>Men's Team</h3>
     <br>
-    <table>
-        <tbody><tr>
-            <th>Roster</th>
-            <th> </th>
-            <th> </th>
-            <th> </th>
-        </tr>
+    <table class = "divisionLarge">
+        <thead>
+          <tr><th style="text-align: center"><strong>Name</strong></th>
+          <th><strong>Year</strong></th>
+          <th><strong>Events</strong></th>
+          <th><strong>Height</strong></th>
+          <th><strong>Weight</strong></th>
+        </tr></thead>
         <tr>
             <td style="text-align: center">Paul Almeida</td>
-            <td>Gerald Bakke</td>
-            <td>Mike Boileau</td>
-            <td>James Book</td>
+            <td>SR</td>
+            <td>Butterfly, Backstroke</td>
+            <td>5-11</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Gerald Bakke</td>
+            <td>FR</td>
+            <td>I.M., Freestyle</td>
+            <td>6-2</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Mike Boileau</td>
+            <td>FR</td>
+            <td>Butterfly</td>
+            <td>5-10</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Don Book</td>
+            <td>FR</td>
+            <td>Diving</td>
+            <td>5-9</td>
+            <td>145</td>
         </tr>
         <tr>
             <td style="text-align: center">Kurt Brekke</td>
-            <td>William Bunch</td>
-            <td>Mark Collings</td>
-            <td>Dan Freigang</td>
+            <td>SR</td>
+            <td>Freestyle</td>
+            <td>6-2</td>
+            <td>186</td>
         </tr>
         <tr>
-            <td style="text-align: center">Robert Grabau</td>
-            <td>Scott Harmon</td>
-            <td>Jim Harrison</td>
-            <td>Vance Howard</td>
+            <td style="text-align: center">William Bunch</td>
+            <td>FR</td>
+            <td>Breaststroke</td>
+            <td>5-10</td>
+            <td>160</td>
         </tr>
         <tr>
-            <td style="text-align: center">Thomas Nutter</td>
-            <td>Frank Orten</td>
-            <td>Tad Tinnell</td>
-            <td>Bull Tulin</td>
+            <td style="text-align: center">Mark Collings</td>
+            <td>SO</td>
+            <td>Butterfly, Freestyle</td>
+            <td>6-2</td>
+            <td>180</td>
         </tr>
         <tr>
-          <td style="text-align: center">Philip Wrist</td>
-          <td>Eric Zube</td>
+            <td style="text-align: center">Dan Freigang</td>
+            <td>JR</td>
+            <td>Freestyle, I.M.</td>
+            <td>6-0</td>
+            <td>165</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Bob Grabau</td>
+            <td>SO</td>
+            <td>Backstroke</td>
+            <td>6-3</td>
+            <td>186</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Scott Harmon</td>
+            <td>FR</td>
+            <td>Diving</td>
+            <td>5-9</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Jim Harrison</td>
+            <td>FR</td>
+            <td>Breaststroke</td>
+            <td>6-4</td>
+            <td>185</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Vance Howard</td>
+            <td>FR</td>
+            <td>Freestyle</td>
+            <td>6-2</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Tom Nutter</td>
+            <td>JR</td>
+            <td>Freestyle</td>
+            <td>6-0</td>
+            <td>185</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Frank Orten</td>
+            <td>SR</td>
+            <td>Breaststroke, I.M.</td>
+            <td>6-0</td>
+            <td>165</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Tad Tinnell</td>
+            <td>SO</td>
+            <td>Diving</td>
+            <td>5-9</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Bull Tulin</td>
+            <td>JR</td>
+            <td>Butterfly</td>
+            <td>6-0</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Philip Wrist</td>
+            <td>SR</td>
+            <td>Butterfly, Breaststroke</td>
+            <td>6-1</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Rick Zube</td>
+            <td>JR</td>
+            <td>Butterfly, Freestyle</td>
+            <td>5-10</td>
+            <td>160</td>
         </tr>
     </tbody></table><br>
 
     <!--Meets-->
-    <h1>Schedule/Results</h1>
-    <br><div class="row">
+    <h1>Schedule/Results</h1><br>
+    <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Colorado State Dual</h1><hr>
         <p>November 27, 1979</p>
@@ -157,7 +258,7 @@
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Final Score (Men)</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
@@ -172,24 +273,96 @@
     </div><br><br><br>
     <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
-        <h1>Nebraska Dual</h1><hr>
-        <p>December 7, 1979</p>
-        <p>Bob Devaney Sports Center, Lincoln, NE</p>
-        <button class = "button button1"><a href="../assets/results/1970-1980/79F_W_UNL.pdf">PDF Results</a></button>
+        <h1>Wyoming Dual</h1><hr>
+        <p>December 4, 1979</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1">PDF Coming Soon</button>
       </div>
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Final Score (Women)</th>
+            <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
-            <td><b>76</b></td>
+            <td style="text-align: center; background: #F5B702;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_06.png"></td>
+            <td><b>73</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
-            <td>54</td>
+            <td>40</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Nebraska Dual</h1><hr>
+        <p>December 7, 1979</p>
+        <p>Bob Devaney Sports Center, Lincoln, NE</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td><b>64</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>49</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Utah Dual</h1><hr>
+        <p>January 19, 1980</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #EE2C5E;"><img alt="University of Utah" title="University of Utah" class="sicon" src="../assets/icons/utah_87.png"></td>
+            <td><b>80</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>33</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>New Mexico Dual</h1><hr>
+        <p>January 24, 1980</p>
+        <p>Albuquerque, NM</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #EA0A2A;"><img alt="University of New Mexico" title="University of New Mexico" class="sicon" src="../assets/icons/unm_99.png"></td>
+            <td><b>64</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>49</td>
           </tr>
         </table>
       </div>
@@ -197,7 +370,7 @@
     <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
         <h1>Brigham Young Dual</h1><hr>
-        <p>January 29, 1980</p>
+        <p>January 30, 1980</p>
         <p>TBD</p>
         <button class = "button button1"><a href="../assets/results/1970-1980/80S_BYU.pdf">PDF Results</a></button>
       </div>
@@ -205,115 +378,39 @@
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Women</th>
-            <th>Men</th>
-            <th>Combined</th>
+            <th>Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #0033A0;"><img alt="Brigham Young University" title="Brigham Young University" class="sicon" src="../assets/icons/byu_70s.png"></td>
-            <td><b>76</b></td>
             <td><b>69</b></td>
-            <td><b>145</b></td>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
-            <td>28</td>
             <td>35</td>
-            <td>63</td>
-          </tr>
-        </table>
-      </div>
-    </div><br><br><br>
-    <br><div class="row">
-      <div class="column left-dual" style="background-color:#eaebec;">
-        <h1>Air Force Dual</h1><hr>
-        <p>February 8, 1980</p>
-        <p>Cadet Natatorium, Colorado Springs, CO</p>
-        <button class = "button button1"><a href="../assets/results/1970-1980/80S_WomenVsAF.pdf">PDF Results</a></button>
-      </div>
-      <div class="column right-dual" style="background-color:#eaebec;">
-        <table>
-          <tr>
-            <th style="text-align: center">Team</th>
-            <th>Final Score (Women)</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #0162AE;"><img alt="Air Force Academy" title="Air Force Academy" class="sicon" src="../assets/icons/airforce_95.png"></td>
-            <td><b>77</b></td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
-            <td>63</td>
-          </tr>
-        </table>
-      </div>
-    </div><br><br><br>
-    <br><div class="row">
-      <div class="column left-dual" style="background-color:#eaebec;">
-        <h1>Colorado State Dual</h1><hr>
-        <p>February 9, 1980</p>
-        <p>Moby Pool, Fort Collins, CO</p> <!--Unsure of Location-->
-        <button class = "button button1"><a href="../assets/results/1970-1980/80S_CSU.pdf">PDF Results</a></button>
-      </div>
-      <div class="column right-dual" style="background-color:#eaebec;">
-        <table>
-          <tr>
-            <th style="text-align: center">Team</th>
-            <th>Women</th>
-            <th>Men</th>
-            <th>Combined</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
-            <td><b>72</b></td>
-            <td>56</td>
-            <td><b>128</b></td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
-            <td>67</td>
-            <td><b>57</b></td>
-            <td>124</td>
           </tr>
         </table>
       </div>
     </div><br><br><br>
     <div class="row">
-      <div class="column left" style="background-color:#eaebec;">
-        <h1>Big 8 Swimming & Diving Championships</h1><hr>
-        <p>February 21 - 23, 1980</p>
-        <p>Bob Devaney Sports Center, Lincoln, NE</p>
-        <button class = "button button1"><a href="../assets/results/1970-1980/80S_WomenBig8.pdf">PDF Results</a></button>
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Colorado State Dual</h1><hr>
+        <p>February 9, 1980</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/80S_CSU_M.pdf">PDF Results</a></button>
       </div>
-      <div class="column right" style="background-color:#eaebec;">
+      <div class="column right-dual" style="background-color:#eaebec;">
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Final Score (Women)</th>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
-            <td><b>905 &frac12;</b></td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_83.png"></td>
-            <td>791</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
-            <td>663</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #680102;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma.png"></td>
-            <td>570 &frac12;</td>
-          </tr>
-          <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
-            <td>497</td>
+            <th>Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
-            <td>456</td>
+            <td><b>57</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td>56</td>
           </tr>
         </table>
       </div>
@@ -329,7 +426,7 @@
         <table>
           <tr>
             <th style="text-align: center">Team</th>
-            <th>Final Score (Men)</th>
+            <th>Final Score</th>
           </tr>
           <tr>
             <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
@@ -358,6 +455,399 @@
         </table>
       </div>
     </div><br><br><br>
+    </div>
+    <div id="table2" class="table">
+    <img src="../assets/css/images/teamphoto1980.png" alt="Full Team Photo 1979-80" class="center"><br>
+    <h1>Team Roster</h1>
+    <h3>Coaching Staff</h3><br>
+    <div id="images">
+      <a>
+          <img src="../assets/css/images/headshots/danktank.png" class="headshot" alt="Headshot of Terry Danko"><br>
+          <div class="caption"><b>Terry Danko</b></div>
+          <div class="caption"><i>Head Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/jedmarquis.png" class="headshot" alt="Headshot of Jed Marquis"><br>
+          <div class="caption"><b>Jed Marquis</b></div>
+          <div class="caption"><i>Dive Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/russmarsh.png" class="headshot" alt="Headshot of Russ Marsh"><br>
+          <div class="caption"><b>Russ Marsh</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
+      <a>
+          <img src="../assets/css/images/headshots/tonifromberg.png" class="headshot" alt="Headshot of Toni Fromberg"><br>
+          <div class="caption"><b>Toni Fromberg</b></div>
+          <div class="caption"><i>Assistant Coach</i></div>
+      </a>
+    </div><br><br><br>
+    <h3>Women's Team</h3>
+    <br>
+    <table class = "divisionLarge">
+        <thead>
+          <tr><th style="text-align: center"><strong>Name</strong></th>
+          <th><strong>Year</strong></th>
+          <th><strong>Events</strong></th>
+          <th><strong>Height</strong></th>
+          <th><strong>Weight</strong></th>
+        </tr></thead>
+        <tr>
+            <td style="text-align: center">Jackie Armstrong</td>
+            <td>FR</td>
+            <td>Breaststroke, I.M.</td>
+            <td>5-10</td>
+            <td>136</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Zoe Baumann</td>
+            <td>JR</td>
+            <td>Freestyle</td>
+            <td>5-5</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Suzanne Fahey</td>
+            <td>SR</td>
+            <td>Butterfly, I.M.</td>
+            <td>5-6</td>
+            <td>125</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Niki Frangos</td>
+            <td>JR</td>
+            <td>Backstroke</td>
+            <td>5-8</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Heidi Hagelstein</td>
+            <td>FR</td>
+            <td>Freestyle</td>
+            <td>5-8</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Kathy Howe</td>
+            <td>JR</td>
+            <td>Freestyle</td>
+            <td>5-8</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Sharon Little</td>
+            <td>JR</td>
+            <td>Freestyle, Backstroke</td>
+            <td>5-7</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Natalie Marshall</td>
+            <td>FR</td>
+            <td>Freestyle, Butterfly</td>
+            <td>5-4</td>
+            <td>128</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Kristen Miller</td>
+            <td>SO</td>
+            <td>Freestyle</td>
+            <td>5-7</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Carol Rabe</td>
+            <td>SR</td>
+            <td>Diving</td>
+            <td>5-4</td>
+            <td>118</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Kris Reeves</td>
+            <td>JR</td>
+            <td>Breaststroke, I.M.</td>
+            <td>5-7</td>
+            <td>105</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Carol Toren</td>
+            <td>FR</td>
+            <td>Freestyle, Backstroke</td>
+            <td>5-4</td>
+            <td>113</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Debbie Vaughn</td>
+            <td>FR</td>
+            <td>Diving</td>
+            <td>5-4</td>
+            <td>108</td>
+        </tr>
+    </tbody></table><br>
+    
+    <!--Meets-->
+    <h1>Schedule/Results</h1><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Colorado State Dual</h1><hr>
+        <p>November 27, 1979</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/79F_CSU_W.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td><b>69</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td>62</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Wyoming Dual</h1><hr>
+        <p>December 4, 1979</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td><b>79</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #F5B702;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_06.png"></td>
+            <td>61</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Nebraska Dual</h1><hr>
+        <p>December 7, 1979</p>
+        <p>Bob Devaney Sports Center, Lincoln, NE</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/79F_W_UNL.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td><b>76</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>54</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Brigham Young Dual</h1><hr>
+        <p>January 18, 1980</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0033A0;"><img alt="Brigham Young University" title="Brigham Young University" class="sicon" src="../assets/icons/byu_70s.png"></td>
+            <td><b>TBD</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>TBD</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Utah Dual</h1><hr>
+        <p>January 19, 1980</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #EE2C5E;"><img alt="University of Utah" title="University of Utah" class="sicon" src="../assets/icons/utah_87.png"></td>
+            <td><b>TBD</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>TBD</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>New Mexico Dual</h1><hr>
+        <p>January 24, 1980</p>
+        <p>Albuquerque, NM</p>
+        <button class = "button button1">PDF Coming Soon</button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td><b>90</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #EA0A2A;"><img alt="University of New Mexico" title="University of New Mexico" class="sicon" src="../assets/icons/unm_99.png"></td>
+            <td>50</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Brigham Young Dual</h1><hr>
+        <p>January 30, 1980</p>
+        <p>Provo, UT</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/80S_BYU.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0033A0;"><img alt="Brigham Young University" title="Brigham Young University" class="sicon" src="../assets/icons/byu_70s.png"></td>
+            <td><b>76</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>28</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Air Force Dual</h1><hr>
+        <p>February 8, 1980</p>
+        <p>Cadet Natatorium, Colorado Springs, CO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/80S_WomenVsAF.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0162AE;"><img alt="Air Force Academy" title="Air Force Academy" class="sicon" src="../assets/icons/airforce_95.png"></td>
+            <td><b>77</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>63</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left-dual" style="background-color:#eaebec;">
+        <h1>Colorado State Dual</h1><hr>
+        <p>February 9, 1980</p>
+        <p>Student Recreation Pool, Boulder, CO</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/80S_CSU_W.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right-dual" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td><b>72</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>67</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="column left" style="background-color:#eaebec;">
+        <h1>Big 8 Swimming & Diving Championships</h1><hr>
+        <p>February 21 - 23, 1980</p>
+        <p>Bob Devaney Sports Center, Lincoln, NE</p>
+        <button class = "button button1"><a href="../assets/results/1970-1980/80S_WomenBig8.pdf">PDF Results</a></button>
+      </div>
+      <div class="column right" style="background-color:#eaebec;">
+        <table>
+          <tr>
+            <th style="text-align: center">Team</th>
+            <th>Final Score</th>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
+            <td><b>905 &frac12;</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State University" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_83.png"></td>
+            <td>791</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td>663</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #680102;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma.png"></td>
+            <td>570 &frac12;</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
+            <td>497</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_84.png"></td>
+            <td>456</td>
+          </tr>
+        </table>
+      </div>
+    </div><br><br><br>
+    </div>
+    
+    
+
+    
     
 </div>
 
