@@ -126,7 +126,7 @@ body {font-family: "Lato", sans-serif;}
 .ttcolumn{
   float: left;
   padding: 10px;
-  height: 490px;
+  height: 480px;
   overflow: auto;
 }
 .ttleft {
@@ -761,7 +761,7 @@ table th {
 
 table th:first-child {
 	text-align: left;
-	padding-left:20px;
+	padding-left:10px;
 }
 
 table tr:first-child th:first-child {
@@ -783,8 +783,7 @@ table tr {
 }
 
 table td:first-child {
-	text-align: left;
-	padding-left:20px;
+	padding-left:10px;
 	border-left: 0;
 }
 
