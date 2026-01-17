@@ -682,7 +682,7 @@ td {
     text-align: center;
 }
 td:hover{
-    background-color:#EBEBEB;
+    background-color:#f6f5f5;
 }
 .headshot {
     height: 150px; 
@@ -757,11 +757,6 @@ table th {
 	background: #ededed;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
 	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
-}
-
-table th:first-child {
-	text-align: left;
-	padding-left:10px;
 }
 
 table tr:first-child th:first-child {
@@ -956,18 +951,6 @@ small {
         font-size: 1.3em;   
     }
     
-    #news-feed h2 {
-        font-size: 1.4em;   
-    }
-    
-    #news-feed h3 {
-        font-size: 1.3em;   
-    }
-    
-    #news-feed h4 {
-        font-size: 1.3em;   
-    }
-    
 }
 
 
@@ -1025,19 +1008,6 @@ small {
     #home-info h3 {
         font-size: 1.3em;   
     }
-    
-    #news-feed h2 {
-        font-size: 1.4em;   
-    }
-    
-    #news-feed h3 {
-        font-size: 1.3em;   
-    }
-    
-    #news-feed h4 {
-        font-size: 1.3em;   
-    }
-    
     
 }
 
@@ -1105,22 +1075,6 @@ small {
     
     #home-info h3 {
         font-size: 1.1em;   
-    }
-    
-    #news-feed h2 {
-        font-size: 1.2em;   
-    }
-    
-    #news-feed h3 {
-        font-size: 1.1em;
-    }
-    #news-feed h4 {
-        font-size: 1.1em;   
-    }
-    
-    #news-feed p {
-        font-size: 1em;
-        overflow: hidden;
     }
     
     #contact ul li {
@@ -1361,46 +1315,9 @@ small {
 	    padding-right: 25px;
     }
     
-    #news-feed {
-        display: block; 
-        float: none;
-        width: 98%;
-        margin-left: 4px;
-        margin-right: 3px;
-    }
-    #news-feed ul {
-    padding: 0;
-    margin: 0;
-    }
-
-    #news-feed ul li {
-    display: inline-block;
-    width: 47%;
-    padding-right: 2%;
-    text-align: left;
-    vertical-align:top;
-    }
-
-    #news-feed ul li img {
-    width: 100%;
-    display: block;
-    margin-left: 5px;    
-    }
-    #news-feed h2 {
-        font-size: 1.7em;   
-    }
-    
-    #news-feed h3 {
-        font-size: 1.1em;
-    }
-    
-    #news-feed h4 {
-        font-size: 1.1em;   
-    }
-    
-    #news-feed p {
-        font-size: 1em;
-        overflow: hidden;
+    .button3 {
+        margin: 4px;
+        padding:10px 16px;
     }
     
     .contact-wrap {
@@ -1596,29 +1513,6 @@ small {
     
     #home-info h3 {
         font-size: 1.1em;   
-    }
-    
-    #news-feed {
-        display: block; 
-        float: none;
-        width: 100%;
-    }
-    
-    #news-feed h2 {
-        font-size: 1.2em;   
-    }
-    
-    #news-feed h3 {
-        font-size: 1.1em;
-    }
-    
-    #news-feed h4 {
-        font-size: 1.1em;   
-    }
-    
-    #news-feed p {
-        font-size: 1em;
-        overflow: hidden;
     }
     
     #contact {

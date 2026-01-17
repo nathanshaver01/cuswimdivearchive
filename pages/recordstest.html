@@ -2,7 +2,7 @@
 <!-- saved from url=(0034)http://cuswimdive.com/records.html -->
 <html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-    <title>Division Records of CU Swim & Dive</title>
+    <title>Varsity Records of CU Swim & Dive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Nathan Shaver, Jennifer Cozzette, Simon Alexander, Connor McAllister, Melissa Guba">
     <link rel="stylesheet" href="../assets/css/normalize.css">
@@ -15,18 +15,7 @@
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
-    <script>
-    $(function() {
-        $( "#tabs" ).tabs();
-        $( "#tabs2" ).tabs();
-    });
-    </script>
-    <script>
-    $(function() {
-        $( "#divetabs" ).tabs();
-        $( "#divetabs2" ).tabs();
-    });
-    </script>
+
     <script>
         function showTable(tableIdToShow) {
             hideAllTables();
@@ -43,26 +32,96 @@
               tableElement.classList.remove('show')
             }
         }
+        function show(nr) {
+            document.getElementById("table1").style.display="none";
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table3").style.display="none";
+            document.getElementById("table4").style.display="none";
+            document.getElementById("table5").style.display="none";
+            document.getElementById("table6").style.display="none";
+            document.getElementById("table7").style.display="none";
+            document.getElementById("table8").style.display="none";
+            document.getElementById("table"+nr).style.display="block";
+        }
+        function focusMe(button) {
+            var elem = document.getElementsByClassName("button-selected")[0];
+            if (elem) {
+                elem.className = "";
+            }
+            button.className = "button-selected";
+        }
     </script>
     
     
     <style>
-    table {
-        width: 100%;
-        table-layout: fixed;
-    }
-    .race {
-      width: 20%;
-    }
-    .timedate {
-      width: 22%;
-    }
-    .date{
-        width:15%
-    }
-    .name {
-      width: 43%;
-    }
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
+        .race {
+        width: 20%;
+        }
+        .timedate {
+        width: 22%;
+        }
+        .date{
+            width:15%
+        }
+        .name {
+        width: 43%;
+        }
+        .dropdown-content {
+            min-width: 115px;
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown-link:hover .dropdown-content {
+        display: block;
+        }
+        .dropdown-link {
+        position: relative;
+        display: inline-block;
+        line-height: 30px; 
+        }
+        @media only screen and (min-width: 481px) and (max-width: 620px) {
+        .dropdown-link {
+            line-height: 25px; 
+        }
+        .dropdown-content a {
+            padding: 6px 8px;
+        }
+        }
+        @media screen and (max-width: 480px) {
+        .dropdown-link {
+            line-height: 25px; 
+        }
+        .dropdown-content a {
+            padding: 4px 6px;
+        }
+        .dropdown-content {
+            min-width: 80px;
+        }
+        }
+        #table1, #table2, #table3, #table4, #table5, #table6, #table7, #table8{
+            display: none;
+        }
+        .button3:focus {
+            background-color:#CFB87C;
+        }
+        .button3 {
+            background-color: #ECECEC;
+            color: black;
+        }
     </style>
 </head> 
     
@@ -78,165 +137,918 @@
                 </div>
                 <nav class="shadow">
                     <div class="container">
-                        <ul>
-                            <li class="main-link"><a href="../">YEARLY ARCHIVE</a></li>
-                            <li class="main-link"><a href="#" class = "active">TEAM RECORDS</a>
-                                <ul class="dropdown">
-                                  <li><a href="./records">Club Records</a></li>
-                                  <li><a href="./records_division">Division Records</a></li>
-                                  <li><a href="./records_pool">Pool Records</a></li>
-                                </ul>
-                              </li>
-                            <li class="main-link"><a href="./novel">NOVEL</a></li>
-                            <li class="main-link"><a href="./coaches">COACHES</a></li>
-                        </ul>
-                    </div>
+                  <ul>
+                      <li class="main-link"><a href="../">YEARLY ARCHIVE</a></li>
+                      <li class="dropdown-link"><a href="#">RECORDS</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="#">Club Records</a>
+                            <a href="#">Varsity Records</a>
+                            <a href="#">Pool Records</a>
+                          </div>
+                      </li>
+                      </li>
+                      <li class="main-link"><a href="./novel">BOOK</a></li>
+                      <li class="dropdown-link"><a href="#">ADDITIONAL</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="#">Coaches</a>
+                            <a href="#">Championships</a>
+                          </div>
+                      </li>
+                  </ul>
+                </div>
                 </nav>
             </header>
         
         <!-- main content -->
         <div id="info-content"><br><br>
-            <h1>Clare Small Pool Records</h1><br>
-            <h4 style="text-align: center">Record Archive</h4><br>
-            <h4 style="text-align: center"><a href="./records_pool">Current</a></h4>
-            <h4 style="text-align: center"><a href="./records_pool1969">March, 1969</a></h4><br><br>
-            <h4 style="text-align: center">Updated March, 1969</h4>
-            
-            <div class="buttoncontainer">
-                <input class="button2" type="button" onclick="showTable('table2')" value="Women's"><br>
-                <input class="button2" type="button" onclick="showTable('table1')" value="Men's">
-            </div>
 
-            <div id="table1" class="show table">
-                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
-                    <table>
-                        <thead>
-                            <tr><th><strong>Event</strong></th>
+            <h1>Varsity Records of CU Swim & Dive</h1><br>
+            <h3>Year Selection</h3><br><br>
+
+            <table>
+                <tr>
+                    <td><h3 style="color:black">Men</h3></td>
+                    <td><h3 style="color:black">Women</h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" onclick='show(1);'><button class = "button button3">1980</button></a>
+                        <a href="#" onclick='show(3);'><button class = "button button3">1969</button></a>
+                        <a href="#" onclick='show(4);'><button class = "button button3">1967</button></a>
+                        <a href="#" onclick='show(5);'><button class = "button button3">1963</button></a>
+                        <a href="#" onclick='show(6);'><button class = "button button3">1951</button></a>
+                        <a href="#" onclick='show(7);'><button class = "button button3">1942</button></a>
+                        <a href="#" onclick='show(8);'><button class = "button button3">1937</button></a>
+                    </td>
+                    <td>
+                        <a href="#" onclick='show(2);'><button class = "button button3">1980</button></a>
+                        <br/>
+                    </td>
+                </tr>
+            </table><br><br><br>
+            
+            <div id="table2" style="overflow-x:auto; margin:20px;">
+                <h3>Women - March 1980</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
                             <th><strong>Time</strong></th>
                             <th><strong>Swimmer</strong></th>
-                            <th><strong>School</strong></th>
-                            <th><strong>Date</strong></th>
-                        </tr></thead>
+                            <th><strong>Date/Meet</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>50 Freestyle</td>
-                            <td>21.6</td>
-                            <td>D. O'Connor</td>
-                            <td>C.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>24.500</td>
+                            <td>Sharon Little</td>
+                            <td>1979, Brigham Young Invitational</td>
                         </tr>
                         <tr>
                             <td>100 Freestyle</td>
-                            <td>48.4</td>
-                            <td>D. O'Connor</td>
-                            <td>C.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>52.800</td>
+                            <td>Sharon Little</td>
+                            <td>1979, AIAW Nationals</td>
                         </tr>
                         <tr>
                             <td>200 Freestyle</td>
-                            <td>1:52.3</td>
-                            <td>J. Cumming</td>
-                            <td>C.U.</td>
-                            <td>2/7/69</td>
+                            <td>1:56.900</td>
+                            <td>Kathy Howe</td>
+                            <td>1978, Big 8 Championship</td>
                         </tr>
                         <tr>
                             <td>500 Freestyle</td>
-                            <td>5:27.7</td>
-                            <td>C. Ridenour</td>
-                            <td>K.S.U.</td>
-                            <td>1/13/68</td>
-                        </tr>
-                        <tr>
-                            <td>1000 Freestyle</td>
-                            <td>10:57.5</td>
-                            <td>D. Kerr</td>
-                            <td>C.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>5:11.259</td>
+                            <td>Kathey Howe</td>
+                            <td>1978, Big 8 Championship</td>
                         </tr>
                         <tr>
                             <td>1650 Freestyle</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
+                            <td>17:40.000</td>
+                            <td>Kathy Howe</td>
+                            <td>1977, Husker Invitational</td>
+                        </tr>
+                        <tr>
+                            <td>50 Backstroke</td>
+                            <td>28.300</td>
+                            <td>Sharon Little</td>
+                            <td>1979, Big 8 Championship</td>
                         </tr>
                         <tr>
                             <td>100 Backstroke</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
+                            <td>1:00.300</td>
+                            <td>Sharon Little</td>
+                            <td>1979, Big 8 Championship</td>
                         </tr>
                         <tr>
                             <td>200 Backstroke</td>
-                            <td>2:06.1</td>
-                            <td>A. Picadura</td>
-                            <td>C.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>2:13.92</td>
+                            <td>Wendy Kasting</td>
+                            <td>1877, AIAW Nationals</td>
+                        </tr>
+                        <tr>
+                            <td>50 Breaststroke</td>
+                            <td>31.050</td>
+                            <td>Kris Reeves</td>
+                            <td>1980, Air Force Dual</td>
                         </tr>
                         <tr>
                             <td>100 Breaststroke</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
+                            <td>1:10.400</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, Big 8 Championship</td>
                         </tr>
                         <tr>
                             <td>200 Breaststroke</td>
-                            <td>2:23.2</td>
-                            <td>P. Watts</td>
-                            <td>C.S.U.</td>
-                            <td>2/17/68</td>
+                            <td>2:33.700</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>50 Butterfly</td>
+                            <td>27.676</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, AIAW Regionals</td>
                         </tr>
                         <tr>
                             <td>100 Butterfly</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
+                            <td>1:00.249</td>
+                            <td>Kathy Howe</td>
+                            <td>1978, Big 8 Championship</td>
                         </tr>
                         <tr>
                             <td>200 Butterfly</td>
-                            <td>2:10.5</td>
-                            <td>R. Cooley</td>
-                            <td>C.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>2:11.200</td>
+                            <td>Kathy Howe</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 I.M.</td>
+                            <td>1:02.600</td>
+                            <td>Kris Reeves</td>
+                            <td>1978, Big 8 Prelims</td>
                         </tr>
                         <tr>
                             <td>200 I.M.</td>
-                            <td>2:07.4</td>
-                            <td>R. Cooley</td>
-                            <td>C.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>2:18.000</td>
+                            <td>Marcia King</td>
+                            <td>1977, Husker Invitational</td>
                         </tr>
                         <tr>
                             <td>400 I.M.</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
+                            <td>4:41.66</td>
+                            <td>Jackie Armstrong</td>
+                            <td>1980, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Medley Relay</td>
+                            <td>1:53.060</td>
+                            <td>Frangos <br> Reeves <br> King <br> Little</td>
+                            <td>1978, Brigham Young Dual</td>
                         </tr>
                         <tr>
                             <td>400 Medley Relay</td>
-                            <td>3:47.8</td>
-                            <td>A. Picadura<br>P. Watts<br>Fuller<br>M. Fuller</td>
-                            <td>C.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>4:12.268</td>
+                            <td>Frangos <br> Reeves <br> King <br> Little</td>
+                            <td>1978, Texas Tech Dual</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle Relay</td>
+                            <td>1:43.000</td>
+                            <td>King <br> Little <br> Reeves <br> Howe</td>
+                            <td>1978, Brigham Young Dual</td>
                         </tr>
                         <tr>
                             <td>400 Freestyle Relay</td>
-                            <td>3:22.1</td>
-                            <td>J. Cunningham<br>G. Phillips<br>D. Johnson<br>K. Lemaster</td>
-                            <td>O.S.U.</td>
-                            <td>2/16/68</td>
+                            <td>3:47.880</td>
+                            <td>Reeves <br> Little <br> King <br> Howe</td>
+                            <td>1977, AIAW Nationals</td>
                         </tr>
-                </tbody></table>
-                </div>
+                        <tr>
+                            <td>800 Freestyle Relay</td>
+                            <td>8:09.235</td>
+                            <td>Howe <br> Little <br> King <br> Frangos</td>
+                            <td>1978, AIAW Regionals</td>
+                        </tr>
+                        <tr>
+                            <td>One Meter 11 Dives</td>
+                            <td>449.15</td>
+                            <td>Bev Beauchamp</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>Three Meter 11 Dives</td>
+                            <td>476.15</td>
+                            <td>Bev Beauchamp</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div id="table2" class="table">
-                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
-                    
-                </div>
+            <div id="table1" style="overflow-x:auto; margin:20px;">
+                <h3>Men - March 1980</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date/Meet</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>21.039</td>
+                            <td>Kurt Brekke</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>46.544</td>
+                            <td>Kurt Brekke</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:42.000</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979 Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>4:32.160</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>9:37.600</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>1650 Freestyle</td>
+                            <td>15:41.700</td>
+                            <td>George Tidmarsh</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>58.940</td>
+                            <td>Frank Orten</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:07.990</td>
+                            <td>Frank Orten</td>
+                            <td>1979, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>54.400</td>
+                            <td>Paul Almeida</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>1:58.650</td>
+                            <td>Paul Almeida</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>51.510</td>
+                            <td>Paul Almeida</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>1:54.678</td>
+                            <td>Bruce Wencel</td>
+                            <td>1977, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>1:53.780</td>
+                            <td>Frank Orten</td>
+                            <td>1978, CU Qualifying Meet</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>4:07.100</td>
+                            <td>Phillip Wrist</td>
+                            <td>1977, NCAA Championship</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:31.530</td>
+                            <td>Keith <br> Almeida <br> Brekke <br> Orten</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:07.230</td>
+                            <td>Orten <br> Bush <br> Bowman <br> Brekke </td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                        <tr>
+                            <td>800 Freestyle Relay</td>
+                            <td>6:55.600</td>
+                            <td>Brekke <br> Bowman <br> Orten <br> Wrist</td>
+                            <td>1978, Big 8 Championship</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <div id="table3" style="overflow-x:auto; margin:20px;">
+                <h3>Men - March 1969</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>22.08</td>
+                            <td>J. Cumming</td>
+                            <td>3/6/69</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>49.12</td>
+                            <td>J. Cumming</td>
+                            <td>3/8/69</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:49.22</td>
+                            <td>J. Cumming</td>
+                            <td>3/7/69</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:15.45</td>
+                            <td>K. Schmitt</td>
+                            <td>3/6/69</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>11:30.4</td>
+                            <td>K. Schmitt</td>
+                            <td>2/1/69</td>
+                        </tr>
+                        <tr>
+                            <td>1650 Freestyle</td>
+                            <td>18:28.5</td>
+                            <td>K. Schmitt</td>
+                            <td>3/8/69</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>57.6</td>
+                            <td>K. Krueger</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:11.09</td>
+                            <td>W. Rake</td>
+                            <td>2/8/69</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>56.77</td>
+                            <td>S. Katz</td>
+                            <td>3/8/69</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:09.61</td>
+                            <td>S. Katz</td>
+                            <td>3/7/69</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>1:03.8</td>
+                            <td>D. Zemer</td>
+                            <td>3/3/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:22.7</td>
+                            <td>T. Danko</td>
+                            <td>2/18/66</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:10.71</td>
+                            <td>P. Mack</td>
+                            <td>3/6/69</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>4:46.17</td>
+                            <td>W. Rake</td>
+                            <td>3/7/69</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:39.1</td>
+                            <td>C. Kaufman <br>D. Zemer <br> K. Krueger <br> R. Cornell</td>
+                            <td>3/2/67</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:19.6</td>
+                            <td>J. Boulware <br>K. Krueger <br> J. Cumming <br> G. Krum</td>
+                            <td>3/8/68</td>
+                        </tr>
+                        <tr>
+                            <td>800 Freestyle Relay</td>
+                            <td>7:32.66</td>
+                            <td>K. Schmitt <br>C. Cowan <br> G. Krum <br> J. Cumming</td>
+                            <td>3/7/69</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="table4" style="overflow-x:auto; margin:20px;">
+                <h3>Men - March 1967</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>22.8</td>
+                            <td>A. Wilson</td>
+                            <td>2/23/63</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>50.1</td>
+                            <td>R. Cornell</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:56.7</td>
+                            <td>C. Kaufman</td>
+                            <td>1/6/67</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:18.7</td>
+                            <td>M. McElroy</td>
+                            <td>3/7/63</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>12:04.6</td>
+                            <td>C. Kaufman</td>
+                            <td>2/10/67</td>
+                        </tr>
+                        <tr>
+                            <td>1650 Freestyle</td>
+                            <td>18:53.6</td>
+                            <td>C. Kaufman</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>57.6</td>
+                            <td>K. Krueger</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:17.4</td>
+                            <td>B. Elliott</td>
+                            <td>2/19/66</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>57.6</td>
+                            <td>C. Kaufman</td>
+                            <td>3/4/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:17.4</td>
+                            <td>J. Waggoner</td>
+                            <td>3/5/65</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>1:03.8</td>
+                            <td>D. Zemer</td>
+                            <td>3/3/67</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:22.7</td>
+                            <td>T. Danko</td>
+                            <td>2/18/66</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:14.3</td>
+                            <td>J. Waggoner</td>
+                            <td>2/5/65</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>5:03.0</td>
+                            <td>J. Waggoner</td>
+                            <td>3/5/64</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:39.1</td>
+                            <td>C. Kaufman <br>D. Zemer <br> K. Krueger <br> R. Cornell</td>
+                            <td>3/2/67</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:29.1</td>
+                            <td>K. Krueger <br>C. Kaufman <br> W. Rogers <br> R. Cornell</td>
+                            <td>1/14/67</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  
+            <div id="table5" style="overflow-x:auto; margin:20px;">
+                <h3>Men - March 1963</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>22.8</td>
+                            <td>A. Wilson</td>
+                            <td>2/23/63</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>51.2</td>
+                            <td>A. Wilson</td>
+                            <td>2/23/63</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:58.5</td>
+                            <td>M. McElroy</td>
+                            <td>3/7/63</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:18.7</td>
+                            <td>M. McElroy</td>
+                            <td>3/7/63</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:17.6</td>
+                            <td>B. Carlson</td>
+                            <td>3/7/63</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:31.1</td>
+                            <td>J. Waggoner</td>
+                            <td>2/20/63</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:28.9</td>
+                            <td>K. Shaw</td>
+                            <td>3/7/63</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:22.0</td>
+                            <td>H. Wise</td>
+                            <td>2/16/63</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>4:04.2</td>
+                            <td>B. Carlson <br>K. Shaw <br> J. Waggoner <br> A. Wilson</td>
+                            <td>3/7/63</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:35.5</td>
+                            <td>J. Thompson <br> D. Bailey <br> C. Bush <br> A. Wilson</td>
+                            <td>3/8/63</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="table6" style="overflow-x:auto; margin:20px;">
+                <h3>Men - March 1951</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>25.0</td>
+                            <td>H. Daniels</td>
+                            <td>2/28/42</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>56.6</td>
+                            <td>B. Bowers</td>
+                            <td>3/11/50</td>
+                        </tr>
+                        <tr>
+                            <td>220 Freestyle</td>
+                            <td>2:25.0</td>
+                            <td>H. Berger</td>
+                            <td>3/9/51</td>
+                        </tr>
+                        <tr>
+                            <td>440 Freestyle</td>
+                            <td>5:23.8</td>
+                            <td>M. Heffelman</td>
+                            <td>3/10/51</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:29.3</td>
+                            <td>C. Harbaugh</td>
+                            <td>3/9/51</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>1:05.0</td>
+                            <td>S. Black</td>
+                            <td>3/10/51</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:32.0</td>
+                            <td>S. Black</td>
+                            <td>--/--/50</td>
+                        </tr>
+                        <tr>
+                            <td>150 I.M.</td>
+                            <td>1:47.0</td>
+                            <td>B. Bond</td>
+                            <td>3/11/50</td>
+                        </tr>
+                        <tr>
+                            <td>300 Medley Relay</td>
+                            <td>3:06.0</td>
+                            <td>C. Harbaugh <br> S. Black <br> B. Bond <br></td>
+                            <td>3/10/51</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:48.2</td>
+                            <td>B. Heim <br> A. Daman <br> G. Kiley <br> B. Bond</td>
+                            <td>3/9/51</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div id="table7" style="overflow-x:auto; margin:20px;">
+                <h3>Men - March 1942</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>Plunge</td>
+                            <td>50' 2"</td>
+                            <td>Anderson</td>
+                            <td>5/6/25</td>
+                        </tr>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>25.0</td>
+                            <td>H. Daniels</td>
+                            <td>2/28/42</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>57.3</td>
+                            <td>A. Rogers</td>
+                            <td>2/15/41</td>
+                        </tr>
+                        <tr>
+                            <td>220 Freestyle</td>
+                            <td>2:30.9</td>
+                            <td>C. Merrifield</td>
+                            <td>2/28/42</td>
+                        </tr>
+                        <tr>
+                            <td>440 Freestyle</td>
+                            <td>5:34.1</td>
+                            <td>P. Musselwhite</td>
+                            <td>2/26/38</td>
+                        </tr>
+                        <tr>
+                            <td>150 Backstroke</td>
+                            <td>1:56.7</td>
+                            <td>R. Christy</td>
+                            <td>3/3/34</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:30.7</td>
+                            <td>G. Eaton</td>
+                            <td>2/21/42</td>
+                        </tr>
+                        <tr>
+                            <td>220 Breaststroke</td>
+                            <td>2:44.0</td>
+                            <td>G. Eaton</td>
+                            <td>2/7/42</td>
+                        </tr>
+                        <tr>
+                            <td>270 Medley Relay</td>
+                            <td>3:06.8</td>
+                            <td>R. Counley<br>G. Caypless<br>H. Shelton</td>
+                            <td>2/24/40</td>
+                        </tr>
+                        <tr>
+                            <td>300 Medley Relay</td>
+                            <td>3:17.9</td>
+                            <td>J. Dumm <br>G. Belders <br>A. List</td>
+                            <td>2/21/42</td>
+                        </tr>
+                        <tr>
+                            <td>120 Freestyle Relay</td>
+                            <td>57.7</td>
+                            <td>D. Murray <br>F. Pingrey <br>S. Debenham</td>
+                            <td>2/14/31</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle Relay</td>
+                            <td>1:52.2</td>
+                            <td>R. Hazlett <br> C. Hinderlider <br> F. Pingrey <br> Neusteter</td>
+                            <td>2/6/31</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>4:00.0</td>
+                            <td>W. Bigum <br>P. Clark <br> A. Rogers <br> C. Merrifield</td>
+                            <td>2/22/41</td>
+                        </tr>
+                        <tr>
+                            <td>440 Freestyle Relay</td>
+                            <td>3:52.1*</td>
+                            <td>J. Glass <br>G. Caypless <br> R. Vandapool <br> C. Merrifield</td>
+                            <td>2/10/40</td>
+                        </tr>
+                        <tr>
+                            <td>Diving</td>
+                            <td>240.1</td>
+                            <td>E. McCluskey</td>
+                            <td>2/5/40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><h4>*Unofficial record is by H. Shelton, A. List. Jr, R. Law, C. Merrifield on 1/27/40 which is listed as 3:39.7.  Very unlikely this was actual time, likely newspaper misprint</h4>
+            </div>
+            <div id="table8" style="overflow-x:auto; margin:20px;">
+                <h3>Men - March 1937</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>Plunge</td>
+                            <td>50' 2"</td>
+                            <td>Anderson</td>
+                            <td>5/6/25</td>
+                        </tr>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>26.2</td>
+                            <td>H. Eakins</td>
+                            <td>3/2/35</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>59.7</td>
+                            <td>F. Pingrey</td>
+                            <td>2/17/34</td>
+                        </tr>
+                        <tr>
+                            <td>220 Freestyle</td>
+                            <td>2:41.7</td>
+                            <td>H. Eakins</td>
+                            <td>2/17/34</td>
+                        </tr>
+                        <tr>
+                            <td>440 Freestyle</td>
+                            <td>6:28.8</td>
+                            <td>J. Bangeman</td>
+                            <td>2/4/33</td>
+                        </tr>
+                        <tr>
+                            <td>150 Backstroke</td>
+                            <td>1:56.7</td>
+                            <td>R. Christy</td>
+                            <td>3/3/34</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:51.5*</td>
+                            <td>C. Bumstead</td>
+                            <td>2/8/36</td>
+                        </tr>
+                        <tr>
+                            <td>220 Breaststroke</td>
+                            <td>2:45.7</td>
+                            <td>C. Bumstead</td>
+                            <td>3/2/35</td>
+                        </tr>
+                        <tr>
+                            <td>270 Medley Relay</td>
+                            <td>3:08.8</td>
+                            <td>R. Christy<br>K. Porath<br>Alexander</td>
+                            <td>2/11/33</td>
+                        </tr>
+                        <tr>
+                            <td>120 Freestyle Relay</td>
+                            <td>57.7</td>
+                            <td>D. Murray <br>F. Pingrey <br>S. Debenham</td>
+                            <td>2/14/31</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle Relay</td>
+                            <td>1:52.2</td>
+                            <td>R. Hazlett <br> C. Hinderlider <br> F. Pingrey <br> Neusteter</td>
+                            <td>2/6/31</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>4:19.8</td>
+                            <td>R. Rogers<br>C. Moore<br>Alexander<br>H. Eakins</td>
+                            <td>2/17/34</td>
+                        </tr>
+                        <tr>
+                            <td>440 Freestyle Relay</td>
+                            <td>4:16.6</td>
+                            <td>Alexander<br>C. Moroe<br>Clark<br>H. Eakins</td>
+                            <td>3/4/33</td>
+                        </tr>
+                        <tr>
+                            <td>Diving</td>
+                            <td>133.3</td>
+                            <td>B. Mark</td>
+                            <td>2/27/37</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><h4>*Unofficial record is by C. Bumstead on 2/27/37 which is listed as “Two minutes, 15.5 seconds.” Very unlikely this was actual time, likely newspaper misprint</h4>
+            </div>
+            
         </div>
         
     
