@@ -2,7 +2,7 @@
 <!-- saved from url=(0034)http://cuswimdive.com/records.html -->
 <html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-    <title>Club Records of CU Swim & Dive</title>
+    <title>University of Colorado Pool Records</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Nathan Shaver, Jennifer Cozzette, Simon Alexander, Connor McAllister, Melissa Guba">
     <link rel="stylesheet" href="../assets/css/normalize.css">
@@ -15,18 +15,7 @@
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
-    <script>
-    $(function() {
-        $( "#tabs" ).tabs();
-        $( "#tabs2" ).tabs();
-    });
-    </script>
-    <script>
-    $(function() {
-        $( "#divetabs" ).tabs();
-        $( "#divetabs2" ).tabs();
-    });
-    </script>
+
     <script>
         function showTable(tableIdToShow) {
             hideAllTables();
@@ -43,26 +32,45 @@
               tableElement.classList.remove('show')
             }
         }
+        function show(nr) {
+            document.getElementById("table1").style.display="none";
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table3").style.display="none";
+            document.getElementById("table4").style.display="none";
+            document.getElementById("table5").style.display="none";
+            document.getElementById("table6").style.display="none";
+            document.getElementById("table"+nr).style.display="block";
+        }
+        function focusMe(button) {
+            var elem = document.getElementsByClassName("button-selected")[0];
+            if (elem) {
+                elem.className = "";
+            }
+            button.className = "button-selected";
+        }
     </script>
     
     
     <style>
-    table {
-        width: 100%;
-        table-layout: fixed;
-    }
-    .race {
-      width: 20%;
-    }
-    .timedate {
-      width: 22%;
-    }
-    .date{
-        width:15%
-    }
-    .name {
-      width: 43%;
-    }
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
+        .race {
+        width: 20%;
+        }
+        .timedate {
+        width: 22%;
+        }
+        .date{
+            width:15%
+        }
+        .name {
+        width: 43%;
+        }
+        #table1, #table2, #table3, #table4, #table5, #table6{
+            display: none;
+        }
     </style>
 </head> 
     
@@ -78,343 +86,3428 @@
                 </div>
                 <nav class="shadow">
                     <div class="container">
-                        <ul>
-                            <li class="main-link"><a href="../">YEARLY ARCHIVE</a></li>
-                            <li class="main-link"><a href="#" class = "active">TEAM RECORDS</a>
-                                <ul class="dropdown">
-                                  <li><a href="./records">Club Records</a></li>
-                                  <li><a href="./records_division">Division Records</a></li>
-                                  <li><a href="./records_pool">Pool Records</a></li>
-                                </ul>
-                              </li>
-                            <li class="main-link"><a href="./novel">NOVEL</a></li>
-                            <li class="main-link"><a href="./coaches">COACHES</a></li>
-                        </ul>
-                    </div>
+                  <ul>
+                      <li class="main-link"><a href="../">YEARLY ARCHIVE</a></li>
+                      <li class="dropdown-link"><a href="#">RECORDS</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="./records">Club</a>
+                            <a href="./records_division">Varsity</a>
+                            <a href="./records_pool">Pool</a>
+                          </div>
+                      </li>
+                      </li>
+                      <li class="main-link"><a href="./novel">BOOK</a></li>
+                      <li class="dropdown-link"><a href="#">ADDITIONAL</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="./coaches">Coaches</a>
+                            <a href="./championships">Championships</a>
+                          </div>
+                      </li>
+                  </ul>
+                </div>
                 </nav>
             </header>
         
         <!-- main content -->
         <div id="info-content"><br><br>
-            <h1>CU Recreation Pool Records</h1><br>
-            <h4 style="text-align: center">Record Archive</h4><br>
-            <h4 style="text-align: center"><a href="./records_pool">Current</a></h4>
-            <h4 style="text-align: center"><a href="./records_pool1972">March, 1972</a></h4>
-            <h4 style="text-align: center"><a href="./records_pool1969">March, 1969</a></h4><br><br>
-            <h4 style="text-align: center">Not Fully Updated. Still WIP</h4>
-            <div class="buttoncontainer">
-                <input class="button2" type="button" onclick="showTable('table1')" value="Women's"><br>
-                <input class="button2" type="button" onclick="showTable('table2')" value="Men's">
-            </div>
 
-            <div id="table1" class="show table">
-                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
-                <table>
-                    <thead><!--IMG_3514.HEIC-->
+            <h1>University of Colorado Pool Records</h1><br>
+            <h3>Year Selection</h3><br><br>
+
+            <table>
+                <tr>
+                    <td><h3 style="color:black">Women</h3></td>
+                    <td><h3 style="color:black">Men</h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" onclick='show(2);'><button class = "button button3">2023</button></a>
+                        <a href="#" onclick='show(4);'><button class = "button button3">1980</button></a>
+                        <br/>
+                    </td>
+                    <td>
+                        <a href="#" onclick='show(1);'><button class = "button button3">2023</button></a>
+                        <a href="#" onclick='show(3);'><button class = "button button3">1980</button></a>
+                        <a href="#" onclick='show(5);'><button class = "button button3">1972</button></a>
+                        <a href="#" onclick='show(6);'><button class = "button button3">1969</button></a>
+                    </td>
+                </tr>
+            </table><br><br><br>
+            
+            <div id="table2" style="overflow-x:auto; margin:12px;">
+                <h3>Women - October 2023 (Recreation Pool)</h3><br><br>
+                <table class="table4">
+                    <thead>
                     <tr>
-                    <th><strong>Event</strong></th>
-                    <th><strong>Time</strong></th>
-                    <th><strong>Swimmer</strong></th>
-                    <th><strong>School</strong></th>
-                    <th><strong>Date/Meet</strong></th>
+                        <th><strong>Event</strong></th>
+                        <th><strong>Time</strong></th>
+                        <th><strong>Swimmer</strong></th>
+                        <th><strong>School</strong></th>
+                        <th><strong>Date</strong></th>
                     </tr>
                     </thead>
-                <!-- **********************************************************
-                EDIT MENS RECORDS HERE
-                SEARCH FOR THE RECORD YOU WISH TO CHANGE, EDIT WITH THE FORMAT:
-                <tr>
-                    <td>Event Name</td>
-                    <td>Time</td>
-                    <td>Swimmer</td>
-                    <td>Date</td>
-                </tr>
-                *********************************************************** -->
-                <tbody>
                     <tr>
-                        <td>50 Freestyle</td>
+                        <td rowspan="5">50 Freestyle</td>
                         <td>24.748</td>
-                        <td>Gail Amundrud</td>
+                        <td>G. Amundrud</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/24/1978</td>
                     </tr>
                     <tr>
-                        <td>100 Freestyle</td>
+                        <td>24.86</td>
+                        <td>E. Lutz</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>24.917</td>
+                        <td>V. Allen</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>24.985</td>
+                        <td>S. Budner</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>25.08</td>
+                        <td>L.Stauffer</td>
+                        <td>Colorado State</td>
+                        <td>1/31/1977</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Freestyle</td>
                         <td>52.292</td>
-                        <td>Gail Amundrud</td>
+                        <td>G. Amundrud</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/25/1978</td>
                     </tr>
                     <tr>
-                        <td>200 Freestyle</td>
+                        <td>53.604</td>
+                        <td>D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>54.233</td>
+                        <td>P. Tosdal</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>54.323</td>
+                        <td>S. Brady</td>
+                        <td>Colorado State</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>54.46</td>
+                        <td>S. Little</td>
+                        <td>Colorado</td>
+                        <td>1/18/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle</td>
                         <td>1:53.527</td>
-                        <td>Gail Amundrud</td>
+                        <td>G. Amundrud</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/24/1978</td>
                     </tr>
                     <tr>
-                        <td>500 Freestyle</td>
+                        <td>1:55.811</td>
+                        <td>L. Wood</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:57.145</td>
+                        <td>D. Dunlevy</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:57.721</td>
+                        <td>K. Ginniver</td>
+                        <td>New Mexico</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:57.837</td>
+                        <td>K. Rowell</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">500 Freestyle</td>
                         <td>5:05.771</td>
-                        <td>Gail Amundrud</td>
+                        <td>G. Amundrud</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/23/1978</td>
                     </tr>
                     <tr>
-                        <td>1650 Freestyle</td>
+                        <td>5:08.643</td>
+                        <td>S. Thompson</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>5:09.606</td>
+                        <td>R. Ginnover</td>
+                        <td>New Mexico</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>5:13.663</td>
+                        <td>L. Wood</td>
+                        <td>Arizona</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>5:15.1</td>
+                        <td>G. Murray</td>
+                        <td>Colorado State</td>
+                        <td>12/7/1976</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1000 Freestyle</td>
+                        <td>10:52.559</td>
+                        <td>Smith</td>
+                        <td>Brigham Young</td>
+                        <td>1/18/1980</td>
+                    </tr>
+                    <tr>
+                        <td>10:50.202</td>
+                        <td>K. Howe</td>
+                        <td>Colorado</td>
+                        <td>11/12/1977</td>
+                    </tr>
+                    <tr>
+                        <td>10:58.825</td>
+                        <td>L. Spindler</td>
+                        <td>Nebraska</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>10:59.49</td>
+                        <td>A. Watland</td>
+                        <td>Nebraska</td>
+                        <td>12/8/1978</td>
+                    </tr>
+                    <tr>
+                        <td>11:00.362</td>
+                        <td>S. Fahey</td>
+                        <td>Colorado</td>
+                        <td>12/8/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1650 Freestyle</td>
                         <td>17:53.968</td>
-                        <td>Sandy Thompson</td>
+                        <td>S. Thompson</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/24/1978</td>
                     </tr>
                     <tr>
-                        <td>50 Backstroke</td>
-                        <td>28.566</td>
-                        <td>Lyn Griggs</td>
+                        <td>18:04.423</td>
+                        <td>L. Wood</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>18:15.149</td>
+                        <td>L. Cliff</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>18:24.471</td>
+                        <td>L. Dinan</td>
+                        <td>Wyoming</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>18:24.582</td>
+                        <td>K. Howe</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle Relay</td>
+                        <td>1:39.468</td>
+                        <td>W. Czarniecki, H. Stevens, S. Anderson, J. Wallace</td>
                         <td>Colorado State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/9/1980</td>
                     </tr>
                     <tr>
-                        <td>100 Backstroke</td>
-                        <td>1:00.627</td>
-                        <td>Lelei Finoimoana</td>
-                        <td>Brigham Young</td>
-                        <td>1979, Buff Invitational</td>
-                    </tr>
-                    <tr>
-                        <td>200 Backstroke</td>
-                        <td>2:12.414</td>
-                        <td>Lyn Griggs</td>
+                        <td>1:39.727</td>
+                        <td>V. Allen, S. Budner, D. Dunlevy, S. Larson</td>
                         <td>Colorado State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/24/1978</td>
                     </tr>
                     <tr>
-                        <td>50 Breaststroke</td>
-                        <td>30.277</td>
-                        <td>Pam Rogers</td>
+                        <td>1:40.238</td>
+                        <td>P. Tosdal, M. Campion, K. Rowell, G. Higgins</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/24/1978</td>
                     </tr>
                     <tr>
-                        <td>100 Breaststroke</td>
-                        <td>1:06.112</td>
-                        <td>Pam Rogers</td>
+                        <td>1:40.468</td>
+                        <td>J. Armstrong, S. Little, C. Toren, K. Reeves</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.470</td>
+                        <td>L. Wood, S. Wheatley, S. Minton, E. Lutz</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Freestyle Relay</td>
+                        <td>3:34.602</td>
+                        <td>S. Wheatley, L. Wood, Johnson, E. Lutz</td>
+                        <td>Arizona</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>3:41.279</td>
+                        <td>W. Czarniecki, Thatcher, S. Anderson, J. Wallace</td>
+                        <td>Colorado State</td>
+                        <td>11/29/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:41.709</td>
+                        <td>S. Thompson, Zygowicz, M. Oliver, K. Rowell</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/25/1978</td>
                     </tr>
                     <tr>
-                        <td>200 Breaststroke</td>
-                        <td>2:25.624</td>
-                        <td>Yolanda Mendiola</td>
+                        <td>3:42.196</td>
+                        <td>L. Young, C. Naisbitt, Y. Mendiola, L. Fonoimoana</td>
                         <td>Brigham Young</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/25/1978</td>
                     </tr>
                     <tr>
-                        <td>50 Butterfly</td>
-                        <td>26.476</td>
-                        <td>Peggy Tosdal</td>
+                        <td>3:44.514</td>
+                        <td>K. Howe, S. Shannon, K. Long, S. Little</td>
+                        <td>Colorado</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">800 Freestyle Relay</td>
+                        <td>7:43.878</td>
+                        <td>G. Higgins, Powell, G. Amundrud, M. Campion</td>
                         <td>Arizona State</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/23/1978</td>
                     </tr>
                     <tr>
-                        <td>100 Butterfly</td>
+                        <td>7:43.361</td>
+                        <td>S. Wheatley, L. Wood, E. Lutz, D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>8:06.475</td>
+                        <td>L. Young, C. Naisbilt, S. Clark, L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>8:09.235</td>
+                        <td>K. Howe, S. Little, M. King, N. Frangos</td>
+                        <td>Colorado</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>8:12.327</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Butterfly</td>
+                        <td>26.199</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>26.486</td>
+                        <td>P. Tosdal</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>27.461</td>
+                        <td>S. Budner</td>
+                        <td>Colorado State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>27.489</td>
+                        <td>M. Campion</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>27.925</td>
+                        <td>P. Swim</td>
+                        <td>Utah</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Butterfly</td>
                         <td>57.727</td>
-                        <td>Leli Finoiomana</td>
+                        <td>L. Fonoimoana</td>
                         <td>Brigham Young</td>
-                        <td>1979, Buff Invitational</td>
+                        <td>2/1/1979</td>
                     </tr>
                     <tr>
-                        <td>200 Butterfly</td>
-                        <td>2:09.095</td>
-                        <td>Leli Finoiomana</td>
-                        <td>Brigham Young</td>
-                        <td>1979, Buff Invitational</td>
+                        <td>58.099</td>
+                        <td>P. Tosdal</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
                     </tr>
                     <tr>
-                        <td>100 I.M.</td>
+                        <td>59.345</td>
+                        <td>G. Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.205</td>
+                        <td>P. Swim</td>
+                        <td>Utah</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.247</td>
+                        <td>M. Campion</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Butterfly</td>
+                        <td>2;08.096</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:10.007</td>
+                        <td>K. Miller</td>
+                        <td>Colorado</td>
+                        <td>1/18/1980</td>
+                    </tr>
+                    <tr>
+                        <td>2:11.4</td>
+                        <td>S. Thompson</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.021</td>
+                        <td>P. Swim</td>
+                        <td>Utah</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.133</td>
+                        <td>K. Howe</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Backstroke</td>
+                        <td>28.16</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>2/7/2008</td>
+                    </tr>
+                    <tr>
+                        <td>28.473</td>
+                        <td>L. Griggs</td>
+                        <td>Colorado State</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>28.57</td>
+                        <td>S. Little</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>28.99</td>
+                        <td>G. Spong</td>
+                        <td>Colorado</td>
+                        <td>10/12/2019</td>
+                    </tr>
+                    <tr>
+                        <td>29.06</td>
+                        <td>K. Olson</td>
+                        <td>Colorado Mesa</td>
+                        <td>10/24/2015</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Backstroke</td>
+                        <td>1:00.627</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.832</td>
+                        <td>D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.947</td>
+                        <td>L. Griggs</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:01.697</td>
+                        <td>S. Little</td>
+                        <td>Colorado</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:02.64</td>
+                        <td>J. Dolan</td>
+                        <td>Colorado State</td>
+                        <td>10/8/2022</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Backstroke</td>
+                        <td>2:12.414</td>
+                        <td>L. Griggs</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.462</td>
+                        <td>M. Belote</td>
+                        <td>Arizona Staet</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.0</td>
+                        <td>B. Straughn</td>
+                        <td>Colorado State</td>
+                        <td>1/31/1977</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.6</td>
+                        <td>Bacon</td>
+                        <td>New Mexico</td>
+                        <td>1/30/1976</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.666</td>
+                        <td>A. Callahan</td>
+                        <td>Wyoming</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Breaststroke</td>
+                        <td>30.227</td>
+                        <td>P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>31.359</td>
+                        <td>A. Bettencourt</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>31.567</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>31.841</td>
+                        <td>Diane Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>32.351</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Breaststroke</td>
+                        <td>1:06.112</td>
+                        <td>P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:07.449</td>
+                        <td>A. Bettencourt</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:07.466</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:08.406</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:08.417</td>
+                        <td>K. Reeves</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Breaststroke</td>
+                        <td>2:25.624</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:25.933</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:28.939</td>
+                        <td>A. Bettencourt</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:29.398</td>
+                        <td>P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:33.398</td>
+                        <td>J. Armstrong</td>
+                        <td>Colorado</td>
+                        <td>11/27/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 I.M.</td>
                         <td>59.915</td>
-                        <td>Diane Johnson</td>
+                        <td>D. Johnson</td>
                         <td>Arizona</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/25/1978</td>
                     </tr>
                     <tr>
-                        <td>200 I.M.</td>
-                        <td>2:11.212</td>
-                        <td>Leli Finoiomana</td>
+                        <td>1:00.574</td>
+                        <td>L. Fonoimoana</td>
                         <td>Brigham Young</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/25/1978</td>
                     </tr>
                     <tr>
-                        <td>400 I.M.</td>
-                        <td>4:41.318</td>
+                        <td>1:02.062</td>
+                        <td>J. Armstrong</td>
+                        <td>Colorado</td>
+                        <td>12/4/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:02.775</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:02.9</td>
+                        <td>K. Reeves</td>
+                        <td>Colorado</td>
+                        <td>11/12/1976</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 I.M.</td>
+                        <td>2:22.217</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:12.922</td>
+                        <td>M. Belote</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:14.336</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.034</td>
+                        <td>S. Clark</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.306</td>
+                        <td>J. Armstrong</td>
+                        <td>Colorado</td>
+                        <td>12/4/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 I.M.</td>
+                        <td>4:48.318</td>
+                        <td>D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:47.297</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:47.557</td>
+                        <td>M. Oliver</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:48.641</td>
+                        <td>V. Miller</td>
+                        <td>Colorado State</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:48.876</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Medley Relay</td>
+                        <td>1:49.357</td>
+                        <td>M. Belote, P. Rogers, P. Tosdal, K. Rowell</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:51.746</td>
+                        <td>S. Little, K. Reeves, K. Howe, C. Toren</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>1:51.805</td>
+                        <td>L. Griggs, D. Rudolph, S. Budner, S. Larson</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:52.376</td>
+                        <td>"A"</td>
+                        <td>Wyoming</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:52.763</td>
+                        <td>L. Griggs, W. Czarniecki, P. King, J. Wallace</td>
+                        <td>Colorado State</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Medley Relay</td>
+                        <td>4:01.492</td>
+                        <td>G. Amundrud, A. Bettencourt, P. Tosdal, P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:06.400</td>
+                        <td>Engelmann, Y. Mendiola, S. Clark, B. Coon</td>
+                        <td>Brigham Young</td>
+                        <td>1/18/1980</td>
+                    </tr>
+                    <tr>
+                        <td>4:06.613</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:07.009</td>
+                        <td>L. Griggs, Czarniecki, D. Steward, J. Wallace</td>
+                        <td>Colorado State</td>
+                        <td>11/29/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:07.922</td>
+                        <td>"A"</td>
+                        <td>Colorado State</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1 Meter Diving</td>
+                        <td>412.5</td>
+                        <td>B. Beauchamp</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>411.6</td>
+                        <td>T. Brookbank</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>402.25</td>
+                        <td>D. Seal</td>
+                        <td>Wyoming</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>393.35</td>
+                        <td>T. Dollaghan</td>
+                        <td>Brigham Young</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>383.05</td>
+                        <td>N. Fenn</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">3 Meter Diving</td>
+                        <td>412.0</td>
+                        <td>B. Beauchamp</td>
+                        <td>Colorado</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>403.85</td>
+                        <td>T. Dollaghan</td>
+                        <td>Brigham Young</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>381.95</td>
+                        <td>T. Brookbank</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>380.35</td>
+                        <td>Denise Seal</td>
+                        <td>Wyoming</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>361.9</td>
+                        <td>J. Leopold</td>
+                        <td>Arizona</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                </table><br><br><h4>Note: Some results do not list individuals on relays. "A" denotes unknown swimmer(s) from that school's A relay</h4>
+            </div>
+            <div id="table1" style="overflow-x:auto; margin:12px;">
+                <h3>Men - October 2023 (Recreation Pool)</h3><br><br>
+                <table class="table4">
+                    <thead>
+                    <tr>
+                        <th><strong>Event</strong></th>
+                        <th><strong>Time</strong></th>
+                        <th><strong>Swimmer</strong></th>
+                        <th><strong>School</strong></th>
+                        <th><strong>Date</strong></th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td rowspan="5">50 Freestyle</td>
+                        <td>21.1</td>
+                        <td>J. Garnier</td>
+                        <td>Masters</td>
+                        <td>10/20/2018</td>
+                    </tr>
+                    <tr>
+                        <td>21.307</td>
+                        <td>L. Gordon</td>
+                        <td>Brigham Young</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr>
+                        <td>21.4</td>
+                        <td>C. Lansberg</td>
+                        <td>Colorado</td>
+                        <td>2/1/1975</td>
+                    </tr>
+                    <tr>
+                        <td>21.49</td>
+                        <td>D. Biddick</td>
+                        <td>Oklahoma State</td>
+                        <td>3/7/1974</td>
+                    </tr>
+                    <tr>
+                        <td>21.5</td>
+                        <td>Hogue</td>
+                        <td>Air Force</td>
+                        <td>2/1/1975</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Freestyle</td>
+                        <td>46.65</td>
+                        <td>J. Harnier</td>
+                        <td>Masters</td>
+                        <td>10/20/2018</td>
+                    </tr>
+                    <tr>
+                        <td>46.87</td>
+                        <td>A. McDonald</td>
+                        <td>Kansas</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>47.04</td>
+                        <td>D. Biddick</td>
+                        <td>Oklahoma State</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>47.13</td>
+                        <td>C. Sharp</td>
+                        <td>Colorado</td>
+                        <td>3/20/2016</td>
+                    </tr>
+                    <tr>
+                        <td>47.199</td>
+                        <td>M. McGregor</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle</td>
+                        <td>1:42.455</td>
+                        <td>B. Briggs</td>
+                        <td>Wyoming</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:42.60</td>
+                        <td>S. Vaughn</td>
+                        <td>Colorado State</td>
+                        <td>2/20/1976</td>
+                    </tr>
+                    <tr>
+                        <td>1:43.25</td>
+                        <td>R. Burnett</td>
+                        <td>Iowa State</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:43.857</td>
+                        <td>J. Sorich</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:44.039</td>
+                        <td>J. Marshall</td>
+                        <td>Oklahoma State</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">500 Freestyle</td>
+                        <td>4:38.189</td>
+                        <td>J. Marshall</td>
+                        <td>Oklahoma State</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:40.215</td>
+                        <td>T. Stetson</td>
+                        <td>Wyoming</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:41.736</td>
+                        <td>B. Thomas</td>
+                        <td>Utah</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:43.376</td>
+                        <td>J. Mras</td>
+                        <td>Utah</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:44.093</td>
+                        <td>J. Sorich</td>
+                        <td>Brigham Young</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1000 Freestyle</td>
+                        <td>9:39.20</td>
+                        <td>T. Stetson</td>
+                        <td>Wyoming</td>
+                        <td>2/19/1979</td>
+                    </tr>
+                    <tr>
+                        <td>9:55.815</td>
+                        <td>G. Tidmarsh</td>
+                        <td>Colorado</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>9:59.251</td>
+                        <td>K. Kimbard</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>10:06.30</td>
+                        <td>J. Hughes</td>
+                        <td>Colorado</td>
+                        <td>2/20/1976</td>
+                    </tr>
+                    <tr>
+                        <td>10:06.8</td>
+                        <td>L. Farrar</td>
+                        <td>New Mexico</td>
+                        <td>1/25/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1650 Freestyle</td>
+                        <td>16:05.62</td>
+                        <td>B. Thomas</td>
+                        <td>Utah</td>
+                        <td>2/3/1977</td>
+                    </tr>
+                    <tr>
+                        <td>16:19.751</td>
+                        <td>J. Mras</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>16:24.785</td>
+                        <td>J. Herschberg</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>16:34.336</td>
+                        <td>R. Meyer</td>
+                        <td>Oklahoma State</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>16:43.614</td>
+                        <td>G. Tidmarsh</td>
+                        <td>Colorado</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle Relay</td>
+                        <td>1:27.320</td>
+                        <td>R. Brendt, B. Hough, J. Martin, B. Zimmer</td>
+                        <td>Oklahoma</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.146</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.379</td>
+                        <td>"A"</td>
+                        <td>Iowa State</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.807</td>
+                        <td>"A"</td>
+                        <td>Kansas</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.814</td>
+                        <td>"A"</td>
+                        <td>Missouri</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Freestyle Relay</td>
+                        <td>3:05.745</td>
+                        <td>"A"</td>
+                        <td>Wyoming</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:08.269</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:09.457</td>
+                        <td>"A"</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:10.847</td>
+                        <td>Orten, K. Brekke, K. Bush, E. Rindahl</td>
+                        <td>Colorado</td>
+                        <td>2/11/1977</td>
+                    </tr>
+                    <tr>
+                        <td>3:11.212</td>
+                        <td>P. Almeida, P. Wrist, T. Nutter, K. Brekke</td>
+                        <td>Colorado</td>
+                        <td>1/9/1980</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">800 Freestyle Relay</td>
+                        <td>6:59.494</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>7:02.56</td>
+                        <td>"A"</td>
+                        <td>Utah</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>7:03.97</td>
+                        <td>S. Guild, J. McLintock, B. Bockus, D. Pattengale</td>
+                        <td>Oklahoma</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>7:05.04</td>
+                        <td>"A"</td>
+                        <td>Wyoming</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>7:07.491</td>
+                        <td>"A"</td>
+                        <td>Utah</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Butterfly</td>
+                        <td>23.27</td>
+                        <td>P. Paulus</td>
+                        <td>Colorado</td>
+                        <td>10/23/2021</td>
+                    </tr>
+                    <tr>
+                        <td>23.85</td>
+                        <td>A. Baker</td>
+                        <td>Nebraska</td>
+                        <td>10/23/2021</td>
+                    </tr>
+                    <tr>
+                        <td>23.93</td>
+                        <td>W. Dravenstott</td>
+                        <td>Colorado</td>
+                        <td>10/23/2021</td>
+                    </tr>
+                    <tr>
+                        <td>24.74</td>
+                        <td>S. Raber</td>
+                        <td>Utah</td>
+                        <td>8/20/2018</td>
+                    </tr>
+                    <tr>
+                        <td>24.81</td>
+                        <td>N. Whittenburg</td>
+                        <td>Colorado</td>
+                        <td>10/7/2023</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Butterfly</td>
+                        <td>51.277</td>
+                        <td>C. Killpack</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>51.408</td>
+                        <td>B. Patno</td>
+                        <td>New Mexico</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>51.63</td>
+                        <td>J. Mixdorf</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>53.04</td>
+                        <td>D. Walden</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>53.097</td>
+                        <td>P. Almeida</td>
+                        <td>Colorado</td>
+                        <td>2/15/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Butterfly</td>
+                        <td>1:51.235</td>
+                        <td>C. Killpack</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:55.50</td>
+                        <td>R. Seymour</td>
+                        <td>Oklahoma State</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:55.74</td>
+                        <td>C. Roth</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:55.790</td>
+                        <td>S. Waters</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:56.299</td>
+                        <td>D. Walden</td>
+                        <td>Iowa State</td>
+                        <td>1/20/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Backstroke</td>
+                        <td>25.43</td>
+                        <td>N. Skorut</td>
+                        <td>Utah</td>
+                        <td>10/25/2018</td>
+                    </tr>
+                    <tr>
+                        <td>25.46</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>10/22/2016</td>
+                    </tr>
+                    <tr>
+                        <td>25.63</td>
+                        <td>"A"</td>
+                        <td>Colorado Mesa</td>
+                        <td>10/7/2023</td>
+                    </tr>
+                    <tr>
+                        <td>25.78</td>
+                        <td>O. Spooner</td>
+                        <td>Northern Colorado</td>
+                        <td>10/7/2023</td>
+                    </tr>
+                    <tr>
+                        <td>25.98</td>
+                        <td>C. Sharp</td>
+                        <td>Colorado</td>
+                        <td>3/20/2016</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Backstroke</td>
+                        <td>53.55</td>
+                        <td>Z. Nahman</td>
+                        <td>Colorado Mines</td>
+                        <td>2/10/2014</td>
+                    </tr>
+                    <tr>
+                        <td>54.371</td>
+                        <td>S. Claffey</td>
+                        <td>Utah</td>
+                        <td>2/4/1979</td>
+                    </tr>
+                    <tr>
+                        <td>55.213</td>
+                        <td>F. Lyhman</td>
+                        <td>Oklahoma</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>55.44</td>
+                        <td>H. Hapgood</td>
+                        <td>Coloardo Mesa</td>
+                        <td>10/24/2015</td>
+                    </tr>
+                    <tr>
+                        <td>55.628</td>
+                        <td>R. Keith</td>
+                        <td>Colorado</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Backstroke</td>
+                        <td>1:58.661</td>
+                        <td>S. Claffey</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.02</td>
+                        <td>G. Kempf</td>
+                        <td>Kansas</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.378</td>
+                        <td>B. Smith</td>
+                        <td>Air Force</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.397</td>
+                        <td>F. Lyhman</td>
+                        <td>Oklahoma</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.610</td>
+                        <td>D. Poorman</td>
+                        <td>Air Force</td>
+                        <td>2/11/1977</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Breaststroke</td>
+                        <td>27.8</td>
+                        <td>C. Amman</td>
+                        <td>Colorado</td>
+                        <td>3/19/2016</td>
+                    </tr>
+                    <tr>
+                        <td>28.09</td>
+                        <td>R. Isobe</td>
+                        <td>Colorado</td>
+                        <td>3/19/2016</td>
+                    </tr>
+                    <tr>
+                        <td>28.39</td>
+                        <td>A. Steinkamp</td>
+                        <td>Utah</td>
+                        <td>10/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td>28.5</td>
+                        <td>H. Crone</td>
+                        <td>Colorado</td>
+                        <td>3/19/2016</td>
+                    </tr>
+                    <tr>
+                        <td>28.7</td>
+                        <td>D. Newman</td>
+                        <td>Utah State</td>
+                        <td>10/20/2018</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Breaststroke</td>
+                        <td>1:00.45</td>
+                        <td>B. Lowe</td>
+                        <td>Colorado Mesa</td>
+                        <td>3/5/2016</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.68</td>
+                        <td>J. McLintock</td>
+                        <td>Oklahoma</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.681</td>
+                        <td>F. Orten</td>
+                        <td>Colorado</td>
+                        <td>2/15/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.75</td>
+                        <td>B. DiBiase</td>
+                        <td>Kansas</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.869</td>
+                        <td>O. Gonzalez</td>
+                        <td>Utah</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Breaststroke</td>
+                        <td>2:10.924</td>
+                        <td>P. Ferracuti</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>J. Hackbarth</td>
+                        <td>2:12.899</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:12.979</td>
+                        <td>F. Orten</td>
+                        <td>Colorado</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.506</td>
+                        <td>Philip Wrist</td>
+                        <td>Colorado</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.52</td>
+                        <td>J. McLintock</td>
+                        <td>Oklahoma</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 I.M.</td>
+                        <td>55.54</td>
+                        <td>N. Leigh</td>
+                        <td>Northern Colorado</td>
+                        <td>2/23/2019</td>
+                    </tr>
+                    <tr>
+                        <td>55.98</td>
+                        <td>J. Gullett</td>
+                        <td>Colorado</td>
+                        <td>10/12/2019</td>
+                    </tr>
+                    <tr>
+                        <td>55.68</td>
+                        <td>B. Miclette</td>
+                        <td>Colorado</td>
+                        <td>3/19/2016</td>
+                    </tr>
+                    <tr>
+                        <td>56.82</td>
+                        <td>D. Newman</td>
+                        <td>Utah State</td>
+                        <td>10/20/2018</td>
+                    </tr>
+                    <tr>
+                        <td>56.89</td>
+                        <td>O. Spooner</td>
+                        <td>Northern Colorado</td>
+                        <td>10/7/2023</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 I.M.</td>
+                        <td>1:57.91</td>
+                        <td>F. Orten</td>
+                        <td>Colorado</td>
+                        <td>2/3/1977</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.42</td>
+                        <td>T. Hsu</td>
+                        <td>New Mexico</td>
+                        <td>1/18/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.450</td>
+                        <td>M. James</td>
+                        <td>Wyoming</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.546</td>
+                        <td>D. Basescu</td>
+                        <td>Colorado State</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.661</td>
+                        <td>P. Wrist</td>
+                        <td>Colorado</td>
+                        <td>12/4/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 I.M.</td>
+                        <td>4:13.82</td>
+                        <td>P. Wrist</td>
+                        <td>Colorado</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>4:16.19</td>
+                        <td>D. Basescu</td>
+                        <td>Colorado State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>4:16.627</td>
+                        <td>C. Roth</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:16.954</td>
+                        <td>B. Thomas</td>
+                        <td>Utah</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:17.93</td>
+                        <td>B. MicLette</td>
+                        <td>Colorado</td>
+                        <td>3/20/2016</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Medley Relay</td>
+                        <td>1:39.97</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>3/7/2008</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.401</td>
+                        <td>D. Heffron, R. Orten, B. Wencel, C. Lansberg</td>
+                        <td>Colorado</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.422</td>
+                        <td>"A"</td>
+                        <td>Colorado State</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.602</td>
+                        <td>"A"</td>
+                        <td>Oklahoma</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.85</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>2/8/2014</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Medley Relay</td>
+                        <td>3:33.961</td>
+                        <td>"A"</td>
+                        <td>Air Force</td>
+                        <td>2/11/77</td>
+                    </tr>
+                    <tr>
+                        <td>3:34.632</td>
+                        <td>"A"</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:35.4</td>
+                        <td>M. Croshier, B., J. Bell, R. Burnett</td>
+                        <td>Iowa State</td>
+                        <td>3/7/1974</td>
+                    </tr>
+                    <tr>
+                        <td>3:35.5</td>
+                        <td>"A"</td>
+                        <td>Kansas</td>
+                        <td>3/7/1974</td>
+                    </tr>
+                    <tr>
+                        <td>3:35.545</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1 Meter Diving</td>
+                        <td>475.5</td>
+                        <td>S. Harmon</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>465.45</td>
+                        <td>D. Book</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>423.87</td>
+                        <td>J. Hager</td>
+                        <td>Oklahoma</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>415.05</td>
+                        <td>B. Luterbach</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>409.8</td>
+                        <td>D. Johnson</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">3 Meter Diving</td>
+                        <td>500.75</td>
+                        <td>D. Book</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>486.9</td>
+                        <td>R. McAnally</td>
+                        <td>Iowa State</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>375.85</td>
+                        <td>S. Harmon</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>461.1</td>
+                        <td>D. McGregor</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>442.23</td>
+                        <td>S. King</td>
+                        <td>Kansas</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                </table><br><br><h4>Note: Some results do not list individuals on relays. "A" denotes unknown swimmer(s) from that school's A relay</h4>
+            </div>
+            <div id="table3" style="overflow-x:auto; margin:12px;">
+                <h3>Men - February 1980 (Recreation Pool)</h3><br><br>
+                <table class="table4">
+                    <thead>
+                    <tr>
+                        <th><strong>Event</strong></th>
+                        <th><strong>Time</strong></th>
+                        <th><strong>Swimmer</strong></th>
+                        <th><strong>School</strong></th>
+                        <th><strong>Date</strong></th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td rowspan="5">50 Freestyle</td>
+                        <td>21.307</td>
+                        <td>L. Gordon</td>
+                        <td>Brigham Young</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr>
+                        <td>21.4</td>
+                        <td>C. Lansberg</td>
+                        <td>Colorado</td>
+                        <td>2/1/1975</td>
+                    </tr>
+                    <tr>
+                        <td>21.5</td>
+                        <td>Hogue</td>
+                        <td>Air Force</td>
+                        <td>2/1/1975</td>
+                    </tr>
+                    <tr>
+                        <td>21.49</td>
+                        <td>D. Biddick</td>
+                        <td>Oklahoma State</td>
+                        <td>3/7/1974</td>
+                    </tr>
+                    <tr>
+                        <td>21.53</td>
+                        <td>A. McDonald</td>
+                        <td>Kansas</td>
+                        <td>3/7/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Freestyle</td>
+                        <td>46.87</td>
+                        <td>A. McDonald</td>
+                        <td>Kansas</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>47.04</td>
+                        <td>D. Biddick</td>
+                        <td>Oklahoma State</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>47.199</td>
+                        <td>M. McGregor</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>47.214</td>
+                        <td>M. Hayes</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>47.31</td>
+                        <td>R. Burnett</td>
+                        <td>Iowa State</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle</td>
+                        <td>1:42.455</td>
+                        <td>B. Briggs</td>
+                        <td>Wyoming</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:42.60</td>
+                        <td>S. Vaughn</td>
+                        <td>Colorado State</td>
+                        <td>2/20/1976</td>
+                    </tr>
+                    <tr>
+                        <td>1:43.25</td>
+                        <td>R. Burnett</td>
+                        <td>Iowa State</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:43.857</td>
+                        <td>J. Sorich</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:44.039</td>
+                        <td>J. Marshall</td>
+                        <td>Oklahoma State</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">500 Freestyle</td>
+                        <td>4:38.189</td>
+                        <td>J. Marshall</td>
+                        <td>Oklahoma State</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:40.215</td>
+                        <td>T. Stetson</td>
+                        <td>Wyoming</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:41.736</td>
+                        <td>B. Thomas</td>
+                        <td>Utah</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:43.376</td>
+                        <td>J. Mras</td>
+                        <td>Utah</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:44.093</td>
+                        <td>J. Sorich</td>
+                        <td>Brigham Young</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1000 Freestyle</td>
+                        <td>9:39.20</td>
+                        <td>T. Stetson</td>
+                        <td>Wyoming</td>
+                        <td>2/19/1979</td>
+                    </tr>
+                    <tr>
+                        <td>9:55.815</td>
+                        <td>G. Tidmarsh</td>
+                        <td>Colorado</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>9:59.251</td>
+                        <td>K. Kimbard</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>10:06.30</td>
+                        <td>J. Hughes</td>
+                        <td>Colorado</td>
+                        <td>2/20/1976</td>
+                    </tr>
+                    <tr>
+                        <td>10:06.8</td>
+                        <td>L. Farrar</td>
+                        <td>New Mexico</td>
+                        <td>1/25/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1650 Freestyle</td>
+                        <td>16:05.62</td>
+                        <td>B. Thomas</td>
+                        <td>Utah</td>
+                        <td>2/3/1977</td>
+                    </tr>
+                    <tr>
+                        <td>16:19.751</td>
+                        <td>J. Mras</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>16:24.785</td>
+                        <td>J. Herschberg</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>16:34.336</td>
+                        <td>R. Meyer</td>
+                        <td>Oklahoma State</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>16:43.614</td>
+                        <td>G. Tidmarsh</td>
+                        <td>Colorado</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle Relay</td>
+                        <td>1:27.320</td>
+                        <td>R. Brendt, B. Hough, J. Martin, B. Zimmer</td>
+                        <td>Oklahoma</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.146</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.379</td>
+                        <td>"A"</td>
+                        <td>Iowa State</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.807</td>
+                        <td>"A"</td>
+                        <td>Kansas</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:28.814</td>
+                        <td>"A"</td>
+                        <td>Missouri</td>
+                        <td>12/5/1975</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Freestyle Relay</td>
+                        <td>3:05.745</td>
+                        <td>"A"</td>
+                        <td>Wyoming</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:08.269</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:09.457</td>
+                        <td>"A"</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:10.847</td>
+                        <td>Orten, K. Brekke, K. Bush, E. Rindahl</td>
+                        <td>Colorado</td>
+                        <td>2/11/1977</td>
+                    </tr>
+                    <tr>
+                        <td>3:11.212</td>
+                        <td>P. Almeida, P. Wrist, T. Nutter, K. Brekke</td>
+                        <td>Colorado</td>
+                        <td>1/9/1980</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">800 Freestyle Relay</td>
+                        <td>6:59.494</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>7:02.56</td>
+                        <td>"A"</td>
+                        <td>Utah</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>7:03.97</td>
+                        <td>S. Guild, J. McLintock, B. Bockus, D. Pattengale</td>
+                        <td>Oklahoma</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>7:05.04</td>
+                        <td>"A"</td>
+                        <td>Wyoming</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>7:07.491</td>
+                        <td>"A"</td>
+                        <td>Utah</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Butterfly</td>
+                        <td>51.277</td>
+                        <td>C. Killpack</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>51.408</td>
+                        <td>B. Patno</td>
+                        <td>New Mexico</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>51.63</td>
+                        <td>J. Mixdorf</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>53.04</td>
+                        <td>D. Walden</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>53.097</td>
+                        <td>P. Almeida</td>
+                        <td>Colorado</td>
+                        <td>2/15/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Butterfly</td>
+                        <td>1:51.235</td>
+                        <td>C. Killpack</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:55.50</td>
+                        <td>R. Seymour</td>
+                        <td>Oklahoma State</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:55.74</td>
+                        <td>C. Roth</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:55.790</td>
+                        <td>S. Waters</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:56.299</td>
+                        <td>D. Walden</td>
+                        <td>Iowa State</td>
+                        <td>1/20/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Backstroke</td>
+                        <td>54.371</td>
+                        <td>S. Claffey</td>
+                        <td>Utah</td>
+                        <td>2/4/1979</td>
+                    </tr>
+                    <tr>
+                        <td>55.213</td>
+                        <td>F. Lyhman</td>
+                        <td>Oklahoma</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>55.628</td>
+                        <td>R. Keith</td>
+                        <td>Colorado</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>55.641</td>
+                        <td>J. Koch</td>
+                        <td>New Mexico</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>55.75</td>
+                        <td>D. Peters</td>
+                        <td>Utah</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Backstroke</td>
+                        <td>1:58.661</td>
+                        <td>S. Claffey</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.02</td>
+                        <td>G. Kempf</td>
+                        <td>Kansas</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.378</td>
+                        <td>B. Smith</td>
+                        <td>Air Force</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.397</td>
+                        <td>F. Lyhman</td>
+                        <td>Oklahoma</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:59.610</td>
+                        <td>D. Poorman</td>
+                        <td>Air Force</td>
+                        <td>2/11/1977</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Breaststroke</td>
+                        <td>1:00.68</td>
+                        <td>J. McLintock</td>
+                        <td>Oklahoma</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.681</td>
+                        <td>F. Orten</td>
+                        <td>Colorado</td>
+                        <td>2/15/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.75</td>
+                        <td>B. DiBiase</td>
+                        <td>Kansas</td>
+                        <td>3/8/1974</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.869</td>
+                        <td>O. Gonzalez</td>
+                        <td>Utah</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:01.120</td>
+                        <td>P. Ferracuti</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Breaststroke</td>
+                        <td>2:10.924</td>
+                        <td>P. Ferracuti</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>J. Hackbarth</td>
+                        <td>2:12.899</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:12.979</td>
+                        <td>F. Orten</td>
+                        <td>Colorado</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.506</td>
+                        <td>Philip Wrist</td>
+                        <td>Colorado</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.52</td>
+                        <td>J. McLintock</td>
+                        <td>Oklahoma</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 I.M.</td>
+                        <td>1:57.91</td>
+                        <td>F. Orten</td>
+                        <td>Colorado</td>
+                        <td>2/3/1977</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.42</td>
+                        <td>T. Hsu</td>
+                        <td>New Mexico</td>
+                        <td>1/18/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.450</td>
+                        <td>M. James</td>
+                        <td>Wyoming</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.546</td>
+                        <td>D. Basescu</td>
+                        <td>Colorado State</td>
+                        <td>1/27/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:58.661</td>
+                        <td>P. Wrist</td>
+                        <td>Colorado</td>
+                        <td>12/4/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 I.M.</td>
+                        <td>4:13.82</td>
+                        <td>P. Wrist</td>
+                        <td>Colorado</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>4:16.19</td>
+                        <td>D. Basescu</td>
+                        <td>Colorado State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>4:16.627</td>
+                        <td>C. Roth</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:16.954</td>
+                        <td>B. Thomas</td>
+                        <td>Utah</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:20.141</td>
+                        <td>J. Mras</td>
+                        <td>Utah</td>
+                        <td>1/28/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Medley Relay</td>
+                        <td>1:40.401</td>
+                        <td>D. Heffron, R. Orten, B. Wencel, C. Lansberg</td>
+                        <td>Colorado</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.422</td>
+                        <td>"A"</td>
+                        <td>Colorado State</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.602</td>
+                        <td>"A"</td>
+                        <td>Oklahoma</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.863</td>
+                        <td>"A"</td>
+                        <td>Kansas</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr>
+                        <td>1:41.235</td>
+                        <td>"A"</td>
+                        <td>Iowa State</td>
+                        <td>12/6/1975</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Medley Relay</td>
+                        <td>3:33.961</td>
+                        <td>"A"</td>
+                        <td>Air Force</td>
+                        <td>2/11/77</td>
+                    </tr>
+                    <tr>
+                        <td>3:34.632</td>
+                        <td>"A"</td>
+                        <td>Air Force</td>
+                        <td>1/26/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:35.4</td>
+                        <td>M. Croshier, B., J. Bell, R. Burnett</td>
+                        <td>Iowa State</td>
+                        <td>3/7/1974</td>
+                    </tr>
+                    <tr>
+                        <td>3:35.5</td>
+                        <td>"A"</td>
+                        <td>Kansas</td>
+                        <td>3/7/1974</td>
+                    </tr>
+                    <tr>
+                        <td>3:35.545</td>
+                        <td>"A"</td>
+                        <td>Colorado</td>
+                        <td>2/17/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1 Meter Diving</td>
+                        <td>475.5</td>
+                        <td>S. Harmon</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>465.45</td>
+                        <td>D. Book</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>423.87</td>
+                        <td>J. Hager</td>
+                        <td>Oklahoma</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>415.05</td>
+                        <td>B. Luterbach</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr>
+                        <td>409.8</td>
+                        <td>D. Johnson</td>
+                        <td>Iowa State</td>
+                        <td>2/4/1977</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">3 Meter Diving</td>
+                        <td>500.75</td>
+                        <td>D. Book</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>486.9</td>
+                        <td>R. McAnally</td>
+                        <td>Iowa State</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr>
+                        <td>375.85</td>
+                        <td>S. Harmon</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>461.1</td>
+                        <td>D. McGregor</td>
+                        <td>Utah</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>442.23</td>
+                        <td>S. King</td>
+                        <td>Kansas</td>
+                        <td>3/9/1974</td>
+                    </tr>
+                    <tr><th></th></tr>
+                </table><br><br><h4>Note: Some results do not list individuals on relays. "A" denotes unknown swimmer(s) from that school's A relay</h4>
+            </div>
+            <div id="table4" style="overflow-x:auto; margin:12px;">
+                <h3>Women - February 1980 (Recreation Pool)</h3><br><br>
+                <table class="table4">
+                    <thead>
+                    <tr>
+                        <th><strong>Event</strong></th>
+                        <th><strong>Time</strong></th>
+                        <th><strong>Swimmer</strong></th>
+                        <th><strong>School</strong></th>
+                        <th><strong>Date</strong></th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td rowspan="5">50 Freestyle</td>
+                        <td>24.748</td>
+                        <td>G. Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>24.86</td>
+                        <td>E. Lutz</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>24.917</td>
+                        <td>V. Allen</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>24.985</td>
+                        <td>S. Budner</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>25.08</td>
+                        <td>L.Stauffer</td>
+                        <td>Colorado State</td>
+                        <td>1/31/1977</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Freestyle</td>
+                        <td>52.292</td>
+                        <td>G. Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>53.604</td>
+                        <td>D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>54.233</td>
+                        <td>P. Tosdal</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>54.323</td>
+                        <td>S. Brady</td>
+                        <td>Colorado State</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>54.46</td>
+                        <td>S. Little</td>
+                        <td>Colorado</td>
+                        <td>1/18/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle</td>
+                        <td>1:53.527</td>
+                        <td>G. Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:55.811</td>
+                        <td>L. Wood</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:57.145</td>
+                        <td>D. Dunlevy</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:57.721</td>
+                        <td>K. Ginniver</td>
+                        <td>New Mexico</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:57.837</td>
+                        <td>K. Rowell</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">500 Freestyle</td>
+                        <td>5:05.771</td>
+                        <td>G. Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>5:08.643</td>
+                        <td>S. Thompson</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>5:09.606</td>
+                        <td>R. Ginnover</td>
+                        <td>New Mexico</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>5:13.663</td>
+                        <td>L. Wood</td>
+                        <td>Arizona</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>5:15.1</td>
+                        <td>G. Murray</td>
+                        <td>Colorado State</td>
+                        <td>12/7/1976</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1000 Freestyle</td>
+                        <td>10:52.559</td>
+                        <td>Smith</td>
+                        <td>Brigham Young</td>
+                        <td>1/18/1980</td>
+                    </tr>
+                    <tr>
+                        <td>10:50.202</td>
+                        <td>K. Howe</td>
+                        <td>Colorado</td>
+                        <td>11/12/1977</td>
+                    </tr>
+                    <tr>
+                        <td>10:58.825</td>
+                        <td>L. Spindler</td>
+                        <td>Nebraska</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>10:59.49</td>
+                        <td>A. Watland</td>
+                        <td>Nebraska</td>
+                        <td>12/8/1978</td>
+                    </tr>
+                    <tr>
+                        <td>11:00.362</td>
+                        <td>S. Fahey</td>
+                        <td>Colorado</td>
+                        <td>12/8/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1650 Freestyle</td>
+                        <td>17:53.968</td>
+                        <td>S. Thompson</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>18:04.423</td>
+                        <td>L. Wood</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>18:15.149</td>
+                        <td>L. Cliff</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>18:24.471</td>
+                        <td>L. Dinan</td>
+                        <td>Wyoming</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>18:24.582</td>
+                        <td>K. Howe</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Freestyle Relay</td>
+                        <td>1:39.468</td>
+                        <td>W. Czarniecki, H. Stevens, S. Anderson, J. Wallace</td>
+                        <td>Colorado State</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>1:39.727</td>
+                        <td>V. Allen, S. Budner, D. Dunlevy, S. Larson</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.238</td>
+                        <td>P. Tosdal, M. Campion, K. Rowell, G. Higgins</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.468</td>
+                        <td>J. Armstrong, S. Little, C. Toren, K. Reeves</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>1:40.470</td>
+                        <td>L. Wood, S. Wheatley, S. Minton, E. Lutz</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Freestyle Relay</td>
+                        <td>3:34.602</td>
+                        <td>S. Wheatley, L. Wood, Johnson, E. Lutz</td>
+                        <td>Arizona</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>3:41.279</td>
+                        <td>W. Czarniecki, Thatcher, S. Anderson, J. Wallace</td>
+                        <td>Colorado State</td>
+                        <td>11/29/1979</td>
+                    </tr>
+                    <tr>
+                        <td>3:41.709</td>
+                        <td>S. Thompson, Zygowicz, M. Oliver, K. Rowell</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>3:42.196</td>
+                        <td>L. Young, C. Naisbitt, Y. Mendiola, L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>3:44.514</td>
+                        <td>K. Howe, S. Shannon, K. Long, S. Little</td>
+                        <td>Colorado</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">800 Freestyle Relay</td>
+                        <td>7:43.878</td>
+                        <td>G. Higgins, Powell, G. Amundrud, M. Campion</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>7:43.361</td>
+                        <td>S. Wheatley, L. Wood, E. Lutz, D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>8:06.475</td>
+                        <td>L. Young, C. Naisbilt, S. Clark, L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>8:09.235</td>
+                        <td>K. Howe, S. Little, M. King, N. Frangos</td>
+                        <td>Colorado</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>8:12.327</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Butterfly</td>
+                        <td>26.199</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>26.486</td>
+                        <td>P. Tosdal</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>27.461</td>
+                        <td>S. Budner</td>
+                        <td>Colorado State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>27.489</td>
+                        <td>M. Campion</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>27.925</td>
+                        <td>P. Swim</td>
+                        <td>Utah</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Butterfly</td>
+                        <td>57.727</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr>
+                        <td>58.099</td>
+                        <td>P. Tosdal</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>59.345</td>
+                        <td>G. Amundrud</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.205</td>
+                        <td>P. Swim</td>
+                        <td>Utah</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.247</td>
+                        <td>M. Campion</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Butterfly</td>
+                        <td>2;08.096</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:10.007</td>
+                        <td>K. Miller</td>
+                        <td>Colorado</td>
+                        <td>1/18/1980</td>
+                    </tr>
+                    <tr>
+                        <td>2:11.4</td>
+                        <td>S. Thompson</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.021</td>
+                        <td>P. Swim</td>
+                        <td>Utah</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.133</td>
+                        <td>K. Howe</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Backstroke</td>
+                        <td>28.473</td>
+                        <td>L. Griggs</td>
+                        <td>Colorado State</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>28.57</td>
+                        <td>S. Little</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>29.371</td>
+                        <td>N. Franogs</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>29.473</td>
+                        <td>A. Callahan</td>
+                        <td>Wyoming</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>29.794</td>
+                        <td>S. Minton</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Backstroke</td>
+                        <td>1:00.627</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.832</td>
+                        <td>D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.947</td>
+                        <td>L. Griggs</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:01.697</td>
+                        <td>S. Little</td>
+                        <td>Colorado</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:02.703</td>
+                        <td>A. Callahan</td>
+                        <td>Wyoming</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Backstroke</td>
+                        <td>2:12.414</td>
+                        <td>L. Griggs</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:13.462</td>
+                        <td>M. Belote</td>
+                        <td>Arizona Staet</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.0</td>
+                        <td>B. Straughn</td>
+                        <td>Colorado State</td>
+                        <td>1/31/1977</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.6</td>
+                        <td>Bacon</td>
+                        <td>New Mexico</td>
+                        <td>1/30/1976</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.666</td>
+                        <td>A. Callahan</td>
+                        <td>Wyoming</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">50 Breaststroke</td>
+                        <td>30.227</td>
+                        <td>P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>31.359</td>
+                        <td>A. Bettencourt</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>31.567</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>31.841</td>
                         <td>Diane Johnson</td>
                         <td>Arizona</td>
-                        <td>1978, AIAW Regionals</td>
+                        <td>2/23/1978</td>
                     </tr>
                     <tr>
-                        <td>One Meter 6 Dives</td>
-                        <td>260.40</td>
-                        <td>Bev Beauchamp</td>
-                        <td>Colorado</td>
-                        <td>1979, Wyoming Dual</td>
+                        <td>32.351</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 Breaststroke</td>
+                        <td>1:06.112</td>
+                        <td>P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
                     </tr>
                     <tr>
-                        <td>Three Meter 6 Dives</td>
-                        <td>281.50</td>
-                        <td>Bev Beauchamp</td>
-                        <td>Colorado</td>
-                        <td>1979, New Mexico Dual</td>
+                        <td>1:07.449</td>
+                        <td>A. Bettencourt</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
                     </tr>
-                    
-                </tbody>
-                </table>
-                </div>
-            </div>
-            <div id="table2" class="table">
-                <div style="overflow-x:auto; margin:20px;" id="WomensTeamRecords">
-                    <table>
-                        <thead>
-                            <tr><th><strong>Event</strong></th>
+                    <tr>
+                        <td>1:07.466</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:08.406</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:08.417</td>
+                        <td>K. Reeves</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Breaststroke</td>
+                        <td>2:25.624</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:25.933</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:28.939</td>
+                        <td>A. Bettencourt</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:29.398</td>
+                        <td>P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:33.398</td>
+                        <td>J. Armstrong</td>
+                        <td>Colorado</td>
+                        <td>11/27/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">100 I.M.</td>
+                        <td>59.915</td>
+                        <td>D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:00.574</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:02.062</td>
+                        <td>J. Armstrong</td>
+                        <td>Colorado</td>
+                        <td>12/4/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:02.775</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/3/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:02.9</td>
+                        <td>K. Reeves</td>
+                        <td>Colorado</td>
+                        <td>11/12/1976</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 I.M.</td>
+                        <td>2:22.217</td>
+                        <td>L. Fonoimoana</td>
+                        <td>Brigham Young</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:12.922</td>
+                        <td>M. Belote</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:14.336</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.034</td>
+                        <td>S. Clark</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>2:15.306</td>
+                        <td>J. Armstrong</td>
+                        <td>Colorado</td>
+                        <td>12/4/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 I.M.</td>
+                        <td>4:48.318</td>
+                        <td>D. Johnson</td>
+                        <td>Arizona</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:47.297</td>
+                        <td>Y. Mendiola</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:47.557</td>
+                        <td>M. Oliver</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:48.641</td>
+                        <td>V. Miller</td>
+                        <td>Colorado State</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:48.876</td>
+                        <td>D. Rudolph</td>
+                        <td>Colorado State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">200 Medley Relay</td>
+                        <td>1:49.357</td>
+                        <td>M. Belote, P. Rogers, P. Tosdal, K. Rowell</td>
+                        <td>Arizona State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:51.746</td>
+                        <td>S. Little, K. Reeves, K. Howe, C. Toren</td>
+                        <td>Colorado</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr>
+                        <td>1:51.805</td>
+                        <td>L. Griggs, D. Rudolph, S. Budner, S. Larson</td>
+                        <td>Colorado State</td>
+                        <td>2/23/1978</td>
+                    </tr>
+                    <tr>
+                        <td>1:52.376</td>
+                        <td>"A"</td>
+                        <td>Wyoming</td>
+                        <td>2/1/1979</td>
+                    </tr>
+                    <tr>
+                        <td>1:52.763</td>
+                        <td>L. Griggs, W. Czarniecki, P. King, J. Wallace</td>
+                        <td>Colorado State</td>
+                        <td>2/9/1980</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">400 Medley Relay</td>
+                        <td>4:01.492</td>
+                        <td>G. Amundrud, A. Bettencourt, P. Tosdal, P. Rogers</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>4:06.400</td>
+                        <td>Engelmann, Y. Mendiola, S. Clark, B. Coon</td>
+                        <td>Brigham Young</td>
+                        <td>1/18/1980</td>
+                    </tr>
+                    <tr>
+                        <td>4:06.613</td>
+                        <td>"A"</td>
+                        <td>Brigham Young</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:07.009</td>
+                        <td>L. Griggs, Czarniecki, D. Steward, J. Wallace</td>
+                        <td>Colorado State</td>
+                        <td>11/29/1979</td>
+                    </tr>
+                    <tr>
+                        <td>4:07.922</td>
+                        <td>"A"</td>
+                        <td>Colorado State</td>
+                        <td>2/2/1979</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">1 Meter Diving</td>
+                        <td>412.5</td>
+                        <td>B. Beauchamp</td>
+                        <td>Colorado</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>411.6</td>
+                        <td>T. Brookbank</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>402.25</td>
+                        <td>D. Seal</td>
+                        <td>Wyoming</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>393.35</td>
+                        <td>T. Dollaghan</td>
+                        <td>Brigham Young</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr>
+                        <td>383.05</td>
+                        <td>N. Fenn</td>
+                        <td>Arizona State</td>
+                        <td>2/24/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                    <tr>
+                        <td rowspan="5">3 Meter Diving</td>
+                        <td>412.0</td>
+                        <td>B. Beauchamp</td>
+                        <td>Colorado</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>403.85</td>
+                        <td>T. Dollaghan</td>
+                        <td>Brigham Young</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>381.95</td>
+                        <td>T. Brookbank</td>
+                        <td>Arizona State</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>380.35</td>
+                        <td>Denise Seal</td>
+                        <td>Wyoming</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr>
+                        <td>361.9</td>
+                        <td>J. Leopold</td>
+                        <td>Arizona</td>
+                        <td>2/25/1978</td>
+                    </tr>
+                    <tr><th></th></tr>
+                </table><br><br><h4>Note: Some results do not list individuals on relays. "A" denotes unknown swimmer(s) from that school's A relay</h4>
+            </div>  
+            <div id="table5" style="overflow-x:auto; margin:12px;">
+                <h3>Men - March 1972 (Clare Small)</h3><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Event</strong></th>
                             <th><strong>Time</strong></th>
                             <th><strong>Swimmer</strong></th>
                             <th><strong>School</strong></th>
-                            <th><strong>Date/Meet</strong></th>
-                        </tr></thead>
-                            <tr>
-                                <td>50 Freestyle</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>100 Freestyle</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>200 Freestyle</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>500 Freestyle</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>1650 Freestyle</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>50 Backstroke</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>100 Backstroke</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>200 Backstroke</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>50 Breaststroke</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>100 Breaststroke</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>200 Breaststroke</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>50 Butterfly</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>100 Butterfly</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>200 Butterfly</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>100 I.M.</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>200 I.M.</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>400 I.M.</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>One Meter 6 Dives</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                            <tr>
-                                <td>Three Meter 6 Dives</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
-                            </tr>
-                    </tbody></table>
-                </div>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>21.6</td>
+                            <td>D. O'Connor</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>48.4</td>
+                            <td>D. O'Connor</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:50.3</td>
+                            <td>R. Christenson</td>
+                            <td>C.S.U.</td>
+                            <td>2/24/70</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:09.6</td>
+                            <td>J. McNichols</td>
+                            <td>I.S.U.</td>
+                            <td>1/16/71</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>10:33.9</td>
+                            <td>R. Hutton</td>
+                            <td>C.S.U.</td>
+                            <td>2/24/70</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:05.4</td>
+                            <td>D. McCulloh</td>
+                            <td>C.U.</td>
+                            <td>2/4/72</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:21.7</td>
+                            <td>M. Fairbank</td>
+                            <td>C.U.</td>
+                            <td>2/21/72</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:04.4</td>
+                            <td>Kelley</td>
+                            <td>D.U.</td>
+                            <td>2/21/72</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:06.8</td>
+                            <td>D. McCulloh</td>
+                            <td>C.S.U.</td>
+                            <td>2/21/72</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:46.8</td>
+                            <td>K. Neusitz<br>M. Fairbank<br>B. Miller<br>C. Christie</td>
+                            <td>C.U.</td>
+                            <td>2/21/72</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:22.1</td>
+                            <td>J. Cunningham<br>G. Phillips<br>D. Johnson<br>K. Lemaster</td>
+                            <td>O.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <div id="table6" style="overflow-x:auto; margin:12px;">
+                <h3>Men - March 1969 (Clare Small)</h3><br><br>
+                <table>
+                    <thead> 
+                        <tr>
+                            <th><strong>Event</strong></th>
+                            <th><strong>Time</strong></th>
+                            <th><strong>Swimmer</strong></th>
+                            <th><strong>School</strong></th>
+                            <th><strong>Date</strong></th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>50 Freestyle</td>
+                            <td>21.6</td>
+                            <td>D. O'Connor</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Freestyle</td>
+                            <td>48.4</td>
+                            <td>D. O'Connor</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>200 Freestyle</td>
+                            <td>1:52.3</td>
+                            <td>J. Cumming</td>
+                            <td>C.U.</td>
+                            <td>2/7/69</td>
+                        </tr>
+                        <tr>
+                            <td>500 Freestyle</td>
+                            <td>5:27.7</td>
+                            <td>C. Ridenour</td>
+                            <td>K.S.U.</td>
+                            <td>1/13/68</td>
+                        </tr>
+                        <tr>
+                            <td>1000 Freestyle</td>
+                            <td>10:57.5</td>
+                            <td>D. Kerr</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Backstroke</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>200 Backstroke</td>
+                            <td>2:06.1</td>
+                            <td>A. Picadura</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Breaststroke</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>200 Breaststroke</td>
+                            <td>2:23.2</td>
+                            <td>P. Watts</td>
+                            <td>C.S.U.</td>
+                            <td>2/17/68</td>
+                        </tr>
+                        <tr>
+                            <td>100 Butterfly</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>200 Butterfly</td>
+                            <td>2:10.5</td>
+                            <td>R. Cooley</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>200 I.M.</td>
+                            <td>2:07.4</td>
+                            <td>R. Cooley</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>400 I.M.</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>400 Medley Relay</td>
+                            <td>3:47.8</td>
+                            <td>A. Picadura<br>P. Watts<br>Fuller<br>M. Fuller</td>
+                            <td>C.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                        <tr>
+                            <td>400 Freestyle Relay</td>
+                            <td>3:22.1</td>
+                            <td>J. Cunningham<br>G. Phillips<br>D. Johnson<br>K. Lemaster</td>
+                            <td>O.S.U.</td>
+                            <td>2/16/68</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="table0" style="overflow-x:auto; margin:12px; height:300px"></div>
         </div>
+        
+    
+    
     <footer class="shadow2">
         <div class="container">
             <small>© 2025 University of Colorado Club Swimming &amp; Diving <br></small>
