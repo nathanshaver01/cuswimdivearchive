@@ -49,16 +49,22 @@
             <nav class="shadow">
                 <div class="container">
                   <ul>
-                      <li class="main-link"><a href="../" class = "active">YEARLY ARCHIVE</a></li>
-                      <li class="main-link"><a href="#">TEAM RECORDS</a>
-                          <ul class="dropdown">
-                            <li><a href="./records">Club Records</a></li>
-                            <li><a href="./records_division">Division Records</a></li>
-                            <li><a href="./records_pool">Pool Records</a></li>
-                          </ul>
-                        </li>
-                      <li class="main-link"><a href="./novel">NOVEL</a></li>
-                      <li class="main-link"><a href="./coaches">COACHES</a></li>
+                      <li class="main-link"><a href="../">YEARLY ARCHIVE</a></li>
+                      <li class="dropdown-link"><a href="#">RECORDS</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="./records">Club</a>
+                            <a href="./records_division">Varsity</a>
+                            <a href="./records_pool">Pool</a>
+                          </div>
+                      </li>
+                      </li>
+                      <li class="main-link"><a href="./novel">BOOK</a></li>
+                      <li class="dropdown-link"><a href="#">ADDITIONAL</a>
+                          <div class="dropdown-content" style="left:0;">
+                            <a href="./coaches">Coaches</a>
+                            <a href="./championships">Championships</a>
+                          </div>
+                      </li>
                   </ul>
                 </div>
             </nav>
@@ -79,7 +85,7 @@
         <input class="button2" type="button" onclick="showTable('table2')" value="Women's Swimming">
     </div>
     <div id="table1" class="show table">
-    <h1>Team Roster</h1>
+    <h1>Roster</h1>
     <h3>Coaching Staff</h3><br>
     <div id="images">
       <a>
@@ -111,116 +117,116 @@
         <col class="events" />
       </colgroup>
       <thead>
-        <tr><th style="text-align: center"><strong>Name</strong></th>
+        <tr><th><strong>Name</strong></th>
         <th><strong>Year</strong></th>
         <th><strong>Events</strong></th> <!--4707-->
       </tr></thead>
       <tr>
-          <td style="text-align: center">Mark Campman</td>
+          <td>Mark Campman</td>
           <td>SO</td>
           <td>Butterfly, I.M.</td>
       </tr>
       <tr>
-          <td style="text-align: center">John Carey</td>
+          <td>John Carey</td>
           <td>FR</td>
           <td>Freestyle, Backstroke</td>
       </tr>
       <tr>
-          <td style="text-align: center">Chris Christie</td>
+          <td>Chris Christie</td>
           <td>--</td>
           <td>Freestyle</td>
       </tr>
       <tr>
-          <td style="text-align: center">Christie Clarence</td>
+          <td>Christie Clarence</td>
           <td>FR</td>
           <td>Freestyle, Butterfly</td>
       </tr>
       <tr>
-          <td style="text-align: center">Kim Cowles</td>
+          <td>Kim Cowles</td>
           <td>SR</td>
           <td>Manager</td>
       </tr>
       <tr>
-          <td style="text-align: center">Art Degener</td>
+          <td>Art Degener</td>
           <td>SO</td>
           <td>Breaststroke</td>
       </tr>
       <tr>
-          <td style="text-align: center">Bruce Evans</td>
+          <td>Bruce Evans</td>
           <td>FR</td>
           <td>Breaststroke</td>
       </tr>
       <tr>
-          <td style="text-align: center">Michael Fairbank</td>
+          <td>Michael Fairbank</td>
           <td>JR</td>
           <td>Breaststroke, I.M.</td>
       </tr>
       <tr>
-          <td style="text-align: center">Marc Finley</td>
+          <td>Marc Finley</td>
           <td>FR</td>
           <td>Backstroke, I.M.</td>
       </tr>
       <tr>
-          <td style="text-align: center">William Giesey</td>
+          <td>William Giesey</td>
           <td>SO</td>
           <td>Manager</td>
       </tr>
       <tr>
-          <td style="text-align: center">Pete Huisveld</td>
+          <td>Pete Huisveld</td>
           <td>JR</td>
           <td>Freestyle</td>
       </tr>
       <tr>
-          <td style="text-align: center">David Mackay</td>
+          <td>David Mackay</td>
           <td>FR</td>
           <td>Backstroke, I.M.</td>
       </tr>
       <tr>
-          <td style="text-align: center">David McCulloh</td>
+          <td>David McCulloh</td>
           <td>SO</td>
           <td>Backstroke, I.M.</td>
       </tr>
       <tr>
-          <td style="text-align: center">William Miller</td>
+          <td>William Miller</td>
           <td>JR</td>
           <td>Butterfly, Freestyle</td>
       </tr>
       <tr>
-          <td style="text-align: center">Kurt Neusitz</td>
+          <td>Kurt Neusitz</td>
           <td>FR</td>
           <td>Backstroke, Butterfly</td>
       </tr>
       <tr>
-          <td style="text-align: center">Kurt Schmitt*</td>
+          <td>Kurt Schmitt*</td>
           <td>SR</td>
           <td>Freestyle</td>
       </tr>
       <tr>
-          <td style="text-align: center">Lester Wells</td>
+          <td>Lester Wells</td>
           <td>JR</td>
           <td>Freestyle</td>
       </tr>
       <tr>
-          <td style="text-align: center">Dennis Williams</td>
+          <td>Dennis Williams</td>
           <td>SO</td>
           <td>Diving</td>
       </tr>
     </tbody></table><br>
     <h4>*=Captain</h4><br>
 
-    <h1>Schedule/Results</h1>
+    <h1>Schedule &amp; Results</h1>
     <!--Box Summary-->
     <div class="meetbox">
      <table class = "meetsummary">
        <thead>
-         <tr><th style="text-align: center"><strong>Overall</strong></th>
+         <tr><th><strong>Overall</strong></th>
          <th><strong>PCT</strong></th>
          <th><strong>Home</strong></th>
          <th><strong>Away</strong></th>
          <th><strong>Conference</strong></th>
        </tr></thead>
        <tr>
-         <td class="td-test" style="text-align: center;" >4-3</td>
+         <td class="td-test" >4-3</td>
          <td class="td-test">.571</td>
          <td class="td-test">2-0</td>
          <td class="td-test">2-3</td>
@@ -239,35 +245,35 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
+            <td style="background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
             <td><b>110</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
+            <td style="background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
             <td>101</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State Universityi" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
+            <td style="background: #FFC423;"><img alt="Iowa State Universityi" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
             <td>75</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
+            <td style="background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
             <td>58</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
+            <td style="background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
             <td>53</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>37</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td style="background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
             <td>20</td>
           </tr>
         </table>
@@ -284,39 +290,39 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #E51937;"><img alt="Southern Methodist University" title="Southern Methodist University" class="sicon" src="../assets/icons/smu.png"></td>
+            <td style="background: #E51937;"><img alt="Southern Methodist University" title="Southern Methodist University" class="sicon" src="../assets/icons/smu.png"></td>
             <td><b>510</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #74243D;"><img alt="Southern Illinois University" title="Southern Illinois University" class="sicon" src="../assets/icons/southernil.png"></td>
+            <td style="background: #74243D;"><img alt="Southern Illinois University" title="Southern Illinois University" class="sicon" src="../assets/icons/southernil.png"></td>
             <td>369</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
+            <td style="background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
             <td>313</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
+            <td style="background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
             <td>213</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #006BB7;"><img alt="University of Texas Arlington" title="University of Texas Arlington" class="sicon" src="../assets/icons/uta.png"></td>
+            <td style="background: #006BB7;"><img alt="University of Texas Arlington" title="University of Texas Arlington" class="sicon" src="../assets/icons/uta.png"></td>
             <td>176</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CE0F42;"><img alt="University of Arkansas" title="University of Arkansas" class="sicon" src="../assets/icons/arkansas.png"></td>
+            <td style="background: #CE0F42;"><img alt="University of Arkansas" title="University of Arkansas" class="sicon" src="../assets/icons/arkansas.png"></td>
             <td>155</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
+            <td style="background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
             <td>138</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>71</td>
           </tr>
         </table>
@@ -332,29 +338,29 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #0162AE;"><img alt="Air Force Academy" title="Air Force Academy" class="sicon" src="../assets/icons/airforce_95.png"></td>
+            <td style="background: #0162AE;"><img alt="Air Force Academy" title="Air Force Academy" class="sicon" src="../assets/icons/airforce_95.png"></td>
             <td><b>77</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>18</td>
           </tr>
         </table><br>
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #DDDDDD;"><img alt="Texas Tech University" title="Texas Tech University" class="sicon" src="../assets/icons/texastech.png"></td>
+            <td style="background: #DDDDDD;"><img alt="Texas Tech University" title="Texas Tech University" class="sicon" src="../assets/icons/texastech.png"></td>
             <td><b>55</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>40</td>
           </tr>
         </table>
@@ -370,15 +376,15 @@
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td><b>73</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #461E1E;"><img alt="Western Colorado University" title="Western Colorado University" class="sicon" src="../assets/icons/western_old.png"></td>
+            <td style="background: #461E1E;"><img alt="Western Colorado University" title="Western Colorado University" class="sicon" src="../assets/icons/western_old.png"></td>
             <td>38</td>
           </tr>
         </table>
@@ -394,43 +400,43 @@
       <div class="column right-triple" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td style="background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
             <td><b>81</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>32</td>
           </tr>
         </table><br>
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td><b>61</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td style="background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
             <td>50</td>
           </tr>
         </table><br>
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td><b>83</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #F5B702;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_06.png"></td>
+            <td style="background: #F5B702;"><img alt="University of Wyoming" title="University of Wyoming" class="sicon" src="../assets/icons/wyoming_06.png"></td>
             <td>25</td>
           </tr>
         </table>
@@ -446,15 +452,15 @@
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td><b>60</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #DDDDDD;"><img alt="University of Denver" title="University of Denver" class="sicon" src="../assets/icons/denver_85.png"></td>
+            <td style="background: #DDDDDD;"><img alt="University of Denver" title="University of Denver" class="sicon" src="../assets/icons/denver_85.png"></td>
             <td>53</td>
           </tr>
         </table>
@@ -470,35 +476,35 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
+            <td style="background: #0068B3;"><img alt="University of Kansas" title="University of Kansas" class="sicon" src="../assets/icons/kansas_81.png"></td>
             <td><b>501</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
+            <td style="background: #841617;"><img alt="University of Oklahoma" title="University of Oklahoma" class="sicon" src="../assets/icons/oklahoma_79.png"></td>
             <td>317</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
+            <td style="background: #FEE3B6;"><img alt="Oklahoma State University" title="Oklahoma State University" class="sicon" src="../assets/icons/osu.png"></td>
             <td>286</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FFC423;"><img alt="Iowa State Universityi" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
+            <td style="background: #FFC423;"><img alt="Iowa State Universityi" title="Iowa State University" class="sicon" src="../assets/icons/iowastate_78.png"></td>
             <td>256</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
+            <td style="background: #000000;"><img alt="University of Missouri" title="University of Missouri" class="sicon" src="../assets/icons/missouri.png"></td>
             <td>250</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>155</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
+            <td style="background: #CF152D;"><img alt="University of Nebraska Lincoln" title="University of Nebraska Lincoln" class="sicon" src="../assets/icons/nebraska.png"></td>
             <td>89</td>
           </tr>
         </table>
@@ -522,18 +528,18 @@
           <col class="events" />
         </colgroup>
         <thead>
-          <tr><th style="text-align: center"><strong>Name</strong></th>
+          <tr><th><strong>Name</strong></th>
           <th><strong>Year</strong></th>
           <th><strong>Events</strong></th>
         </tr></thead>
         <tr>
-            <td style="text-align: center">TBD</td>
+            <td>TBD</td>
             <td>--</td>
             <td>--</td>
         </tr>
     </tbody></table><br>
     <!--Meets-->
-    <h1>Schedule/Results</h1>
+    <h1>Schedule &amp; Results</h1>
     
     <div class="row">
       <div class="column left-dual" style="background-color:#eaebec;">
@@ -545,15 +551,15 @@
       <div class="column right-dual" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td style="background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
             <td><b>TBD</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>TBD</td>
           </tr>
         </table>
@@ -569,39 +575,39 @@
       <div class="column right" style="background-color:#eaebec;">
         <table>
           <tr>
-            <th style="text-align: center">Team</th>
+            <th>Team</th>
             <th>Final Score</th>
           </tr>
           <tr>
-            <td style="text-align: center; background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
+            <td style="background: #FCD806;"><img alt="Colorado State University" title="Colorado State University" class="sicon" src="../assets/icons/csu_82.png"></td>
             <td><b>141</b></td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #C5221B;"><img alt="University of New Mexico" title="University of New Mexico" class="sicon" src="../assets/icons/unm_73.png"></td>
+            <td style="background: #C5221B;"><img alt="University of New Mexico" title="University of New Mexico" class="sicon" src="../assets/icons/unm_73.png"></td>
             <td>109 &frac12;</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #003A67;"><img alt="University of Northern Colorado" title="University of Northern Colorado" class="sicon" src="../assets/icons/unc_80.png"></td>
+            <td style="background: #003A67;"><img alt="University of Northern Colorado" title="University of Northern Colorado" class="sicon" src="../assets/icons/unc_80.png"></td>
             <td>79</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #F7D034;"><img alt="Colorado College" title="Colorado College" class="sicon" src="../assets/icons/coloradocollege_70s.png"></td>
+            <td style="background: #F7D034;"><img alt="Colorado College" title="Colorado College" class="sicon" src="../assets/icons/coloradocollege_70s.png"></td>
             <td>50</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
+            <td style="background: #000000;"><img alt="University of Colorado Boulder" title="University of Colorado Boulder" class="sicon" src="../assets/icons/cuboulder_79.png"></td>
             <td>45</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #0033A0;"><img alt="Brigham Young University" title="Brigham Young University" class="sicon" src="../assets/icons/byu_70s.png"></td>
+            <td style="background: #0033A0;"><img alt="Brigham Young University" title="Brigham Young University" class="sicon" src="../assets/icons/byu_70s.png"></td>
             <td>26</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #0E2255;"><img alt="University of Arizona" title="University of Arizona" class="sicon" src="../assets/icons/arizona_69.png"></td>
+            <td style="background: #0E2255;"><img alt="University of Arizona" title="University of Arizona" class="sicon" src="../assets/icons/arizona_69.png"></td>
             <td>27</td>
           </tr>
           <tr>
-            <td style="text-align: center; background: #CC525E;"><img alt="University of Utah" title="University of Utah" class="sicon" src="../assets/icons/utah_73.png"></td>
+            <td style="background: #CC525E;"><img alt="University of Utah" title="University of Utah" class="sicon" src="../assets/icons/utah_73.png"></td>
             <td>5</td>
           </tr>
         </table>
@@ -614,7 +620,7 @@
    
 <footer class="shadow2">
     <div class="container">
-        <small>© 2025 University of Colorado Club Swimming &amp; Diving <br></small>
+        <small>© 2026 University of Colorado Club Swimming &amp; Diving <br></small>
         <a href="https://www.colorado.edu/sportclubs/co-ed-sports/swimming-and-diving">Collegiate Sport Clubs at the University of Colorado</a>
     </div>
 </footer>
