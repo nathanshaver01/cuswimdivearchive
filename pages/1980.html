@@ -10,12 +10,21 @@
         <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="stylesheet" href="../assets/css/main.css">
         <link href="./assets/css/tabs-style.css" rel="stylesheet">
-
+        <script src="https://cdn.jsdelivr.net/npm/table-sort-js/table-sort.js"></script>
+        <link rel="stylesheet" href="../assets/css/themes/default/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="..//assets/css/themes/nivo-slider.css" type="text/css" media="screen" />
         <script src="../assets/css/images/jquery-1.10.2.js.download"></script>
         <script src="../assets/css/images/jquery-ui-1.10.4.custom.js.download"></script>
-            
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery.nivo.slider.js"></script>
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
+
+        <script type="text/javascript">
+          $(window).load(function() {
+          $('#slider').nivoSlider();
+          });
+        </script>
 
         <script>
             function showTable(tableIdToShow) {
@@ -85,10 +94,14 @@
         <input class="button2" type="button" onclick="showTable('table1')" value="Men's Swimming"><br>
         <input class="button2" type="button" onclick="showTable('table2')" value="Women's Swimming">
     </div>
+    <div class="slider-wrapper theme-default">
+      <div id="slider" class="nivoSlider"> 
+        <img src="../assets/css/images/teamphoto1980.png" alt="Full Team Photo 1979-80"/>         
+        <img src="../assets/css/images/teamphoto1980w.png" alt="Women Team Photo 1979-80"/> 
+        <img src="../assets/css/images/teamphoto1980m.png" alt="Men Team Photo 1979-80"/> 
+      </div>
+    </div> 
     <div id="table1" class="show table">
-    <img src="../assets/css/images/teamphoto1980.png" alt="Full Team Photo 1979-80" class="center"><br>
-    <img src="../assets/css/images/teamphoto1980m.png" alt="Men Team Photo 1979-80" class="center"><br>
-    
     <h1>Roster</h1>
     <h3>Coaching Staff</h3><br>
     <div id="images">
@@ -595,8 +608,6 @@
     </div><br><br><br>
     </div>
     <div id="table2" class="table">
-    <img src="../assets/css/images/teamphoto1980.png" alt="Full Team Photo 1979-80" class="center"><br><br>
-    <img src="../assets/css/images/teamphoto1980w.png" alt="Women Team Photo 1979-80" class="center"><br>
     <h1>Roster</h1>
     <h3>Coaching Staff</h3><br>
     <div id="images">

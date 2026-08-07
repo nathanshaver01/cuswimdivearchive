@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="stylesheet" href="../assets/css/main.css">
         <link href="./assets/css/tabs-style.css" rel="stylesheet">
-
+        <script src="https://cdn.jsdelivr.net/npm/table-sort-js/table-sort.js"></script>
+        <link rel="stylesheet" href="../assets/css/themes/default/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="..//assets/css/themes/nivo-slider.css" type="text/css" media="screen" />
         <script src="../assets/css/images/jquery-1.10.2.js.download"></script>
         <script src="../assets/css/images/jquery-ui-1.10.4.custom.js.download"></script>
-            
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery.nivo.slider.js"></script>
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="../assets/css/favicon.ico" sizes="16x16">
 
@@ -31,6 +34,11 @@
               tableElement.classList.remove('show')
             }
           }
+        </script>
+        <script type="text/javascript">
+          $(window).load(function() {
+          $('#slider').nivoSlider();
+          });
         </script>
 
     </head> 
@@ -79,8 +87,12 @@
       <a id = 'backnext' href="../" class="next">&uArr; Archive Directory</a>
       <a id = 'backnext' href="./1965" class="next">1965 &raquo;</a>
     </div><br><br>
-    <img src="../assets/css/images/teamphoto1964.png" alt="Full Team Photo 1963-64" class="center"><br>
-    
+    <div class="slider-wrapper theme-default">
+      <div id="slider" class="nivoSlider"> 
+        <img src="../assets/css/images/teamphoto1964.png" alt="Full Team Photo"/> 
+        <img src="../assets/css/images/teamphoto1964f.png" alt="Freshman Team Photo"/> 
+      </div>
+    </div>
     <h1>Roster</h1>
     <h3>Coaching Staff</h3><br>
     <div id="images">
