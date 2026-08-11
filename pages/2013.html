@@ -26,6 +26,11 @@
           $('#slider').nivoSlider();
           });
         </script>
+        <script type="text/javascript">
+          $(window).load(function() {
+          $('#slider2').nivoSlider();
+          });
+        </script>
 
     </head> 
 
@@ -74,8 +79,13 @@
       <a id = 'backnext' href="../" class="next">&uArr; Archive Directory</a>
       <a id = 'backnext' href="./2014" class="next">2014 &raquo;</a>
     </div><br><br>
-    <img src="../assets/css/images/teamphoto2013.jpg" alt="Full Team Photo 2012-13" class="center"><br>
-    
+    <div class="slider-wrapper theme-default">
+      <div id="slider" class="nivoSlider"> 
+        <img src="../assets/css/images/teamphoto2013.jpg" alt="Full Team Photo 2012-13"/> 
+        <img src="../assets/css/images/teamphoto2013nm.png" alt="Nationals Team Photo Men 2012-13"/>
+        <img src="../assets/css/images/teamphoto2013nw.png" alt="Nationals Team Photo Women 2013-14"/>
+      </div>
+    </div>
     <h1>Roster</h1>
     <h3>Coaching Staff</h3><br>
     <div id="images">
@@ -393,7 +403,7 @@
       </div>
       <div class="ttcolumn ttright" style="background-color:#eaebec;">    
         <div class="slider-wrapper theme-default">
-          <div id="slider" class="nivoSlider"> 
+          <div id="slider2" class="nivoSlider"> 
             <img src="../assets/css/images/tt/13beach.png" alt="Team Photo on Beach"/> 
             <img src="../assets/css/images/tt/13team.png" alt="Team Photo"/> 
           </div>
