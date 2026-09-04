@@ -97,6 +97,7 @@ body {font-family: "Lato", sans-serif;}
 .left {
   width: 30%;
   text-align: center;
+  height:300px;
 }
 .left-dual {
   width: 30%;
@@ -1120,10 +1121,10 @@ small {
       overflow:auto;
     }
     .left{
-      height:250px;
+        height:auto;
     }
     .lefthead{
-      height:260px;
+        height:260px;
     }
     .headshot {
         height: 130px; 
@@ -1176,7 +1177,7 @@ small {
       overflow:auto;
     }
     .left{
-      height:230px;
+        height:auto;
     }
     .lefthead{
       height:250px;
