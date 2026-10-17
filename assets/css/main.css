@@ -40,8 +40,36 @@ h1, h2, h3, h4, p, ul {
 
 body a {
     color: rgb(0, 0, 0);   
+    text-decoration: none;
+}
+body a:hover{
+    color: rgb(207, 184, 124, 1);
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
+.button a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #979797;
+    padding: 0;
+}
 
 .events {
     width: 40%;
