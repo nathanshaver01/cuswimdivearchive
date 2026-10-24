@@ -255,7 +255,7 @@ width:100%;
     margin: 0 auto;
     width: 100%;
     text-shadow: none;
-  }
+}
 table.table2 td { width:3%; }
   
 table.table2 th {
@@ -504,7 +504,7 @@ nav li li{
 }
 .meetbox {
     text-align: center;
-  }
+}
 .meetsummary {
 text-align: justify;
 width:100%;
@@ -740,6 +740,9 @@ td:hover{
     display:inline-block;
     font-size:10pt;
     box-shadow: 2px 2px 2px 2px #ccc;
+}
+#images a:hover{
+    color: rgb(0, 0, 0);
 }
 .caption {
     padding: 3px;
