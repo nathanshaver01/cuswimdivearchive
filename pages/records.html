@@ -41,6 +41,8 @@
             document.getElementById("table6").style.display="none";
             document.getElementById("table7").style.display="none";
             document.getElementById("table8").style.display="none";
+            document.getElementById("table9").style.display="none";
+            document.getElementById("table10").style.display="none";
             document.getElementById("table"+nr).style.display="block";
         }
         function focusMe(button) {
@@ -70,7 +72,8 @@
         .name {
         width: 43%;
         }
-        #table1, #table2, #table3, #table4, #table5, #table6, #table7, #table8{
+        #table1, #table2, #table3, #table4, #table5, #table6, #table7, #table8,
+        #table9, #table10{
             display: none;
         }
     </style>
@@ -123,14 +126,16 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" onclick='show(2);'><button class = "button button3">Current</button></a>
+                        <a href="#" onclick='show(10);'><button class = "button button3">Current</button></a>
+                        <a href="#" onclick='show(2);'><button class = "button button3">2026</button></a>
                         <a href="#" onclick='show(4);'><button class = "button button3">2022</button></a>
                         <a href="#" onclick='show(6);'><button class = "button button3">2018</button></a>
                         <a href="#" onclick='show(8);'><button class = "button button3">1982</button></a>
                         <br/>
                     </td>
                     <td>
-                        <a href="#" onclick='show(1);'><button class = "button button3">Current</button></a>
+                        <a href="#" onclick='show(9);'><button class = "button button3">Current</button></a>
+                        <a href="#" onclick='show(1);'><button class = "button button3">2026</button></a>
                         <a href="#" onclick='show(3);'><button class = "button button3">2022</button></a>
                         <a href="#" onclick='show(5);'><button class = "button button3">2018</button></a>
                         <a href="#" onclick='show(7);'><button class = "button button3">1982</button></a>
@@ -138,6 +143,13 @@
                 </tr>
             </table><br><br><br>
             
+            <div id="table9" style="overflow-x:auto; margin:12px;">
+                <h3>Men - Nov 2026 - Pending Results From Georgia Horan</h3><br><br>
+            </div>
+            <div id="table10" style="overflow-x:auto; margin:12px;">
+                <h3>Women - Nov 2026 - Pending Results From Georgia Horan</h3><br><br>
+            </div>
+
             <div id="table2" style="overflow-x:auto; margin:12px;">
                 <h3>Women - April 2026</h3><br><br>
                 <table class="table4">
